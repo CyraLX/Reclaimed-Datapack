@@ -1,0 +1,44 @@
+{ 
+	"pack": {
+		"pack_format": 71,
+		"supported_formats": {
+			"min_inclusive": 71,
+			"max_inclusive": 81
+		},
+		"description": [
+			{
+				"translate": "dataPack.reclaimed.description.header_format",
+				"fallback": "%s | %s",
+				"color": "dark_gray",
+				"with": [
+					{
+						"text": "v1.0.0",
+						"color": "dark_purple"
+					},
+					{
+						"translate": "dataPack.reclaimed.description.header",
+						"fallback": "Use unique Powers",
+						"color": "gray"
+					}
+				]
+			},
+			"\n",
+			{
+				"translate": "dataPack.reclaimed.description.footer",
+				"fallback": "! Missing Resource Pack !",
+				"color": "dark_gray"
+			}
+		]
+	},
+	"overlays": {
+		"entries": [
+			{
+				"formats": {
+					"min_inclusive": 71,
+					"max_inclusive": 76
+				},
+				"directory": "overlay_f71-f76_no_dialogs"
+			}
+		]
+	}
+}

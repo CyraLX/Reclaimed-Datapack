@@ -1,0 +1,1 @@
+function reclaimed:debug/give_aspect_encyclopedia_2

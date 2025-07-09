@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#aspects:aspect/generic/undead/immune",
+            "required": false
+        },
+        {
+            "id": "#minecraft:is_fire",
+            "required": false
+        },
+        {
+            "id": "minecraft:wither",
+            "required": false
+        }
+    ]
+}

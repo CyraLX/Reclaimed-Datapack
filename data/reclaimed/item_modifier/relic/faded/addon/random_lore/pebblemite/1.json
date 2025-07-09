@@ -1,0 +1,10 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "mode": "append",
+    "lore": [
+        {
+            "translate": "item.reclaimed.faded_relic.pebblemite.lore_1"
+        }
+    ]
+}

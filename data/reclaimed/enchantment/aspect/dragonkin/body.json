@@ -1,0 +1,134 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.reclaimed.dragonkin",
+                "color": "#8e00db"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:scale",
+                "id": "reclaimed:dragonkin/base_scale",
+                "amount": 1.5,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:movement_speed",
+                "id": "reclaimed:dragonkin/movement_speed",
+                "amount": 0.2,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:attack_speed",
+                "id": "reclaimed:dragonkin/attack_speed",
+                "amount": -0.2,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:step_height",
+                "id": "reclaimed:dragonkin/step_height",
+                "amount": 1.0,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:safe_fall_distance",
+                "id": "reclaimed:dragonkin/safe_fall_distance",
+                "amount": 0.5,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:jump_strength",
+                "id": "reclaimed:dragonkin/jump_strength",
+                "amount": 0.25,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:attack_knockback",
+                "id": "reclaimed:dragonkin/attack_knockback_base",
+                "amount": 1.0,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:attack_knockback",
+                "id": "reclaimed:dragonkin/attack_knockback_multiplier",
+                "amount": 0.5,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:oxygen_bonus",
+                "id": "reclaimed:dragonkin/oxygen_bonus",
+                "amount": 1.0,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:block_interaction_range",
+                "id": "reclaimed:dragonkin/block_interaction_range",
+                "amount": 0.8,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:entity_interaction_range",
+                "id": "reclaimed:dragonkin/entity_interaction_range",
+                "amount": 1.0,
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "minecraft:location_changed": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_sprinting": true
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:jump_strength",
+                    "id": "reclaimed:dragonkin/sprinting_jump_strength",
+                    "amount": 0.25,
+                    "operation": "add_multiplied_base"
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 20
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "reclaimed:aspect/dragonkin/attributes/update_dragon_head"
+                }
+            }
+        ]
+    }
+}

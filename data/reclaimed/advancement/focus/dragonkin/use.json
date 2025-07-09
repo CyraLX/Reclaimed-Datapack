@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "consume_item": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "reclaimed:aspect/dragonkin/is_active"
+                    }
+                ],
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "aspects": {
+                                "focus": {
+                                    "target": "dragonkin"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "reclaimed:focus/dragonkin/active"
+    }
+}

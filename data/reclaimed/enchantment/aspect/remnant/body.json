@@ -1,0 +1,99 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.reclaimed.remnant",
+                "color": "#550085",
+                "shadow_color": -4521729
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:scale",
+                "id": "reclaimed:remnant/scale",
+                "amount": 0.2,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:gravity",
+                "id": "reclaimed:remnant/gravity",
+                "amount": -0.95,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:jump_strength",
+                "id": "reclaimed:remnant/jump_strength",
+                "amount": -0.5,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:fall_damage_multiplier",
+                "id": "reclaimed:remnant/fall_damage_multiplier",
+                "amount": -1,
+                "operation": "add_multiplied_total"
+            }
+        ],
+        "minecraft:location_changed": [
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "flags": {
+                                "is_flying": true
+                            }
+                        }
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:gravity",
+                    "id": "reclaimed:remnant/flying_gravity",
+                    "amount": 0.45,
+                    "operation": "add_multiplied_base"
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "reclaimed:aspect/remnant/control_gravity/check"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 100
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "reclaimed:focus/remnant/spawn_particles"
+                }
+            }
+        ]
+    }
+}

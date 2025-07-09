@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "reclaimed:aspect/dragonkin/activate_from_trigger",
+        "reclaimed:aspect/remnant/activate_from_trigger",
+        "reclaimed:aspect/pebblemite/activate_from_trigger",
+        "reclaimed:aspect/withered/activate_from_trigger"
+    ]
+}

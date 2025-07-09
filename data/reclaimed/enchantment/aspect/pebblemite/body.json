@@ -1,0 +1,194 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.reclaimed.pebblemite",
+                "color": "#D3D3D3"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:scale",
+                "id": "reclaimed:pebblemite/base_scale",
+                "amount": -0.55,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:max_health",
+                "id": "reclaimed:pebblemite/max_health",
+                "amount": -0.5,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:attack_damage",
+                "id": "reclaimed:pebblemite/attack_damage",
+                "amount": -0.25,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:attack_knockback",
+                "id": "reclaimed:pebblemite/attack_knockback",
+                "amount": -0.5,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:block_interaction_range",
+                "id": "reclaimed:pebblemite/block_interaction_range",
+                "amount": -1,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:entity_interaction_range",
+                "id": "reclaimed:pebblemite/entity_interaction_range",
+                "amount": -1,
+                "operation": "add_value"
+            }
+        ],
+        "minecraft:damage_immunity": [
+            {
+                "requirements": {
+                    "condition": "damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "reclaimed:aspect/pebblemite/is_suffocation",
+                                "expected": true
+                            }
+                        ]
+                    }
+                },
+                "effect": {}
+            }
+        ],
+        "minecraft:location_changed": [
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "stepping_on": {
+                                    "block": {
+                                        "blocks": "#reclaimed:aspect/pebblemite/is_stone_like"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:movement_speed",
+                            "id": "reclaimed:pebblemite/not_on_stone_like_movement_speed",
+                            "amount": -0.2,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:block_break_speed",
+                            "id": "reclaimed:pebblemite/not_on_stone_like_block_break_speed",
+                            "amount": -0.4,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:attack_speed",
+                            "id": "reclaimed:pebblemite/not_on_stone_like_attack_speed",
+                            "amount": -0.1,
+                            "operation": "add_multiplied_base"
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "stepping_on": {
+                                "block": {
+                                    "blocks": "#reclaimed:aspect/pebblemite/is_stone_like"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:movement_speed",
+                            "id": "reclaimed:pebblemite/on_stone_like_movement_speed",
+                            "amount": 0.1,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:block_break_speed",
+                            "id": "reclaimed:pebblemite/on_stone_like_block_break_speed",
+                            "amount": 0.4,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:mining_efficiency",
+                            "id": "reclaimed:pebblemite/on_stone_like_mining_efficiency",
+                            "amount": 11,
+                            "operation": "add_value"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:attack_speed",
+                            "id": "reclaimed:pebblemite/on_stone_like_attack_speed",
+                            "amount": 0.25,
+                            "operation": "add_multiplied_base"
+                        }
+                    ]
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 100
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "reclaimed:aspect/pebblemite/give_night_vision"
+                }
+            }
+        ]
+    }
+}

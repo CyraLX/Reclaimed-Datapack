@@ -1,0 +1,512 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.reclaimed.frostling",
+                "color": "#31eaf4"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:damage_immunity": [
+            {
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_freezing",
+                                "expected": true
+                            }
+                        ]
+                    }
+                },
+                "effect": {}
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_on_fire": true
+                        },
+                        "periodic_tick": 10
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:damage_entity",
+                    "damage_type": "minecraft:on_fire",
+                    "min_damage": 2,
+                    "max_damage": 2
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 10
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "reclaimed:aspect/frostling/frost_speed/check_value"
+                }
+            }
+        ],
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:scale",
+                "id": "reclaimed:frostling/base_scale",
+                "amount": -0.05,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:max_health",
+                "id": "reclaimed:frostling/max_health",
+                "amount": -0.2,
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "minecraft:location_changed": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "stepping_on": {
+                            "block": {
+                                "blocks": "#minecraft:ice"
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:sneaking_speed",
+                    "id": "reclaimed:frostling/ice_sneaking_speed",
+                    "amount": 0.25,
+                    "operation": "add_multiplied_base"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "stepping_on": {
+                            "block": {
+                                "blocks": "minecraft:frosted_ice"
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "id": "reclaimed:frostling/frosted_ice_movement_speed",
+                    "amount": 0.25,
+                    "operation": "add_multiplied_base"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "stepping_on": {
+                            "block": {
+                                "blocks": "minecraft:ice"
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "id": "reclaimed:frostling/ice_movement_speed",
+                    "amount": 0.5,
+                    "operation": "add_multiplied_base"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "stepping_on": {
+                            "block": {
+                                "blocks": "minecraft:packed_ice"
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "id": "reclaimed:frostling/packed_ice_movement_speed",
+                    "amount": 1,
+                    "operation": "add_multiplied_base"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "stepping_on": {
+                            "block": {
+                                "blocks": "minecraft:blue_ice"
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "id": "reclaimed:frostling/blue_ice_movement_speed",
+                    "amount": 1.5,
+                    "operation": "add_multiplied_base"
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:location_check",
+                                "predicate": {
+                                    "biomes": "#aspectlib:hot"
+                                }
+                            },
+                            {
+                                "condition": "minecraft:location_check",
+                                "predicate": {
+                                    "dimension": "minecraft:the_nether"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:movement_speed",
+                            "id": "reclaimed:frostling/hot_movement_speed",
+                            "amount": -0.4,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:attack_damage",
+                            "id": "reclaimed:frostling/hot_attack_damage",
+                            "amount": -4,
+                            "operation": "add_value"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:attack_speed",
+                            "id": "reclaimed:frostling/hot_attack_speed",
+                            "amount": -0.2,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:block_break_speed",
+                            "id": "reclaimed:frostling/hot_block_break_speed",
+                            "amount": -0.2,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:scale",
+                            "id": "reclaimed:frostling/hot_scale",
+                            "amount": -0.05,
+                            "operation": "add_multiplied_base"
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:all_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:location_check",
+                                "predicate": {
+                                    "biomes": "#aspectlib:cold"
+                                }
+                            },
+                            {
+                                "condition": "minecraft:inverted",
+                                "term": {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "dimension": "minecraft:the_nether"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:movement_speed",
+                            "id": "reclaimed:frostling/cold_movement_speed",
+                            "amount": 0.2,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:attack_damage",
+                            "id": "reclaimed:frostling/cold_attack_damage",
+                            "amount": 2,
+                            "operation": "add_value"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:attack_speed",
+                            "id": "reclaimed:frostling/cold_attack_speed",
+                            "amount": 0.2,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:block_break_speed",
+                            "id": "reclaimed:frostling/cold_block_break_speed",
+                            "amount": 0.2,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:scale",
+                            "id": "reclaimed:frostling/cold_scale",
+                            "amount": 0.05,
+                            "operation": "add_multiplied_base"
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_sneaking": true,
+                            "is_on_ground": true
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:replace_disk",
+                    "block_state": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:ice"
+                        }
+                    },
+                    "predicate": {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "tag": "minecraft:air"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": "minecraft:water"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_fluids",
+                                        "fluids": "minecraft:water"
+                                    },
+                                    {
+                                        "type": "minecraft:unobstructed"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "tag": "minecraft:air"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": "minecraft:frosted_ice"
+                                    },
+                                    {
+                                        "type": "minecraft:unobstructed"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "trigger_game_event": "minecraft:block_place",
+                    "offset": [
+                        0,
+                        -1,
+                        0
+                    ],
+                    "radius": 2,
+                    "height": 1
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_sneaking": true,
+                            "is_on_ground": true
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:replace_disk",
+                    "block_state": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:frosted_ice",
+                            "Properties": {
+                                "age": "0"
+                            }
+                        }
+                    },
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    1,
+                                    0
+                                ],
+                                "tag": "minecraft:air"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:water"
+                            },
+                            {
+                                "type": "minecraft:matching_fluids",
+                                "fluids": "minecraft:water"
+                            },
+                            {
+                                "type": "minecraft:unobstructed"
+                            }
+                        ]
+                    },
+                    "trigger_game_event": "minecraft:block_place",
+                    "offset": [
+                        0,
+                        -1,
+                        0
+                    ],
+                    "radius": 4,
+                    "height": 1
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_sneaking": true,
+                            "is_on_ground": true
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:replace_disk",
+                    "block_state": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:basalt"
+                        }
+                    },
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    1,
+                                    0
+                                ],
+                                "tag": "minecraft:air"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:lava"
+                            },
+                            {
+                                "type": "minecraft:matching_fluids",
+                                "fluids": "minecraft:lava"
+                            },
+                            {
+                                "type": "minecraft:unobstructed"
+                            }
+                        ]
+                    },
+                    "trigger_game_event": "minecraft:block_place",
+                    "offset": [
+                        0,
+                        -1,
+                        0
+                    ],
+                    "radius": 1,
+                    "height": 1
+                }
+            }
+        ]
+    }
+}

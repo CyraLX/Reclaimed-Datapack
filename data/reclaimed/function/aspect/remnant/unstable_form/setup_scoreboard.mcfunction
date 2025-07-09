@@ -1,0 +1,1 @@
+scoreboard objectives add reclaimed.remnant.unstable_form.max_y dummy

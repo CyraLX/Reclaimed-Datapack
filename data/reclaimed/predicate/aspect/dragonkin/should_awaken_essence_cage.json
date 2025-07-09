@@ -1,0 +1,15 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "aspects.essence.void": {
+            "min": 40
+        },
+        "aspects.essence.flying": {
+            "min": 40
+        },
+        "aspects.essence.apex": {
+            "min": 40
+        }
+    }
+}

@@ -1,0 +1,265 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.chosen_aspect",
+        "with": [
+            {
+                "translate": "reclaimed",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.reclaimed.remnant",
+                "color": "#550085",
+                "shadow_color": -4521729
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "with": [
+            {
+                "translate": "reclaimed",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.reclaimed.remnant",
+                "color": "#550085",
+                "shadow_color": -4521729
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "aspect.reclaimed.remnant.description",
+                "italic": true,
+                "color": "#d6d6d6"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:awakened_essence_cage",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "awakened_essence_cage": {
+                                "aspect": "remnant"
+                            }
+                        }
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.essence_combination"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.void"
+                            }
+                        ]
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.ethereal"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
+                "italic": true,
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "reclaimed:aspect/remnant",
+                    "minecraft:enchantments": {
+                        "reclaimed:aspect/remnant/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.effects"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.generic.hydrophobic",
+                        "color": "#d6d6d6",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.generic.hydrophobic.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.reclaimed.remnant.gravity_restructured",
+                        "color": "#d6d6d6",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.reclaimed.remnant.gravity_restructured.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.reclaimed.remnant.gravity_control",
+                        "color": "#d6d6d6",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.reclaimed.remnant.gravity_control.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "reclaimed:focus/remnant",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.focus"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "item.reclaimed.focus.remnant.use_name_1",
+                        "color": "#d6d6d6",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.modifiers.use_offhand",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.reclaimed.focus.remnant.use_result_1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "item.reclaimed.focus.remnant.use_name_2",
+                        "color": "#d6d6d6",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.modifiers.use_mainhand",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.reclaimed.focus.remnant.use_result_2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/aspect_list"
+        }
+    }
+}

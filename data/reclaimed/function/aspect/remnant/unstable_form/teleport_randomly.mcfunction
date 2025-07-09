@@ -1,0 +1,1 @@
+$spreadplayers ~ ~ 1 8 under $(max_y) false @s 

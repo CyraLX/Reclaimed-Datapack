@@ -1,0 +1,117 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.reclaimed.withered",
+                "color": "#222222",
+                "shadow_color": -7631989
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:movement_efficiency",
+                "id": "reclaimed:withered/movement_efficiency",
+                "amount": 1,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:scale",
+                "id": "reclaimed:withered/scale",
+                "amount": 0.1,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:movement_speed",
+                "id": "reclaimed:withered/movement_speed",
+                "amount": -0.1,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:max_health",
+                "id": "reclaimed:withered/max_health",
+                "amount": -0.1,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:burning_time",
+                "id": "reclaimed:withered/burning_time",
+                "amount": -1,
+                "operation": "add_multiplied_total"
+            }
+        ],
+        "minecraft:damage_immunity": [
+            {
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "reclaimed:aspect/withered/immune",
+                                "expected": true
+                            }
+                        ]
+                    }
+                },
+                "effect": {}
+            }
+        ],
+        "minecraft:location_changed": [
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "flags": {
+                                "is_sprinting": true
+                            }
+                        }
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "id": "reclaimed:withered/sprinting_movement_speed",
+                    "amount": 0.1,
+                    "operation": "add_multiplied_base"
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "periodic_tick": 20
+                        }
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "reclaimed:aspect/withered/momentum/update"
+                }
+            }
+        ]
+    }
+}

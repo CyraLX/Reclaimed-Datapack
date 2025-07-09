@@ -1,0 +1,1 @@
+attribute @s minecraft:movement_speed modifier remove reclaimed:frostling/powder_snow_movement_speed

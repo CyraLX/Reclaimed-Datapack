@@ -1,0 +1,119 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:focus_dummy"
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:item_model": "reclaimed:focus/pebblemite",
+            "minecraft:consumable": {
+                "consume_seconds": 1.6,
+                "animation": "bow",
+                "sound": "minecraft:entity.silverfish.step",
+                "has_consume_particles": false
+            },
+            "minecraft:use_cooldown": {
+                "seconds": 20,
+                "cooldown_group": "aspects:focus"
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:jigsaw",
+                "components": {
+                    "minecraft:item_name": {
+                        "translate": "item.reclaimed.focus.pebblemite"
+                    },
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:enchantment_glint_override": false,
+                    "minecraft:tooltip_display": {
+                        "hidden_components": [
+                            "minecraft:attribute_modifiers",
+                            "minecraft:enchantments"
+                        ]
+                    },
+                    "minecraft:item_model": "reclaimed:focus/pebblemite",
+                    "minecraft:enchantments": {
+                        "aspects:focus/generic/modify_mainhand": 1,
+                        "aspects:focus/generic/modify_offhand": 1
+                    },
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "focus": {
+                                "target": "pebblemite"
+                            }
+                        }
+                    }
+                },
+                "count": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "focus": {
+                        "target": "pebblemite"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "target": "item_name",
+        "entity": "this",
+        "name": [
+            {
+                "translate": "item.reclaimed.focus.pebblemite"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_all",
+        "lore": [
+            {
+                "translate": "lore.equipment.use_cooldown_format",
+                "with": [
+                    {
+                        "translate": "lore.equipment.use_cooldown"
+                    },
+                    {
+                        "translate": "lore.equipment.use_cooldown.long",
+                        "color": "dark_gray"
+                    }
+                ],
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "translate": "lore.equipment.use_time_format",
+                "with": [
+                    {
+                        "translate": "lore.equipment.use_time"
+                    },
+                    {
+                        "translate": "lore.equipment.use_time.average",
+                        "color": "dark_gray"
+                    }
+                ],
+                "color": "gray",
+                "italic": false
+            },
+            "",
+            {
+                "translate": "item.modifiers.use",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.reclaimed.focus.pebblemite.use_result_1"
+                    }
+                ]
+            }
+        ]
+    }
+]
