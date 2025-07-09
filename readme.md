@@ -1,4 +1,4 @@
-# Reclaimed v1 | A Minecraft Datapack Add-On for [Aspects](https://modrinth.com/datapack/corrupted-aspects)
+# Aspects: Reclaimed | A Minecraft Datapack Add-On for [Aspects](https://modrinth.com/datapack/corrupted-aspects)
 
 A datapack adding new Aspects that didn't make the cut to the original datapack
 
