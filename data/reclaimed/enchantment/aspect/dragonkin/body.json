@@ -31,7 +31,7 @@
             {
                 "attribute": "minecraft:scale",
                 "id": "reclaimed:dragonkin/base_scale",
-                "amount": 1.5,
+                "amount": 1,
                 "operation": "add_multiplied_base"
             },
             {

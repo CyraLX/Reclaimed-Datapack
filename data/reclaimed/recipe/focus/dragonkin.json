@@ -131,7 +131,16 @@
                             "translate": "item.reclaimed.focus.dragonkin.use_result_1",
                             "with": [
                                 {
-                                    "text": "10"
+                                    "translate": "effect.minecraft.regeneration"
+                                },
+                                {
+                                    "translate": "effect.minecraft.resistance"
+                                },
+                                {
+                                    "text": "30"
+                                },
+                                {
+                                    "text": "30"
                                 }
                             ]
                         }
