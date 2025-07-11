@@ -1,1 +1,1 @@
-execute if score @s aspects.choose_aspect matches 102 run function reclaimed:aspect/remnant/activate
+execute if score @s aspects.choose_aspect matches 101 run function reclaimed:aspect/remnant/activate

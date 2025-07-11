@@ -2,6 +2,6 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-        "aspects.aspect_id": 105
+        "aspects.aspect_id": 104
     }
 }

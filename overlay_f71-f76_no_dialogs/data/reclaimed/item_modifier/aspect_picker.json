@@ -53,22 +53,6 @@
                 "extra": [
                     "\n\n> ",
                     {
-                        "translate": "aspect.reclaimed.withered",
-                        "color": "#222222",
-                        "shadow_color": -7631989,
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
-                                "translate": "aspect.reclaimed.withered.description"
-                            }
-                        },
-                        "click_event": {
-                            "action": "run_command",
-                            "command": "trigger aspects.choose_aspect set 101"
-                        }
-                    },
-                    "\n> ",
-                    {
                         "translate": "aspect.reclaimed.remnant",
                         "color": "#550085",
                         "shadow_color": -4521729,
@@ -80,7 +64,7 @@
                         },
                         "click_event": {
                             "action": "run_command",
-                            "command": "trigger aspects.choose_aspect set 102"
+                            "command": "trigger aspects.choose_aspect set 101"
                         }
                     },
                     "\n> ",
@@ -95,7 +79,7 @@
                         },
                         "click_event": {
                             "action": "run_command",
-                            "command": "trigger aspects.choose_aspect set 103"
+                            "command": "trigger aspects.choose_aspect set 102"
                         }
                     },
                     "\n> ",
@@ -106,6 +90,21 @@
                             "action": "show_text",
                             "value": {
                                 "translate": "aspect.reclaimed.pebblemite.description"
+                            }
+                        },
+                        "click_event": {
+                            "action": "run_command",
+                            "command": "trigger aspects.choose_aspect set 103"
+                        }
+                    },
+                    "\n> ",
+                    {
+                        "translate": "aspect.reclaimed.frostling",
+                        "color": "#31eaf4",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.reclaimed.frostling.description"
                             }
                         },
                         "click_event": {

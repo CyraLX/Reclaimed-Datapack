@@ -21,9 +21,3 @@ scoreboard players set #aspects aspects.stats.remnant.faded 0
 scoreboard players set #aspects aspects.stats.remnant.current 0
 scoreboard players set #aspects aspects.stats.remnant.peak 0
 scoreboard players set #aspects aspects.stats.remnant.first_pick 0
-
-scoreboard players set #aspects aspects.stats.withered.total 0
-scoreboard players set #aspects aspects.stats.withered.faded 0
-scoreboard players set #aspects aspects.stats.withered.current 0
-scoreboard players set #aspects aspects.stats.withered.peak 0
-scoreboard players set #aspects aspects.stats.withered.first_pick 0

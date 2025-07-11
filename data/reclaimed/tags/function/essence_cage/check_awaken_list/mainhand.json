@@ -2,9 +2,8 @@
     "replace": false,
     "values": [
         "reclaimed:essence_cage/check_awaken_list/mainhand/dragonkin",
-        "reclaimed:essence_cage/check_awaken_list/mainhand/remnant",
+        "reclaimed:essence_cage/check_awaken_list/mainhand/frostling",
         "reclaimed:essence_cage/check_awaken_list/mainhand/pebblemite",
-        "reclaimed:essence_cage/check_awaken_list/mainhand/withered",
-        "reclaimed:essence_cage/check_awaken_list/mainhand/frostling"
+        "reclaimed:essence_cage/check_awaken_list/mainhand/remnant"
     ]
 }

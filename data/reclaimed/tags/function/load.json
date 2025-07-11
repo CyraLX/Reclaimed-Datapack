@@ -1,10 +1,9 @@
 {
     "replace": false,
     "values": [
+        "reclaimed:aspect/frostling/frost_speed/initialize",     
         "reclaimed:aspect/remnant/unstable_form/setup_scoreboard",
         "reclaimed:aspect/remnant/control_gravity/setup_scoreboard",
-        "reclaimed:aspect/withered/momentum/scoreboard/initialize",
-        "reclaimed:aspect/frostling/frost_speed/initialize",     
         
         "reclaimed:focus/pebblemite/raycast/setup_scoreboard"
     ]

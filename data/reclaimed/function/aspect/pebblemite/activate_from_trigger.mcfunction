@@ -1,1 +1,1 @@
-execute if score @s aspects.choose_aspect matches 104 run function reclaimed:aspect/pebblemite/activate
+execute if score @s aspects.choose_aspect matches 103 run function reclaimed:aspect/pebblemite/activate

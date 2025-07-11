@@ -1,6 +1,3 @@
-execute if predicate reclaimed:aspect/withered/is_active run item replace entity @s weapon.offhand with minecraft:stick 1
-execute if predicate reclaimed:aspect/withered/is_active run return run item modify entity @s weapon.offhand reclaimed:focus/withered
-
 execute if predicate reclaimed:aspect/remnant/is_active run item replace entity @s weapon.offhand with minecraft:stick 1
 execute if predicate reclaimed:aspect/remnant/is_active run return run item modify entity @s weapon.offhand reclaimed:focus/remnant
 

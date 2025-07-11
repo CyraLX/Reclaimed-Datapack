@@ -65,20 +65,3 @@ scoreboard players add #aspects aspects.stats.remnant.peak 0
 ## Times this Aspect was picked first
 scoreboard objectives add aspects.stats.remnant.first_pick dummy
 scoreboard players add #aspects aspects.stats.remnant.first_pick 0
-
-# Withered
-## Total amount of changes to this Aspect
-scoreboard objectives add aspects.stats.withered.total dummy
-scoreboard players add #aspects aspects.stats.withered.total 0
-## Times this Aspect was switched off from
-scoreboard objectives add aspects.stats.withered.faded dummy
-scoreboard players add #aspects aspects.stats.withered.faded 0
-## Current active users with the Aspect
-scoreboard objectives add aspects.stats.withered.current dummy
-scoreboard players add #aspects aspects.stats.withered.current 0
-## Highest recorded active users of this Aspect
-scoreboard objectives add aspects.stats.withered.peak dummy
-scoreboard players add #aspects aspects.stats.withered.peak 0
-## Times this Aspect was picked first
-scoreboard objectives add aspects.stats.withered.first_pick dummy
-scoreboard players add #aspects aspects.stats.withered.first_pick 0
