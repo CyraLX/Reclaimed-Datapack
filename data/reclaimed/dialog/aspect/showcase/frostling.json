@@ -204,12 +204,12 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "dialog.aspects.chosen_aspect.effects.none",
+                        "translate": "dialog.aspects.chosen_aspect.focus.none",
                         "color": "#d6d6d6",
                         "extra": [
                             "\n",
                             {
-                                "translate": "dialog.aspects.chosen_aspect.effects.none.description",
+                                "translate": "dialog.aspects.chosen_aspect.focus.none.description",
                                 "italic": true
                             }
                         ]
