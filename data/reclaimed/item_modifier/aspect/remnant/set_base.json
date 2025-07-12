@@ -1,0 +1,41 @@
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:equippable": {
+                "slot": "body",
+                "equip_sound": "minecraft:entity.allay.ambient_without_item",
+                "allowed_entities": "minecraft:player",
+                "dispensable": false,
+                "swappable": false,
+                "damage_on_hurt": false,
+                "equip_on_interact": false
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+            "reclaimed:aspect/remnant/body": 1
+        },
+        "add": false
+    },
+    {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "aspects": {
+                "aspect": "remnant"
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": [
+            {
+                "translate": "item.reclaimed.aspect.remnant"
+            }
+        ]
+    }
+]
