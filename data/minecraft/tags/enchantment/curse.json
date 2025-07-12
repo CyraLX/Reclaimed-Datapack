@@ -1,11 +1,7 @@
 {
     "replace": false,
     "values": [
-        "reclaimed:aspect/dragonkin/body",
         "reclaimed:aspect/dragonkin/wings",
-        "reclaimed:aspect/pebblemite/body",
-        "reclaimed:aspect/remnant/body",
-        "reclaimed:aspect/frostling/body",
         "reclaimed:focus/remnant/save",
         "reclaimed:focus/remnant/teleport"
     ]

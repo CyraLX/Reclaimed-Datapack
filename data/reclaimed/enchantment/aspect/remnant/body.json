@@ -26,6 +26,8 @@
         "body"
     ],
     "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
         "minecraft:attributes": [
             {
                 "attribute": "minecraft:scale",
