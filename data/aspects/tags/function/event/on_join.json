@@ -1,0 +1,6 @@
+{
+    "replace": false,
+    "values": [
+        "#reclaimed:event/on_join"
+    ]
+}

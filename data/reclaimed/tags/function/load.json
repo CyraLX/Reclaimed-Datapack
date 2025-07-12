@@ -1,6 +1,8 @@
 {
     "replace": false,
     "values": [
+        "reclaimed:pack_format",
+        
         "reclaimed:aspect/frostling/frost_speed/initialize",     
         "reclaimed:aspect/remnant/unstable_form/setup_scoreboard",
         "reclaimed:aspect/remnant/control_gravity/setup_scoreboard",
