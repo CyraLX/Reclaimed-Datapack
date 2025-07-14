@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "reclaimed:aspect/dragonkin/body",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/frostling/body",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/pebblemite/body",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/remnant/body",
+            "required": false
+        }
+    ]
+}
