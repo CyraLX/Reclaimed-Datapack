@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "#reclaimed:event/on_join"
+        {
+            "id": "#reclaimed:event/on_join",
+            "required": false
+        }
     ]
 }

@@ -1,1 +1,1 @@
-$data remove storage aspectlib:player_$(id) aspects.aspect_data.frostling
+$data remove storage aspectlib:player_$(id) aspects.aspect_data."reclaimed:frostling"

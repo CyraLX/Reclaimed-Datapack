@@ -1,1 +1,12 @@
-data modify storage aspects:aspect_list dragonkin set value {id: 102, name: "dragonkin", translatable: "aspect.reclaimed.dragonkin"}
+# Setup data for the Aspect
+## id = Integer Identifier of the Aspect. Range: 0 to 10000000
+## namespace = Namespace string of your project
+## name = Name string of your Aspect
+## color = Hexidecimal color value for your Aspect
+## sound = Sound Event for your Aspect
+data modify storage aspects:aspect_list reclaimed:dragonkin set value {id: 1668017, namespace: "reclaimed", name: "dragonkin", color: "#8e00db", sound: "minecraft:entity.ender_dragon.ambient"}
+
+# Setup statistic tracking for the Aspect
+function aspects:stats/aspect/initialize with storage aspects:aspect_list reclaimed:dragonkin
+
+# Setup scoreboard objectives for the Aspect

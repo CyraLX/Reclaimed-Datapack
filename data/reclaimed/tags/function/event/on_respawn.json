@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "reclaimed:aspect/dragonkin/on_respawn",
-        "reclaimed:aspect/frostling/on_respawn",
-        "reclaimed:aspect/pebblemite/on_respawn",
-        "reclaimed:aspect/remnant/on_respawn"
-    ]
-}

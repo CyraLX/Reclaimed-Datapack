@@ -1,1 +1,1 @@
-$data remove storage aspectlib:player_$(id) aspects.aspect_data.dragonkin
+$data remove storage aspectlib:player_$(id) aspects.aspect_data."reclaimed:dragonkin"

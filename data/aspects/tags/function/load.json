@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "#reclaimed:load"
+        {
+            "id": "#reclaimed:load",
+            "required": false
+        }
     ]
 }

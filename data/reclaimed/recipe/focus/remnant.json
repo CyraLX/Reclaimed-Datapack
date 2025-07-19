@@ -37,7 +37,7 @@
             "minecraft:item_model": "reclaimed:focus/remnant",
             "!minecraft:enchantments": {},
             "minecraft:consumable": {
-                "consume_seconds": 7.5,
+                "consume_seconds": 8,
                 "animation": "bow",
                 "sound": "minecraft:block.amethyst_block.chime",
                 "has_consume_particles": false
@@ -50,7 +50,8 @@
                 "id": "minecraft:jigsaw",
                 "components": {
                     "minecraft:item_name": {
-                        "translate": "item.aspects.focus.remnant"
+                        "translate": "item.aspects.focus.remnant",
+                        "color": "#ffff55"
                     },
                     "minecraft:rarity": "uncommon",
                     "minecraft:enchantment_glint_override": false,
@@ -70,7 +71,10 @@
                     "minecraft:custom_data": {
                         "aspects": {
                             "focus": {
-                                "target": "remnant"
+                                "aspect": {
+                                    "namespace": "reclaimed",
+                                    "name": "remnant"
+                                }
                             }
                         }
                     }
@@ -80,43 +84,53 @@
             "minecraft:custom_data": {
                 "aspects": {
                     "focus": {
-                        "target": "remnant"
+                        "aspect": {
+                            "namespace": "reclaimed",
+                            "name": "remnant"
+                        }
                     }
                 }
             },
             "minecraft:item_name": [
                 {
-                    "translate": "item.reclaimed.focus.remnant"
+                    "translate": "item.reclaimed.focus.remnant",
+                    "color": "#ffff55"
                 }
             ],
             "minecraft:lore": [
                 {
-                    "translate": "lore.equipment.use_cooldown_format",
-                    "with": [
-                        {
-                            "translate": "lore.equipment.use_cooldown"
-                        },
-                        {
-                            "translate": "lore.equipment.use_cooldown.very_long",
-                            "color": "dark_gray"
-                        }
-                    ],
-                    "color": "gray",
-                    "italic": false
-                },
-                {
                     "translate": "lore.equipment.use_time_format",
+                    "color": "gray",
+                    "italic": false,
                     "with": [
                         {
                             "translate": "lore.equipment.use_time"
                         },
                         {
-                            "translate": "lore.equipment.use_time.very_long",
-                            "color": "dark_gray"
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "8"
+                            ]
                         }
-                    ],
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
                     "color": "gray",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "60"
+                            ]
+                        }
+                    ]
                 },
                 "",
                 {

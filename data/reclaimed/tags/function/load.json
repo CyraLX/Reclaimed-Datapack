@@ -1,12 +1,9 @@
 {
     "replace": false,
     "values": [
-        "reclaimed:pack_format",
-        
-        "reclaimed:aspect/frostling/frost_speed/initialize",     
-        "reclaimed:aspect/remnant/unstable_form/setup_scoreboard",
-        "reclaimed:aspect/remnant/control_gravity/setup_scoreboard",
-        
-        "reclaimed:focus/pebblemite/raycast/setup_scoreboard"
+        {
+            "id": "reclaimed:pack_format",
+            "required": false
+        }
     ]
 }

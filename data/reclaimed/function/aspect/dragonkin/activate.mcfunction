@@ -1,13 +1,8 @@
-# Perform generic ACTIVATE logic
-function aspects:aspect/generic/activate
-# Prepare for new Aspect
-function aspectlib:equipment/drop_chestplate
-# Set new Aspect
-function aspectlib:player_id/expose
-data modify storage aspectlib:dummy new_aspect set from storage aspects:aspect_list dragonkin.name
-function aspects:aspect/generic/assign_data with storage aspectlib:dummy
-# Trigger events
-function reclaimed:aspect/dragonkin/on_respawn
-# Regrant advancement to show they became it as a Toast
-advancement revoke @s only reclaimed:gameplay/aspect/dragonkin/root
-advancement grant @s only reclaimed:gameplay/aspect/dragonkin/root
+# Aspect specific PRE-ACTIVATE logic
+## Free up Chest slot by dropping anything there
+execute unless predicate aspects:equipment/aspect_unique/chest run function aspectlib:equipment/drop/chestplate
+
+# Generic ACTIVATE logic
+function aspects:aspect/generic/activate with storage aspects:aspect_list reclaimed:dragonkin
+
+# Aspect specific POST-ACTIVATE logic

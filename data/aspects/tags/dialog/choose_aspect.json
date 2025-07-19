@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "#reclaimed:choose_aspect"
+        {
+            "id": "#reclaimed:choose_aspect",
+            "required": false
+        }
     ]
 }

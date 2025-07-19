@@ -1,8 +1,17 @@
 {
     "replace": false,
     "values": [
-        "reclaimed:aspect/dragonkin/wings",
-        "reclaimed:focus/remnant/save",
-        "reclaimed:focus/remnant/teleport"
+        {
+            "id": "reclaimed:aspect/dragonkin/wings",
+            "required": false
+        },
+        {
+            "id": "reclaimed:focus/remnant/save",
+            "required": false
+        },
+        {
+            "id": "reclaimed:focus/remnant/teleport",
+            "required": false
+        }
     ]
 }

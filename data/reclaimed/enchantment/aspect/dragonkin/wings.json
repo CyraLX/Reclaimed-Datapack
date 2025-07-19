@@ -33,13 +33,19 @@
             {
                 "attribute": "minecraft:armor",
                 "id": "reclaimed:dragonkin/armor",
-                "amount": 8,
+                "amount": 10,
                 "operation": "add_value"
             },
             {
                 "attribute": "minecraft:armor_toughness",
                 "id": "reclaimed:dragonkin/armor_toughness",
                 "amount": 6,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:knockback_resistance",
+                "id": "reclaimed:dragonkin/knockback_resistance",
+                "amount": 0.2,
                 "operation": "add_value"
             }
         ],
@@ -116,26 +122,17 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "periodic_tick": 1200
+                                "periodic_tick": 100,
+                                "type": "minecraft:player"
                             }
                         },
                         {
                             "condition": "minecraft:inverted",
                             "term": {
-                                "condition": "minecraft:entity_properties",
+                                "condition": "minecraft:entity_scores",
                                 "entity": "this",
-                                "predicate": {
-                                    "equipment": {
-                                        "chest": {
-                                            "predicates": {
-                                                "minecraft:custom_data": {
-                                                    "aspects": {
-                                                        "version": 1
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
+                                "scores": {
+                                    "aspects.aspect_id": 1668017
                                 }
                             }
                         }
@@ -143,7 +140,7 @@
                 },
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "reclaimed:aspect/dragonkin/wings/apply_modifiers"
+                    "function": "aspectlib:equipment/remove/chestplate"
                 }
             }
         ]

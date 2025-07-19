@@ -1,9 +1,21 @@
 {
     "replace": false,
     "values": [
-        "reclaimed:aspect/dragonkin/setup_aspect",
-        "reclaimed:aspect/frostling/setup_aspect",
-        "reclaimed:aspect/remnant/setup_aspect",
-        "reclaimed:aspect/pebblemite/setup_aspect"
+        {
+            "id": "reclaimed:aspect/dragonkin/setup_aspect",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/frostling/setup_aspect",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/remnant/setup_aspect",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/pebblemite/setup_aspect",
+            "required": false
+        }
     ]
 }

@@ -1,2 +1,2 @@
-$execute unless data storage aspectlib:player_$(id) aspects.aspect_data.remnant.space_anchor.Pos_X run playsound minecraft:entity.ender_eye.death player @a[distance=..16] ~ ~ ~ 1 2
-$function reclaimed:focus/remnant/teleport with storage aspectlib:player_$(id) aspects.aspect_data.remnant.space_anchor
+$execute unless data storage aspectlib:player_$(id) aspects.aspect_data."reclaimed:remnant".space_anchor.Pos_X run playsound minecraft:entity.ender_eye.death player @a[distance=..16] ~ ~ ~ 1 2
+$function reclaimed:focus/remnant/teleport with storage aspectlib:player_$(id) aspects.aspect_data."reclaimed:remnant".space_anchor

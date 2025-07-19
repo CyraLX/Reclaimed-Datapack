@@ -14,7 +14,10 @@
                         "minecraft:custom_data": {
                             "aspects": {
                                 "focus": {
-                                    "target": "pebblemite"
+                                    "aspect": {
+                                        "namespace": "reclaimed",
+                                        "name": "pebblemite"
+                                    }
                                 }
                             }
                         }
@@ -24,6 +27,6 @@
         }
     },
     "rewards": {
-        "function": "reclaimed:focus/pebblemite/active"
+        "function": "reclaimed:focus/pebblemite/trigger"
     }
 }

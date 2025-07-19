@@ -180,7 +180,7 @@
         },
         "action": {
             "type": "run_command",
-            "command": "trigger aspects.choose_aspect set 103"
+            "command": "trigger aspects.choose_aspect set 1668037"
         }
     },
     "no": {

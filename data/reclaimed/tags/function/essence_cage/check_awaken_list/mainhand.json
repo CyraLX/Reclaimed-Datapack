@@ -1,9 +1,21 @@
 {
     "replace": false,
     "values": [
-        "reclaimed:essence_cage/check_awaken_list/mainhand/dragonkin",
-        "reclaimed:essence_cage/check_awaken_list/mainhand/frostling",
-        "reclaimed:essence_cage/check_awaken_list/mainhand/pebblemite",
-        "reclaimed:essence_cage/check_awaken_list/mainhand/remnant"
+        {
+            "id": "reclaimed:essence_cage/check_awaken_list/mainhand/dragonkin",
+            "required": false
+        },
+        {
+            "id": "reclaimed:essence_cage/check_awaken_list/mainhand/frostling",
+            "required": false
+        },
+        {
+            "id": "reclaimed:essence_cage/check_awaken_list/mainhand/pebblemite",
+            "required": false
+        },
+        {
+            "id": "reclaimed:essence_cage/check_awaken_list/mainhand/remnant",
+            "required": false
+        }
     ]
 }

@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "reclaimed:summon_aspect_picker"
+        {
+            "id": "reclaimed:debug/give/aspect_picker",
+            "required": false
+        }
     ]
 }

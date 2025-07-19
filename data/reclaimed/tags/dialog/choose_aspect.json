@@ -1,9 +1,21 @@
 {
     "replace": false,
     "values": [
-        "reclaimed:aspect/choose/dragonkin",
-        "reclaimed:aspect/choose/frostling",
-        "reclaimed:aspect/choose/pebblemite",
-        "reclaimed:aspect/choose/remnant"
+        {
+            "id": "reclaimed:aspect/choose/dragonkin",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/choose/frostling",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/choose/pebblemite",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/choose/remnant",
+            "required": false
+        }
     ]
 }

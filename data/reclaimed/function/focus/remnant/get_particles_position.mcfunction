@@ -1,2 +1,2 @@
-$execute unless data storage aspectlib:player_$(id) aspects.aspect_data.remnant.space_anchor.Pos_X run return fail
-$function reclaimed:focus/remnant/saved_position_particles with storage aspectlib:player_$(id) aspects.aspect_data.remnant.space_anchor
+$execute unless data storage aspectlib:player_$(id) aspects.aspect_data."reclaimed:remnant".space_anchor.Pos_X run return fail
+$function reclaimed:focus/remnant/saved_position_particles with storage aspectlib:player_$(id) aspects.aspect_data."reclaimed:remnant".space_anchor

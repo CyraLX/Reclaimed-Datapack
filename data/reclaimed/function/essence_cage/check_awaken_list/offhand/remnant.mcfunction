@@ -1,1 +1,1 @@
-execute if predicate reclaimed:aspect/remnant/should_awaken_essence_cage run return run function reclaimed:essence_cage/awaken/offhand/remnant
+execute if predicate reclaimed:aspect/remnant/should_awaken_essence_cage run return run function aspects:essence_cage/awaken/offhand with storage aspects:aspect_list reclaimed:remnant

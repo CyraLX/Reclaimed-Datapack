@@ -1,1 +1,1 @@
-$data remove storage aspectlib:player_$(id) aspects.aspect_data.remnant
+$data remove storage aspectlib:player_$(id) aspects.aspect_data."reclaimed:remnant"

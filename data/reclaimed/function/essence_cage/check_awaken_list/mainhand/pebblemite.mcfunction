@@ -1,2 +1,2 @@
-execute if predicate reclaimed:aspect/pebblemite/should_awaken_essence_cage run return run function reclaimed:essence_cage/awaken/mainhand/pebblemite
+execute if predicate reclaimed:aspect/pebblemite/should_awaken_essence_cage run return run function aspects:essence_cage/awaken/mainhand with storage aspects:aspect_list reclaimed:pebblemite
 

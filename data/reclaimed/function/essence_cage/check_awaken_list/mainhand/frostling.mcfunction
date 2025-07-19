@@ -1,2 +1,2 @@
-execute if predicate reclaimed:aspect/frostling/should_awaken_essence_cage run return run function reclaimed:essence_cage/awaken/mainhand/frostling
+execute if predicate reclaimed:aspect/frostling/should_awaken_essence_cage run return run function aspects:essence_cage/awaken/mainhand with storage aspects:aspect_list reclaimed:frostling
 

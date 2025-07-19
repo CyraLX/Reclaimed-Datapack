@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "reclaimed:debug/give/aspect_encyclopedia_2",
+            "required": false
+        }
+    ]
+}

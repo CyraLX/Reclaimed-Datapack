@@ -1,7 +1,8 @@
-# Clean up before removing Aspect
-function aspectlib:player_id/expose
-function reclaimed:aspect/pebblemite/remove_data with storage aspectlib:dummy
+# Aspect specific PRE-DEACTIVATE logic
+## Clear Night Vision Effect
 effect clear @s minecraft:night_vision
-item modify entity @s armor.body reclaimed:aspect/pebblemite/remove
-# Perform generic ACTIVATE logic
-function aspects:aspect/generic/deactivate
+
+# Generic DEACTIVATE logic
+function aspects:aspect/generic/deactivate with storage aspects:aspect_list reclaimed:pebblemite
+
+# Aspect specific POST-DEACTIVATE logic
