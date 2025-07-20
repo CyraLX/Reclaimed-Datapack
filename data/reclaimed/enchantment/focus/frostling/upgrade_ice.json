@@ -1,0 +1,105 @@
+{
+    "description": {
+        "translate": "enchantment.aspects.unobtainable"
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand",
+        "offhand"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:replace_disk",
+                    "block_state": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:blue_ice"
+                        }
+                    },
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    1,
+                                    0
+                                ],
+                                "tag": "minecraft:air"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:ice"
+                            },
+                            {
+                                "type": "minecraft:unobstructed"
+                            }
+                        ]
+                    },
+                    "trigger_game_event": "minecraft:block_place",
+                    "offset": [
+                        0,
+                        -1,
+                        0
+                    ],
+                    "radius": 2,
+                    "height": 1
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:replace_disk",
+                    "block_state": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:packed_ice"
+                        }
+                    },
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    1,
+                                    0
+                                ],
+                                "tag": "minecraft:air"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:ice"
+                            },
+                            {
+                                "type": "minecraft:unobstructed"
+                            }
+                        ]
+                    },
+                    "trigger_game_event": "minecraft:block_place",
+                    "offset": [
+                        0,
+                        -1,
+                        0
+                    ],
+                    "radius": 2,
+                    "height": 1
+                }
+            }
+        ]
+    }
+}
