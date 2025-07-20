@@ -8,13 +8,13 @@
         "components": {
             "minecraft:item_model": "reclaimed:focus/frostling",
             "minecraft:consumable": {
-                "consume_seconds": 8,
+                "consume_seconds": 2,
                 "animation": "bow",
                 "sound": "minecraft:block.amethyst_block.chime",
                 "has_consume_particles": false
             },
             "minecraft:use_cooldown": {
-                "seconds": 60,
+                "seconds": 6,
                 "cooldown_group": "aspects:focus"
             },
             "minecraft:use_remainder": {
@@ -91,7 +91,7 @@
                         "translate": "lore.equipment.use_time.seconds",
                         "color": "#757575",
                         "with": [
-                            "8"
+                            "2"
                         ]
                     }
                 ]
@@ -108,7 +108,7 @@
                         "translate": "lore.equipment.use_cooldown.seconds",
                         "color": "#757575",
                         "with": [
-                            "60"
+                            "6"
                         ]
                     }
                 ]
