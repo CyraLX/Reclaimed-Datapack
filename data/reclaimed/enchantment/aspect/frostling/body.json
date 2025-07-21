@@ -107,7 +107,7 @@
                     "type": "minecraft:attribute",
                     "attribute": "minecraft:sneaking_speed",
                     "id": "reclaimed:frostling/ice_sneaking_speed",
-                    "amount": 0.25,
+                    "amount": 0.5,
                     "operation": "add_multiplied_base"
                 }
             },
