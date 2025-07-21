@@ -813,14 +813,26 @@
                                         "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
                                         "with": [
                                             {
-                                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.none",
+                                                "translate": "item.reclaimed.focus.frostling.use_name_1",
                                                 "color": "dark_gray",
                                                 "hover_event": {
                                                     "action": "show_text",
                                                     "value": [
                                                         {
-                                                            "translate": "item.aspects.aspect_encyclopedia.aspect_focus.none.description",
+                                                            "translate": "item.modifiers.use",
+                                                            "color": "gray",
                                                             "italic": false
+                                                        },
+                                                        "\n",
+                                                        {
+                                                            "text": "",
+                                                            "color": "blue",
+                                                            "italic": false,
+                                                            "extra": [
+                                                                {
+                                                                    "translate": "item.reclaimed.focus.frostling.use_result_1"
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }

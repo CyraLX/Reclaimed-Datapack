@@ -190,7 +190,7 @@
                 "id": "minecraft:jigsaw",
                 "count": 1,
                 "components": {
-                    "minecraft:item_model": "aspects:cancel",
+                    "minecraft:item_model": "reclaimed:focus/frostling",
                     "minecraft:enchantment_glint_override": false
                 }
             },
@@ -208,15 +208,28 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "dialog.aspects.chosen_aspect.focus.none",
+                        "translate": "item.reclaimed.focus.frostling.use_name_1",
                         "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
-                            "value": {
-                                "translate": "dialog.aspects.chosen_aspect.focus.none.description",
-                                "color": "white",
-                                "italic": true
-                            }
+                            "value": [
+                                {
+                                    "translate": "item.modifiers.use",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.reclaimed.focus.frostling.use_result_1"
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     }
                 ]

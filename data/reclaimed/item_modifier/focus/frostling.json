@@ -115,7 +115,7 @@
             },
             "",
             {
-                "translate": "item.modifiers.use_offhand",
+                "translate": "item.modifiers.use",
                 "color": "gray",
                 "italic": false
             },
@@ -126,22 +126,6 @@
                 "extra": [
                     {
                         "translate": "item.reclaimed.focus.frostling.use_result_1"
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.use_mainhand",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.reclaimed.focus.frostling.use_result_2"
                     }
                 ]
             }
