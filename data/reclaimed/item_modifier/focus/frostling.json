@@ -10,7 +10,7 @@
             "minecraft:consumable": {
                 "consume_seconds": 2,
                 "animation": "bow",
-                "sound": "minecraft:block.amethyst_block.chime",
+                "sound": "minecraft:block.powder_snow.step",
                 "has_consume_particles": false
             },
             "minecraft:use_cooldown": {

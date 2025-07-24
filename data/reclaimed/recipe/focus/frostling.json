@@ -1,0 +1,144 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "reclaimed:focus/dragonkin",
+    "category": "equipment",
+    "pattern": [
+        "aXa",
+        "qiq",
+        " q "
+    ],
+    "key": {
+        "X": [
+            "minecraft:blue_ice"
+        ],
+        "a": [
+            "minecraft:amethyst_shard"
+        ],
+        "i": [
+            "minecraft:iron_ingot"
+        ],
+        "q": [
+            "minecraft:quartz"
+        ]
+    },
+    "result": {
+        "id": "minecraft:jigsaw",
+        "count": 1,
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:item_model": "reclaimed:focus/frostling",
+            "minecraft:consumable": {
+                "consume_seconds": 2,
+                "animation": "bow",
+                "sound": "minecraft:block.powder_snow.step",
+                "has_consume_particles": false
+            },
+            "minecraft:use_cooldown": {
+                "seconds": 6,
+                "cooldown_group": "aspects:focus"
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:jigsaw",
+                "components": {
+                    "minecraft:item_name": {
+                        "translate": "item.reclaimed.focus.frostling",
+                        "color": "#ffff55"
+                    },
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:enchantment_glint_override": false,
+                    "minecraft:tooltip_display": {
+                        "hidden_components": [
+                            "minecraft:attribute_modifiers",
+                            "minecraft:enchantments"
+                        ]
+                    },
+                    "minecraft:item_model": "reclaimed:focus/frostling",
+                    "minecraft:enchantments": {
+                        "reclaimed:focus/frostling/upgrade_ice": 1,
+                        "aspects:focus/generic/modify_mainhand": 1,
+                        "aspects:focus/generic/modify_offhand": 1
+                    },
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "focus": {
+                                "aspect": {
+                                    "namespace": "reclaimed",
+                                    "name": "frostling"
+                                }
+                            }
+                        }
+                    }
+                },
+                "count": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "focus": {
+                        "aspect": {
+                            "namespace": "reclaimed",
+                            "name": "frostling"
+                        }
+                    }
+                }
+            },
+            "minecraft:item_name": [
+                {
+                    "translate": "item.reclaimed.focus.frostling",
+                    "color": "#ffff55"
+                }
+            ],
+            "minecraft:lore": [
+                {
+                    "translate": "lore.equipment.use_time_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_time"
+                        },
+                        {
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "6"
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.frostling.use_result_1"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
