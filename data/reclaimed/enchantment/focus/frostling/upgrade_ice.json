@@ -21,214 +21,220 @@
     "effects": {
         "minecraft:tick": [
             {
-                "effect": {
-                    "type": "minecraft:replace_disk",
-                    "block_state": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                            "Name": "minecraft:blue_ice"
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "aspects.aspect_id": 1668027
                         }
-                    },
-                    "predicate": {
-                        "type": "minecraft:all_of",
-                        "predicates": [
-                            {
-                                "type": "minecraft:matching_block_tag",
-                                "offset": [
-                                    0,
-                                    1,
-                                    0
-                                ],
-                                "tag": "minecraft:air"
-                            },
-                            {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": "minecraft:packed_ice"
-                            },
-                            {
-                                "type": "minecraft:unobstructed"
-                            }
-                        ]
-                    },
-                    "trigger_game_event": "minecraft:block_place",
-                    "offset": [
-                        0,
-                        -1,
-                        0
-                    ],
-                    "radius": 2,
-                    "height": 1
-                }
-            },
-            {
+                    }
+                ],
                 "effect": {
-                    "type": "minecraft:replace_disk",
-                    "block_state": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                            "Name": "minecraft:packed_ice"
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:replace_disk",
+                            "block_state": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "minecraft:blue_ice"
+                                }
+                            },
+                            "predicate": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "tag": "minecraft:air"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": "minecraft:packed_ice"
+                                    },
+                                    {
+                                        "type": "minecraft:unobstructed"
+                                    }
+                                ]
+                            },
+                            "trigger_game_event": "minecraft:block_place",
+                            "offset": [
+                                0,
+                                -1,
+                                0
+                            ],
+                            "radius": 2,
+                            "height": 1
+                        },
+                        {
+                            "type": "minecraft:replace_disk",
+                            "block_state": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "minecraft:packed_ice"
+                                }
+                            },
+                            "predicate": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "tag": "minecraft:air"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": "minecraft:ice"
+                                    },
+                                    {
+                                        "type": "minecraft:unobstructed"
+                                    }
+                                ]
+                            },
+                            "trigger_game_event": "minecraft:block_place",
+                            "offset": [
+                                0,
+                                -1,
+                                0
+                            ],
+                            "radius": 2,
+                            "height": 1
+                        },
+                        {
+                            "type": "minecraft:replace_disk",
+                            "block_state": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "minecraft:ice"
+                                }
+                            },
+                            "predicate": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "tag": "minecraft:air"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": "minecraft:frosted_ice"
+                                    },
+                                    {
+                                        "type": "minecraft:unobstructed"
+                                    }
+                                ]
+                            },
+                            "trigger_game_event": "minecraft:block_place",
+                            "offset": [
+                                0,
+                                -1,
+                                0
+                            ],
+                            "radius": 2,
+                            "height": 1
+                        },
+                        {
+                            "type": "minecraft:replace_disk",
+                            "block_state": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "minecraft:frosted_ice",
+                                    "Properties": {
+                                        "age": "0"
+                                    }
+                                }
+                            },
+                            "predicate": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "tag": "minecraft:air"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": "minecraft:water"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_fluids",
+                                        "fluids": "minecraft:water"
+                                    },
+                                    {
+                                        "type": "minecraft:unobstructed"
+                                    }
+                                ]
+                            },
+                            "trigger_game_event": "minecraft:block_place",
+                            "offset": [
+                                0,
+                                -1,
+                                0
+                            ],
+                            "radius": 2,
+                            "height": 1
+                        },
+                        {
+                            "type": "minecraft:replace_disk",
+                            "block_state": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "minecraft:basalt"
+                                }
+                            },
+                            "predicate": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "tag": "minecraft:air"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": "minecraft:lava"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_fluids",
+                                        "fluids": "minecraft:lava"
+                                    },
+                                    {
+                                        "type": "minecraft:unobstructed"
+                                    }
+                                ]
+                            },
+                            "trigger_game_event": "minecraft:block_place",
+                            "offset": [
+                                0,
+                                -1,
+                                0
+                            ],
+                            "radius": 2,
+                            "height": 1
                         }
-                    },
-                    "predicate": {
-                        "type": "minecraft:all_of",
-                        "predicates": [
-                            {
-                                "type": "minecraft:matching_block_tag",
-                                "offset": [
-                                    0,
-                                    1,
-                                    0
-                                ],
-                                "tag": "minecraft:air"
-                            },
-                            {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": "minecraft:ice"
-                            },
-                            {
-                                "type": "minecraft:unobstructed"
-                            }
-                        ]
-                    },
-                    "trigger_game_event": "minecraft:block_place",
-                    "offset": [
-                        0,
-                        -1,
-                        0
-                    ],
-                    "radius": 2,
-                    "height": 1
-                }
-            },
-            {
-                "effect": {
-                    "type": "minecraft:replace_disk",
-                    "block_state": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                            "Name": "minecraft:ice"
-                        }
-                    },
-                    "predicate": {
-                        "type": "minecraft:all_of",
-                        "predicates": [
-                            {
-                                "type": "minecraft:matching_block_tag",
-                                "offset": [
-                                    0,
-                                    1,
-                                    0
-                                ],
-                                "tag": "minecraft:air"
-                            },
-                            {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": "minecraft:frosted_ice"
-                            },
-                            {
-                                "type": "minecraft:unobstructed"
-                            }
-                        ]
-                    },
-                    "trigger_game_event": "minecraft:block_place",
-                    "offset": [
-                        0,
-                        -1,
-                        0
-                    ],
-                    "radius": 2,
-                    "height": 1
-                }
-            },
-            {
-                "effect": {
-                    "type": "minecraft:replace_disk",
-                    "block_state": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                            "Name": "minecraft:frosted_ice",
-                            "Properties": {
-                                "age": "0"
-                            }
-                        }
-                    },
-                    "predicate": {
-                        "type": "minecraft:all_of",
-                        "predicates": [
-                            {
-                                "type": "minecraft:matching_block_tag",
-                                "offset": [
-                                    0,
-                                    1,
-                                    0
-                                ],
-                                "tag": "minecraft:air"
-                            },
-                            {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": "minecraft:water"
-                            },
-                            {
-                                "type": "minecraft:matching_fluids",
-                                "fluids": "minecraft:water"
-                            },
-                            {
-                                "type": "minecraft:unobstructed"
-                            }
-                        ]
-                    },
-                    "trigger_game_event": "minecraft:block_place",
-                    "offset": [
-                        0,
-                        -1,
-                        0
-                    ],
-                    "radius": 2,
-                    "height": 1
-                }
-            },
-            {
-                "effect": {
-                    "type": "minecraft:replace_disk",
-                    "block_state": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                            "Name": "minecraft:basalt"
-                        }
-                    },
-                    "predicate": {
-                        "type": "minecraft:all_of",
-                        "predicates": [
-                            {
-                                "type": "minecraft:matching_block_tag",
-                                "offset": [
-                                    0,
-                                    1,
-                                    0
-                                ],
-                                "tag": "minecraft:air"
-                            },
-                            {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": "minecraft:lava"
-                            },
-                            {
-                                "type": "minecraft:matching_fluids",
-                                "fluids": "minecraft:lava"
-                            },
-                            {
-                                "type": "minecraft:unobstructed"
-                            }
-                        ]
-                    },
-                    "trigger_game_event": "minecraft:block_place",
-                    "offset": [
-                        0,
-                        -1,
-                        0
-                    ],
-                    "radius": 2,
-                    "height": 1
+                    ]
                 }
             }
         ]

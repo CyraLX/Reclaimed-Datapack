@@ -1,6 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "reclaimed:focus/dragonkin",
+    "group": "reclaimed:focus/frostling",
     "category": "equipment",
     "pattern": [
         "aXa",
