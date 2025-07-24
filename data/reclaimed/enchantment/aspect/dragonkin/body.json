@@ -128,6 +128,66 @@
                     "type": "minecraft:run_function",
                     "function": "reclaimed:aspect/dragonkin/attributes/update_dragon_head"
                 }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 100
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "chest": {
+                                            "predicates": {
+                                                "minecraft:custom_data": {
+                                                    "aspects": {
+                                                        "unique": true
+                                                    }
+                                                },
+                                                "minecraft:enchantments": [
+                                                    {
+                                                        "enchantments": [
+                                                            "reclaimed:aspect/dragonkin/wings"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "minecraft:in_wall",
+                            "min_damage": 20,
+                            "max_damage": 20
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "aspectlib:equipment/drop/chestplate"
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "reclaimed:aspect/dragonkin/wings/equip"
+                        }
+                    ]
+                }
             }
         ]
     }
