@@ -228,7 +228,15 @@
                                             "translate": "item.reclaimed.focus.dragonkin.use_result_1",
                                             "with": [
                                                 {
-                                                    "translate": "effect.minecraft.regeneration"
+                                                    "translate": "potion.withAmplifier",
+                                                    "with": [
+                                                        {
+                                                            "translate": "effect.minecraft.regeneration"
+                                                        },
+                                                        {
+                                                            "translate": "potion.potency.1"
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "translate": "effect.minecraft.resistance"
