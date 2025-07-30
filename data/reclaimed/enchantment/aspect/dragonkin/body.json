@@ -173,12 +173,6 @@
                     "type": "minecraft:all_of",
                     "effects": [
                         {
-                            "type": "minecraft:damage_entity",
-                            "damage_type": "minecraft:in_wall",
-                            "min_damage": 20,
-                            "max_damage": 20
-                        },
-                        {
                             "type": "minecraft:run_function",
                             "function": "aspectlib:equipment/drop/chestplate"
                         },
