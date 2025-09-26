@@ -31,7 +31,7 @@
                 ],
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "reclaimed:focus/remnant/trigger_mainhand"
+                    "function": "reclaimed:item/focus/remnant/trigger_mainhand"
                 }
             }
         ]

@@ -1,5 +1,0 @@
-function aspectlib:player/id/expose
-function reclaimed:focus/remnant/store_position with storage aspectlib:dummy
-$execute if predicate aspectlib:has_vehicle on vehicle in $(Dimension) run tp @s $(Pos_X) $(Pos_Y) $(Pos_Z)
-$execute unless predicate aspectlib:has_vehicle in $(Dimension) run tp @s $(Pos_X) $(Pos_Y) $(Pos_Z)
-playsound minecraft:entity.player.teleport player @a[distance=..32] ~ ~ ~ 2 0.5

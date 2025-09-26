@@ -10,4 +10,4 @@ data modify storage aspects:aspect_list reclaimed:pebblemite set value {id: 1668
 function aspects:stats/aspect/initialize with storage aspects:aspect_list reclaimed:pebblemite
 
 # Setup scoreboard objectives for the Aspect
-function reclaimed:focus/pebblemite/raycast/initialize_scoreboards
+function reclaimed:item/focus/pebblemite/raycast/initialize_scoreboards

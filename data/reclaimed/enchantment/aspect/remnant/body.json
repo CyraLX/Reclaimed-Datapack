@@ -93,7 +93,7 @@
                 },
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "reclaimed:focus/remnant/spawn_particles"
+                    "function": "reclaimed:item/focus/remnant/spawn_particles"
                 }
             }
         ]
