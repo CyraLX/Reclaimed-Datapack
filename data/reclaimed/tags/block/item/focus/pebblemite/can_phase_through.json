@@ -1094,6 +1094,10 @@
             "required": false
         },
         {
+            "id": "#minecraft:chains",
+            "required": false
+        },
+        {
             "id": "minecraft:pointed_dripstone",
             "required": false
         },
