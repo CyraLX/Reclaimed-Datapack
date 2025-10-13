@@ -1,0 +1,2 @@
+execute if data storage aspectlib:dummy stored_entity.CustomName run return run data modify storage aspectlib:dummy entity_name set from storage aspectlib:dummy stored_entity.CustomName
+data modify storage aspectlib:dummy entity_name set from storage aspectlib:dummy stored_entity_id

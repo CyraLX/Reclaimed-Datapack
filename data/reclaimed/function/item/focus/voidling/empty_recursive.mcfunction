@@ -1,0 +1,2 @@
+execute if score @s reclaimed.voidling.store_entity.length matches 1.. run function reclaimed:item/focus/voidling/trigger_summon
+execute unless score @s reclaimed.voidling.store_entity.length matches ..0 run function reclaimed:item/focus/voidling/empty_recursive

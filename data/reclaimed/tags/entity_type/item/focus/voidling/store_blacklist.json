@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "required": false,
+            "id": "#aspectlib:bosses/major"
+        },
+        {
+            "required": false,
+            "id": "#aspectlib:projectiles"
+        },
+        {
+            "required": false,
+            "id": "#aspectlib:non-living"
+        }
+    ]
+}

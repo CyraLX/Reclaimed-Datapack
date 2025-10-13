@@ -1,0 +1,1 @@
+tp @e[type=item,distance=1.5..8,nbt={PickupDelay:0s}] @s

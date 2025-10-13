@@ -1,0 +1,1 @@
+scoreboard objectives add reclaimed.voidling.spatial_instability.max_y dummy

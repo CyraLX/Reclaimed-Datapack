@@ -1,0 +1,1 @@
+$title @s actionbar "$(entity_name)"

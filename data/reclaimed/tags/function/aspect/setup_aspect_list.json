@@ -16,6 +16,10 @@
         {
             "id": "reclaimed:aspect/pebblemite/setup_aspect",
             "required": false
+        },
+        {
+            "id": "reclaimed:aspect/voidling/setup_aspect",
+            "required": false
         }
     ]
 }
