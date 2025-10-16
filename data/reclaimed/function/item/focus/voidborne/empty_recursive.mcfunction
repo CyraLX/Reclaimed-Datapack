@@ -1,0 +1,2 @@
+execute if score @s reclaimed.voidborne.store_entity.length matches 1.. run function reclaimed:item/focus/voidborne/trigger_summon
+execute unless score @s reclaimed.voidborne.store_entity.length matches ..0 run function reclaimed:item/focus/voidborne/empty_recursive

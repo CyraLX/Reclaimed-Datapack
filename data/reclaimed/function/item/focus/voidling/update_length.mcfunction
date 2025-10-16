@@ -1,1 +1,0 @@
-$execute store result score @s reclaimed.voidling.store_entity.length run data get storage aspectlib:player_$(id) aspects.aspect_data."reclaimed:voidling".stored_entity_array

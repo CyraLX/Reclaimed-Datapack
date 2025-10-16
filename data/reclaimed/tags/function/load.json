@@ -4,6 +4,10 @@
         {
             "id": "reclaimed:pack_format",
             "required": false
+        },
+        {
+            "id": "reclaimed:config/initialize",
+            "required": false
         }
     ]
 }

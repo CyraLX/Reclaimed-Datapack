@@ -18,7 +18,7 @@
             "required": false
         },
         {
-            "id": "reclaimed:aspect/voidling/setup_aspect",
+            "id": "reclaimed:aspect/voidborne/setup_aspect",
             "required": false
         }
     ]

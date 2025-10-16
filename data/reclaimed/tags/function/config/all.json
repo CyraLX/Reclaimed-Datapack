@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "reclaimed:config/help/voidborne/storage_cap",
+            "required": true
+        }
+    ]
+}
