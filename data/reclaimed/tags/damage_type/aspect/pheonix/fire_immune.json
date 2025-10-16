@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "#aspects:aspect/infernal/fire_immune"
+        {
+            "id": "#aspects:aspect/infernal/fire_immune",
+            "required": false
+        }
     ]
 }
