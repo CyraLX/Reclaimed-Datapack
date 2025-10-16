@@ -20,6 +20,10 @@
         {
             "id": "reclaimed:aspect/voidborne/body",
             "required": false
+        },
+        {
+            "id": "reclaimed:aspect/pheonix/body",
+            "required": false
         }
     ]
 }

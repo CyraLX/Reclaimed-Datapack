@@ -1,0 +1,196 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "reclaimed:focus/pheonix",
+    "category": "equipment",
+    "pattern": [
+        "aXa",
+        "qiq",
+        " q "
+    ],
+    "key": {
+        "X": [
+            "minecraft:magma_block"
+        ],
+        "a": [
+            "minecraft:amethyst_shard"
+        ],
+        "i": [
+            "minecraft:iron_ingot"
+        ],
+        "q": [
+            "minecraft:quartz"
+        ]
+    },
+    "result": {
+        "id": "minecraft:jigsaw",
+        "count": 1,
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:rarity": "uncommon",
+            "minecraft:enchantment_glint_override": false,
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:attribute_modifiers",
+                    "minecraft:enchantments"
+                ]
+            },
+            "minecraft:item_model": "reclaimed:focus/pheonix",
+            "!minecraft:enchantments": {},
+            "minecraft:consumable": {
+                "consume_seconds": 2.0,
+                "animation": "bow",
+                "sound": "minecraft:item.trident.hit",
+                "has_consume_particles": false
+            },
+            "minecraft:use_cooldown": {
+                "seconds": 30,
+                "cooldown_group": "aspects:focus"
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:jigsaw",
+                "components": {
+                    "minecraft:item_name": {
+                        "translate": "item.reclaimed.focus.pheonix",
+                        "color": "#ffff55"
+                    },
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:enchantment_glint_override": false,
+                    "minecraft:tooltip_display": {
+                        "hidden_components": [
+                            "minecraft:attribute_modifiers",
+                            "minecraft:enchantments"
+                        ]
+                    },
+                    "minecraft:item_model": "reclaimed:focus/pheonix",
+                    "minecraft:enchantments": {
+                        "aspects:focus/generic/modify_mainhand": 1,
+                        "aspects:focus/generic/modify_offhand": 1,
+                        "reclaimed:focus/pheonix/use": 1
+                    },
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "focus": {
+                                "aspect": {
+                                    "namespace": "reclaimed",
+                                    "name": "pheonix"
+                                }
+                            }
+                        }
+                    }
+                },
+                "count": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "focus": {
+                        "aspect": {
+                            "namespace": "reclaimed",
+                            "name": "pheonix"
+                        }
+                    }
+                }
+            },
+            "minecraft:item_name": [
+                {
+                    "translate": "item.reclaimed.focus.pheonix",
+                    "color": "#ffff55"
+                }
+            ],
+            "minecraft:lore": [
+                {
+                    "translate": "lore.equipment.use_time_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_time"
+                        },
+                        {
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "30"
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.reclaimed.focus.pheonix.use_condition_1",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.pheonix.use_result_1",
+                            "with": [
+                                {
+                                    "text": "10"
+                                },
+                                {
+                                    "translate": "potion.withAmplifier",
+                                    "with": [
+                                        {
+                                            "translate": "effect.minecraft.resistance"
+                                        },
+                                        {
+                                            "translate": "potion.potency.2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.reclaimed.focus.pheonix.use_condition_2",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.pheonix.use_result_2",
+                            "with": [
+                                {
+                                    "translate": "effect.minecraft.slow_falling"
+                                },
+                                {
+                                    "text": "3"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

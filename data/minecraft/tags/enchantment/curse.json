@@ -6,6 +6,10 @@
             "required": false
         },
         {
+            "id": "reclaimed:aspect/pheonix/wings",
+            "required": false
+        },
+        {
             "id": "reclaimed:focus/remnant/save",
             "required": false
         },

@@ -1,0 +1,196 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.reclaimed.pheonix",
+                "color": "#d13232"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:damage_immunity": [
+            {
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "reclaimed:aspect/pheonix/fire_immune",
+                                "expected": true
+                            }
+                        ]
+                    }
+                },
+                "effect": {}
+            }
+        ],
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:max_absorption",
+                "id": "reclaimed:pheonix/max_absorption",
+                "amount": 4.0,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:burning_time",
+                "id": "reclaimed:pheonix/burning_time",
+                "amount": -1.0,
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "minecraft:location_changed": [
+            {
+                "requirements": {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "fluid": {
+                                "fluids": "#minecraft:lava"
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:fall_damage_multiplier",
+                    "id": "reclaimed:pheonix/outside_lava_fall_damage_multiplier",
+                    "amount": 1.0,
+                    "operation": "add_multiplied_base"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "fluid": {
+                            "fluids": "#minecraft:lava"
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:fall_damage_multiplier",
+                    "id": "reclaimed:pheonix/inside_lava_fall_damage_multiplier",
+                    "amount": -1.0,
+                    "operation": "add_multiplied_base"
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 5
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "reclaimed:aspect/pheonix/attributes/state/update"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 20
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "aspectlib.hp_relative": {
+                                    "max": 20
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:ignite",
+                    "duration": 8
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 100
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "chest": {
+                                            "predicates": {
+                                                "minecraft:custom_data": {
+                                                    "aspects": {
+                                                        "unique": true
+                                                    }
+                                                },
+                                                "minecraft:enchantments": [
+                                                    {
+                                                        "enchantments": [
+                                                            "reclaimed:aspect/pheonix/wings"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "aspectlib:equipment/drop/chestplate"
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "reclaimed:aspect/pheonix/wings/equip"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

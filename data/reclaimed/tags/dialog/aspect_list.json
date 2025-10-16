@@ -16,6 +16,10 @@
         {
             "id": "reclaimed:aspect/list/remnant",
             "required": false
+        },
+        {
+            "id": "reclaimed:aspect/list/pheonix",
+            "required": false
         }
     ]
 }

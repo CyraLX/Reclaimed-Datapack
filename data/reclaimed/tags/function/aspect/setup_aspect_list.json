@@ -20,6 +20,10 @@
         {
             "id": "reclaimed:aspect/voidborne/setup_aspect",
             "required": false
+        },
+        {
+            "id": "reclaimed:aspect/pheonix/setup_aspect",
+            "required": false
         }
     ]
 }

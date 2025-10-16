@@ -1,0 +1,1357 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.aspect_info",
+        "with": [
+            {
+                "translate": "reclaimed",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.reclaimed.pheonix",
+                "color": "#d13232"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.aspect_info.external_title",
+        "with": [
+            {
+                "translate": "reclaimed",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.reclaimed.pheonix",
+                "color": "#d13232"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "aspect.reclaimed.pheonix.description",
+                "italic": true,
+                "color": "#d6d6d6"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:awakened_essence_cage",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "awakened_essence_cage": {
+                                "aspect": "pheonix"
+                            }
+                        }
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.essence_combination"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.fire"
+                            }
+                        ]
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.flying"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.aspect_info.hover_tutorial",
+                "italic": true,
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "reclaimed:aspect/pheonix",
+                    "minecraft:enchantments": {
+                        "reclaimed:aspect/pheonix/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.effects"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.generic.hydrophobic"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.generic.hydrophobic.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
+                                "extra": [
+                                    {
+                                        "translate": "badge_details.aspects.trigger.wet",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                                "color": "red",
+                                                "with": [
+                                                    "2",
+                                                    "1s",
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.ignores_armor"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.ignores_enchantments"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.suppressed_by",
+                                                                "with": [
+                                                                    {
+                                                                        "translate": "enchantment.aspects.water_ward"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.used",
+                                        "with": [
+                                            {
+                                                "translate": "item.minecraft.potion",
+                                                "extra": [
+                                                    "+"
+                                                ]
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                                "color": "red",
+                                                "with": [
+                                                    "2",
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.ignores_armor"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.ignores_enchantments"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.reclaimed.pheonix.flaming_feathers"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.reclaimed.pheonix.flaming_feathers.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.starting_equipment_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "item.reclaimed.wings.pheonix",
+                                                "color": "light_purple"
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.bound"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.durability",
+                                                        "with": [
+                                                            "600"
+                                                        ]
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.mending"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.restrict_slot_except",
+                                        "color": "red",
+                                        "with": [
+                                            {
+                                                "translate": "equipment.slot.chest"
+                                            },
+                                            {
+                                                "translate": "item.reclaimed.wings.pheonix",
+                                                "color": "light_purple"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "yellow",
+                                        "with": [
+                                            "+75%",
+                                            {
+                                                "translate": "attribute.name.gravity"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.when_fall_flying",
+                                                "color": "gray",
+                                                "italic": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.reclaimed.pheonix.reckless_descent"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.reclaimed.pheonix.reckless_descent.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_immune_to",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "block.minecraft.fire"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_immune_to",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "block.minecraft.lava"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_immune_to",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "block.minecraft.magma_block"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-100%",
+                                            {
+                                                "translate": "attribute.name.burning_time"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            "-100%",
+                                            {
+                                                "translate": "attribute.name.fall_damage_multiplier"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.inside",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "block.minecraft.lava"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "red",
+                                        "with": [
+                                            "+100%",
+                                            {
+                                                "translate": "attribute.name.fall_damage_multiplier"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.outside",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "block.minecraft.lava"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.reclaimed.pheonix.adrenaline_rush"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.reclaimed.pheonix.adrenaline_rush.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
+                                "extra": [
+                                    {
+                                        "translate": "badge_details.aspects.trigger.basic",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+4",
+                                                    {
+                                                        "translate": "attribute.name.max_absorption"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.health_greater_then",
+                                        "with": [
+                                            "50%"
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-10%",
+                                                    {
+                                                        "translate": "attribute.name.movement_speed"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-10%",
+                                                    {
+                                                        "translate": "attribute.name.attack_speed"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-0.5",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-10%",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.health_lower_or_equal_then",
+                                        "with": [
+                                            "50%"
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+5",
+                                                    {
+                                                        "translate": "attribute.name.armor"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+3",
+                                                    {
+                                                        "translate": "attribute.name.armor_toughness"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+2",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+10%",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.health_lower_or_equal_then",
+                                        "with": [
+                                            "20%"
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+4",
+                                                    {
+                                                        "translate": "attribute.name.max_absorption"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+3",
+                                                    {
+                                                        "translate": "attribute.name.armor"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+3",
+                                                    {
+                                                        "translate": "attribute.name.armor_toughness"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+20%",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+20%",
+                                                    {
+                                                        "translate": "attribute.name.attack_speed"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+20%",
+                                                    {
+                                                        "translate": "attribute.name.movement_speed"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+1.0",
+                                                    {
+                                                        "translate": "attribute.name.movement_efficiency"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "yellow",
+                                                "with": [
+                                                    "+5",
+                                                    {
+                                                        "translate": "attribute.name.knockback_resistance"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "+100%",
+                                                    {
+                                                        "translate": "attribute.name.burning_time"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.ignite_self",
+                                                "color": "red",
+                                                "with": [
+                                                    "8s"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "extra.aspects.hover_context",
+                "color": "green",
+                "with": [
+                    {
+                        "translate": "badge_details.aspects.hover_all"
+                    }
+                ],
+                "hover_event": {
+                    "action": "show_text",
+                    "value": {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.starting_equipment_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "item.reclaimed.wings.pheonix",
+                                                "color": "light_purple"
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.bound"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.durability",
+                                                        "with": [
+                                                            "600"
+                                                        ]
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.mending"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.restrict_slot_except",
+                                        "color": "red",
+                                        "with": [
+                                            {
+                                                "translate": "equipment.slot.chest"
+                                            },
+                                            {
+                                                "translate": "item.reclaimed.wings.pheonix",
+                                                "color": "light_purple"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "yellow",
+                                        "with": [
+                                            "+75%",
+                                            {
+                                                "translate": "attribute.name.gravity"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.when_fall_flying",
+                                                "color": "gray",
+                                                "italic": true
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_immune_to",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "block.minecraft.fire"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_immune_to",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "block.minecraft.lava"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_immune_to",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "block.minecraft.magma_block"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+4",
+                                            {
+                                                "translate": "attribute.name.max_absorption"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-100%",
+                                            {
+                                                "translate": "attribute.name.burning_time"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            "-100%",
+                                            {
+                                                "translate": "attribute.name.fall_damage_multiplier"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.inside",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "block.minecraft.lava"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "red",
+                                        "with": [
+                                            "+100%",
+                                            {
+                                                "translate": "attribute.name.fall_damage_multiplier"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.outside",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "block.minecraft.lava"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.wet",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                        "color": "red",
+                                        "with": [
+                                            "2",
+                                            "1s",
+                                            {
+                                                "text": "",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_armor"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_enchantments"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.suppressed_by",
+                                                        "with": [
+                                                            {
+                                                                "translate": "enchantment.aspects.water_ward"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.used",
+                                "with": [
+                                    {
+                                        "translate": "item.minecraft.potion",
+                                        "extra": [
+                                            "+"
+                                        ]
+                                    }
+                                ],
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                        "color": "red",
+                                        "with": [
+                                            "2",
+                                            {
+                                                "text": "",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_armor"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_enchantments"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.health_greater_then",
+                                "with": [
+                                    "50%"
+                                ],
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-10%",
+                                            {
+                                                "translate": "attribute.name.movement_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-10%",
+                                            {
+                                                "translate": "attribute.name.attack_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-0.5",
+                                            {
+                                                "translate": "attribute.name.attack_damage"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-10%",
+                                            {
+                                                "translate": "attribute.name.attack_damage"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.health_lower_or_equal_then",
+                                "with": [
+                                    "50%"
+                                ],
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+5",
+                                            {
+                                                "translate": "attribute.name.armor"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+3",
+                                            {
+                                                "translate": "attribute.name.armor_toughness"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+2",
+                                            {
+                                                "translate": "attribute.name.attack_damage"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+10%",
+                                            {
+                                                "translate": "attribute.name.attack_damage"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.health_lower_or_equal_then",
+                                "with": [
+                                    "20%"
+                                ],
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+4",
+                                            {
+                                                "translate": "attribute.name.max_absorption"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+3",
+                                            {
+                                                "translate": "attribute.name.armor"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+3",
+                                            {
+                                                "translate": "attribute.name.armor_toughness"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+20%",
+                                            {
+                                                "translate": "attribute.name.attack_damage"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+20%",
+                                            {
+                                                "translate": "attribute.name.attack_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+20%",
+                                            {
+                                                "translate": "attribute.name.movement_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+1.0",
+                                            {
+                                                "translate": "attribute.name.movement_efficiency"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "yellow",
+                                        "with": [
+                                            "+5",
+                                            {
+                                                "translate": "attribute.name.knockback_resistance"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "+100%",
+                                            {
+                                                "translate": "attribute.name.burning_time"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.ignite_self",
+                                        "color": "red",
+                                        "with": [
+                                            "8s"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "reclaimed:focus/pheonix",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.focus",
+                "extra": [
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "dialog.aspects.aspect_info.focus.hover"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.reclaimed.focus.pheonix.use_name_1"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.reclaimed.focus.pheonix.use_condition_1",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.reclaimed.focus.pheonix.use_result_1",
+                                            "with": [
+                                                {
+                                                    "text": "10"
+                                                },
+                                                {
+                                                    "translate": "potion.withAmplifier",
+                                                    "with": [
+                                                        {
+                                                            "translate": "effect.minecraft.resistance"
+                                                        },
+                                                        {
+                                                            "translate": "potion.potency.2"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "20"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.reclaimed.focus.pheonix.use_name_2"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.reclaimed.focus.pheonix.use_condition_2",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.reclaimed.focus.pheonix.use_result_2",
+                                            "with": [
+                                                {
+                                                    "translate": "effect.minecraft.slow_falling"
+                                                },
+                                                {
+                                                    "text": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/aspect_list"
+        }
+    }
+}

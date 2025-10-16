@@ -16,6 +16,10 @@
         {
             "id": "reclaimed:item/essence_cage/check_awaken_list/mainhand/remnant",
             "required": false
+        },
+        {
+            "id": "reclaimed:item/essence_cage/check_awaken_list/mainhand/pheonix",
+            "required": false
         }
     ]
 }
