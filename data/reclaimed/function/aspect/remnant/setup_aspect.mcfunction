@@ -4,7 +4,7 @@
 ## name = Name string of your Aspect
 ## color = Hexidecimal color value for your Aspect
 ## sound = Sound Event for your Aspect
-data modify storage aspects:aspect_list reclaimed:remnant set value {id: 1668047, namespace: "reclaimed", name: "remnant", color: "#550085", sound: "minecraft:entity.allay.ambient_without_item"}
+data modify storage aspects:aspect_list reclaimed:remnant set value {id: 1668047, namespace: "reclaimed", name: "remnant", color: "#024050", sound: "minecraft:entity.allay.ambient_without_item"}
 
 # Setup statistic tracking for the Aspect
 function aspects:stats/aspect/initialize with storage aspects:aspect_list reclaimed:remnant

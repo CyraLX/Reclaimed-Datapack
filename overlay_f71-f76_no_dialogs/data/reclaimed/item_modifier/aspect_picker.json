@@ -54,8 +54,7 @@
                     "\n\n> ",
                     {
                         "translate": "aspect.reclaimed.remnant",
-                        "color": "#550085",
-                        "shadow_color": -4521729,
+                        "color": "#024050",
                         "hover_event": {
                             "action": "show_text",
                             "value": {

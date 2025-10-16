@@ -70,8 +70,7 @@
                                 "with": [
                                     {
                                         "translate": "aspect.reclaimed.remnant",
-                                        "color": "#550085",
-                                        "shadow_color": -4521729
+                                        "color": "#024050"
                                     }
                                 ],
                                 "color": "dark_gray",
@@ -186,8 +185,7 @@
                             ": ",
                             {
                                 "translate": "aspect.reclaimed.remnant",
-                                "color": "#550085",
-                                "shadow_color": -4521729
+                                "color": "#024050"
                             },
                             "\n\n",
                             {
@@ -236,8 +234,7 @@
                             ": ",
                             {
                                 "translate": "aspect.reclaimed.remnant",
-                                "color": "#550085",
-                                "shadow_color": -4521729
+                                "color": "#024050"
                             },
                             "\n\n",
                             {
