@@ -2,7 +2,7 @@
 tag @s remove reclaimed_voidborne_target_temp
 #
 execute store result score #reclaimed aspectlib.dummy run data get entity @s Health
-execute if score #reclaimed aspectlib.dummy matches 51.. run return run playsound minecraft:entity.ender_eye.death player @a[distance=..16] ~ ~ ~ 1 0.5
+execute if score #reclaimed reclaimed.config.voidborne.storage_hp_threshold matches 0.. if score #reclaimed aspectlib.dummy > #reclaimed reclaimed.config.voidborne.storage_hp_threshold run return run playsound minecraft:entity.ender_eye.death player @a[distance=..16] ~ ~ ~ 1 0.5
 # Store NBT
 summon minecraft:armor_stand ~ ~ ~ {Invisible:true,Marker:true,Tags:["reclaimed_voidborne_vehicle_temp"]}
 ride @s mount @n[type=minecraft:armor_stand,tag=reclaimed_voidborne_vehicle_temp,distance=..4]

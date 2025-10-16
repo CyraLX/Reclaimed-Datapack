@@ -4,6 +4,10 @@
         {
             "id": "reclaimed:config/help/voidborne/storage_cap",
             "required": true
+        },
+        {
+            "id": "reclaimed:config/help/voidborne/storage_hp_threshold",
+            "required": true
         }
     ]
 }
