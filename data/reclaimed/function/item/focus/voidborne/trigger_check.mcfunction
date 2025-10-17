@@ -10,3 +10,5 @@ function reclaimed:item/focus/voidborne/expose_stored_entity with storage aspect
 function reclaimed:item/focus/voidborne/expose_entity_name with storage aspectlib:dummy
 # Print stored entity
 function reclaimed:item/focus/voidborne/print_entity_name with storage aspectlib:dummy
+# Update Bossbar
+function reclaimed:item/focus/voidborne/bossbar/update

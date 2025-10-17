@@ -4,6 +4,8 @@ execute if score #reclaimed reclaimed.config.voidborne.storage_cap matches 0.. i
 function aspectlib:player/id/expose
 # Store Entity
 execute as @n[tag=reclaimed_voidborne_target_temp,distance=..10] at @s run function reclaimed:item/focus/voidborne/store_self with storage aspectlib:dummy
+# Update Bossbar
+function reclaimed:item/focus/voidborne/bossbar/update
 
 
 

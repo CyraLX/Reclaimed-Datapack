@@ -12,6 +12,10 @@
         {
             "required": false,
             "id": "#aspectlib:non-living"
+        },
+        {
+            "required": false,
+            "id": "minecraft:creaking"
         }
     ]
 }

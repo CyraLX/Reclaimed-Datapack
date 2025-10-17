@@ -4,3 +4,5 @@ execute unless score @s reclaimed.voidborne.store_entity.length matches 1.. run 
 function reclaimed:item/focus/voidborne/change_index
 # Print Index
 function reclaimed:item/focus/voidborne/trigger_check
+# Update Bossbar
+function reclaimed:item/focus/voidborne/bossbar/update

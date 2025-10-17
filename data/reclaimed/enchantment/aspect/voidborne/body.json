@@ -106,6 +106,24 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
+                        "periodic_tick": 20
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "reclaimed:item/focus/voidborne/bossbar/update"
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
                         "flags": {
                             "is_sneaking": true
                         },
@@ -113,8 +131,13 @@
                     }
                 },
                 "effect": {
-                    "type": "minecraft:run_function",
-                    "function": "reclaimed:aspect/voidborne/gravitational_pull"
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "reclaimed:aspect/voidborne/gravitational_pull"
+                        }
+                    ]
                 }
             }
         ]

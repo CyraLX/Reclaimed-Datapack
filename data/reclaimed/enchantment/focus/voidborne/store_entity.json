@@ -22,6 +22,13 @@
             {
                 "requirements": [
                     {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "attacker",
+                        "scores": {
+                            "aspects.aspect_id": 1668057
+                        }
+                    },
+                    {
                         "condition": "minecraft:any_of",
                         "terms": [
                             {
@@ -73,6 +80,13 @@
             },
             {
                 "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "attacker",
+                        "scores": {
+                            "aspects.aspect_id": 1668057
+                        }
+                    },
                     {
                         "condition": "minecraft:any_of",
                         "terms": [
