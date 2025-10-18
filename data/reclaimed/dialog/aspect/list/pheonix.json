@@ -603,7 +603,7 @@
                                                 "with": [
                                                     "+10%",
                                                     {
-                                                        "translate": "attribute.name.attack_damage"
+                                                        "translate": "attribute.name.movement_speed"
                                                     }
                                                 ]
                                             }
@@ -1083,7 +1083,7 @@
                                         "with": [
                                             "+10%",
                                             {
-                                                "translate": "attribute.name.attack_damage"
+                                                "translate": "attribute.name.movement_speed"
                                             }
                                         ]
                                     }
