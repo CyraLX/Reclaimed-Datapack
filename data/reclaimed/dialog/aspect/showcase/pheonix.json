@@ -211,6 +211,9 @@
                             "\n",
                             {
                                 "translate": "item.reclaimed.focus.pheonix.use_condition_1",
+                                "with": [
+                                    "14"
+                                ],
                                 "italic": true
                             },
                             " ",
@@ -258,6 +261,9 @@
                             "\n",
                             {
                                 "translate": "item.reclaimed.focus.pheonix.use_condition_2",
+                                "with": [
+                                    "14"
+                                ],
                                 "italic": true
                             },
                             " ",
@@ -271,6 +277,56 @@
                                         "extra": [
                                             {
                                                 "translate": "item.reclaimed.focus.pheonix.use_result_2",
+                                                "with": [
+                                                    {
+                                                        "text": "1"
+                                                    },
+                                                    {
+                                                        "text": "8"
+                                                    },
+                                                    {
+                                                        "translate": "potion.withAmplifier",
+                                                        "with": [
+                                                            {
+                                                                "translate": "effect.minecraft.resistance"
+                                                            },
+                                                            {
+                                                                "translate": "potion.potency.2"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "text": "20"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n",
+                    {
+                        "translate": "item.reclaimed.focus.pheonix.use_name_3",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.reclaimed.focus.pheonix.use_condition_3",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "text": "",
+                                        "italic": true,
+                                        "extra": [
+                                            {
+                                                "translate": "item.reclaimed.focus.pheonix.use_result_3",
                                                 "with": [
                                                     {
                                                         "translate": "effect.minecraft.slow_falling"

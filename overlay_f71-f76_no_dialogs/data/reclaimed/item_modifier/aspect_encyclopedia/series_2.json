@@ -61,8 +61,8 @@
                         "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
                         "with": [
                             {
-                                "translate": "aspect.reclaimed.remnant",
-                                "color": "#024050"
+                                "translate": "aspect.reclaimed.dragonkin",
+                                "color": "#8e00db"
                             }
                         ],
                         "color": "dark_gray",
@@ -72,7 +72,7 @@
                                 "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
                                 "with": [
                                     {
-                                        "translate": "aspect.reclaimed.remnant"
+                                        "translate": "aspect.reclaimed.dragonkin"
                                     }
                                 ]
                             }
@@ -90,8 +90,8 @@
                         "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
                         "with": [
                             {
-                                "translate": "aspect.reclaimed.dragonkin",
-                                "color": "#8e00db"
+                                "translate": "aspect.reclaimed.frostling",
+                                "color": "#31eaf4"
                             }
                         ],
                         "color": "dark_gray",
@@ -101,7 +101,7 @@
                                 "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
                                 "with": [
                                     {
-                                        "translate": "aspect.reclaimed.dragonkin"
+                                        "translate": "aspect.reclaimed.frostling"
                                     }
                                 ]
                             }
@@ -148,8 +148,8 @@
                         "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
                         "with": [
                             {
-                                "translate": "aspect.reclaimed.frostling",
-                                "color": "#31eaf4"
+                                "translate": "aspect.reclaimed.remnant",
+                                "color": "#024050"
                             }
                         ],
                         "color": "dark_gray",
@@ -159,7 +159,7 @@
                                 "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
                                 "with": [
                                     {
-                                        "translate": "aspect.reclaimed.frostling"
+                                        "translate": "aspect.reclaimed.remnant"
                                     }
                                 ]
                             }
@@ -168,187 +168,65 @@
                             "action": "change_page",
                             "page": 8
                         }
-                    }
-                ]
-            },
-            {
-                "translate": "aspect",
-                "extra": [
-                    ": ",
-                    {
-                        "translate": "aspect.reclaimed.remnant",
-                        "color": "#024050"
                     },
-                    "\n\n",
+                    "\n",
                     {
-                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
-                        "extra": [
-                            "\n",
+                        "text": "10. "
+                    },
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
+                        "with": [
                             {
-                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "translate": "aspect.reclaimed.voidborne",
+                                "color": "#550085",
+                                "shadow_color": -16777216
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
                                 "with": [
                                     {
-                                        "text": "60",
-                                        "color": "dark_gray"
-                                    },
-                                    {
-                                        "translate": "lore.essence.void",
-                                        "color": "dark_gray"
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
-                                "with": [
-                                    {
-                                        "text": "60",
-                                        "color": "dark_gray"
-                                    },
-                                    {
-                                        "translate": "lore.essence.ethereal",
-                                        "color": "dark_gray"
+                                        "translate": "aspect.reclaimed.voidborne"
                                     }
                                 ]
                             }
-                        ]
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 10
+                        }
                     },
-                    "\n\n",
+                    "\n",
                     {
-                        "translate": "aspect.reclaimed.remnant.description",
-                        "italic": true
-                    }
-                ]
-            },
-            {
-                "translate": "aspect",
-                "extra": [
-                    ": ",
-                    {
-                        "translate": "aspect.reclaimed.remnant",
-                        "color": "#024050"
+                        "text": "12. "
                     },
-                    "\n\n",
                     {
-                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
-                        "extra": [
-                            ":\n",
+                        "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
+                        "with": [
                             {
-                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "translate": "aspect.reclaimed.pheonix",
+                                "color": "#d13232"
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
                                 "with": [
                                     {
-                                        "translate": "aspect.aspects.generic.hydrophobic",
-                                        "color": "dark_gray",
-                                        "hover_event": {
-                                            "action": "show_text",
-                                            "value": {
-                                                "translate": "aspect.aspects.generic.hydrophobic.description"
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
-                                "with": [
-                                    {
-                                        "translate": "aspect.reclaimed.remnant.gravity_restructured",
-                                        "color": "dark_gray",
-                                        "hover_event": {
-                                            "action": "show_text",
-                                            "value": {
-                                                "translate": "aspect.reclaimed.remnant.gravity_restructured.description"
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
-                                "with": [
-                                    {
-                                        "translate": "aspect.reclaimed.remnant.gravity_control",
-                                        "color": "dark_gray",
-                                        "hover_event": {
-                                            "action": "show_text",
-                                            "value": {
-                                                "translate": "aspect.reclaimed.remnant.gravity_control.description"
-                                            }
-                                        }
+                                        "translate": "aspect.reclaimed.pheonix"
                                     }
                                 ]
                             }
-                        ]
-                    },
-                    "\n\n",
-                    {
-                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
-                        "extra": [
-                            ":\n",
-                            {
-                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
-                                "with": [
-                                    {
-                                        "translate": "item.reclaimed.focus.remnant.use_name_1",
-                                        "color": "dark_gray",
-                                        "hover_event": {
-                                            "action": "show_text",
-                                            "value": [
-                                                {
-                                                    "translate": "item.modifiers.use_offhand",
-                                                    "color": "gray",
-                                                    "italic": false
-                                                },
-                                                "\n",
-                                                {
-                                                    "text": "",
-                                                    "color": "blue",
-                                                    "italic": false,
-                                                    "extra": [
-                                                        {
-                                                            "translate": "item.reclaimed.focus.remnant.use_result_1"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
-                                "with": [
-                                    {
-                                        "translate": "item.reclaimed.focus.remnant.use_name_2",
-                                        "color": "dark_gray",
-                                        "hover_event": {
-                                            "action": "show_text",
-                                            "value": [
-                                                {
-                                                    "translate": "item.modifiers.use_mainhand",
-                                                    "color": "gray",
-                                                    "italic": false
-                                                },
-                                                "\n",
-                                                {
-                                                    "text": "",
-                                                    "color": "blue",
-                                                    "italic": false,
-                                                    "extra": [
-                                                        {
-                                                            "translate": "item.reclaimed.focus.remnant.use_result_2"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ]
-                            }
-                        ]
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 12
+                        }
                     }
                 ]
             },
@@ -412,6 +290,174 @@
                     {
                         "translate": "aspect.reclaimed.dragonkin.description",
                         "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.reclaimed.frostling",
+                        "color": "#31eaf4"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "120",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.ice",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.reclaimed.frostling.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.reclaimed.frostling",
+                        "color": "#31eaf4"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.reclaimed.frostling.temperature_sensitive",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.reclaimed.frostling.temperature_sensitive.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.reclaimed.frostling.fire_vulnerabiliy",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.reclaimed.frostling.fire_vulnerabiliy.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.reclaimed.frostling.frost_invigoration",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.reclaimed.frostling.frost_invigoration.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.reclaimed.frostling.ice_ballerina",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.reclaimed.frostling.ice_ballerina.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.reclaimed.frostling.cold_feet",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.reclaimed.frostling.cold_feet.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.reclaimed.focus.frostling.use_name_1",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.modifiers.use",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.reclaimed.focus.frostling.use_result_1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -677,8 +723,8 @@
                 "extra": [
                     ": ",
                     {
-                        "translate": "aspect.reclaimed.frostling",
-                        "color": "#31eaf4"
+                        "translate": "aspect.reclaimed.remnant",
+                        "color": "#024050"
                     },
                     "\n\n",
                     {
@@ -689,11 +735,25 @@
                                 "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
                                 "with": [
                                     {
-                                        "text": "120",
+                                        "text": "60",
                                         "color": "dark_gray"
                                     },
                                     {
-                                        "translate": "lore.essence.ice",
+                                        "translate": "lore.essence.void",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "60",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.ethereal",
                                         "color": "dark_gray"
                                     }
                                 ]
@@ -702,7 +762,7 @@
                     },
                     "\n\n",
                     {
-                        "translate": "aspect.reclaimed.frostling.description",
+                        "translate": "aspect.reclaimed.remnant.description",
                         "italic": true
                     }
                 ]
@@ -712,8 +772,8 @@
                 "extra": [
                     ": ",
                     {
-                        "translate": "aspect.reclaimed.frostling",
-                        "color": "#31eaf4"
+                        "translate": "aspect.reclaimed.remnant",
+                        "color": "#024050"
                     },
                     "\n\n",
                     {
@@ -724,12 +784,12 @@
                                 "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
                                 "with": [
                                     {
-                                        "translate": "aspect.reclaimed.frostling.temperature_sensitive",
+                                        "translate": "aspect.aspects.generic.hydrophobic",
                                         "color": "dark_gray",
                                         "hover_event": {
                                             "action": "show_text",
                                             "value": {
-                                                "translate": "aspect.reclaimed.frostling.temperature_sensitive.description"
+                                                "translate": "aspect.aspects.generic.hydrophobic.description"
                                             }
                                         }
                                     }
@@ -740,12 +800,12 @@
                                 "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
                                 "with": [
                                     {
-                                        "translate": "aspect.reclaimed.frostling.fire_vulnerabiliy",
+                                        "translate": "aspect.reclaimed.remnant.gravity_restructured",
                                         "color": "dark_gray",
                                         "hover_event": {
                                             "action": "show_text",
                                             "value": {
-                                                "translate": "aspect.reclaimed.frostling.fire_vulnerabiliy.description"
+                                                "translate": "aspect.reclaimed.remnant.gravity_restructured.description"
                                             }
                                         }
                                     }
@@ -756,44 +816,12 @@
                                 "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
                                 "with": [
                                     {
-                                        "translate": "aspect.reclaimed.frostling.frost_invigoration",
+                                        "translate": "aspect.reclaimed.remnant.gravity_control",
                                         "color": "dark_gray",
                                         "hover_event": {
                                             "action": "show_text",
                                             "value": {
-                                                "translate": "aspect.reclaimed.frostling.frost_invigoration.description"
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
-                                "with": [
-                                    {
-                                        "translate": "aspect.reclaimed.frostling.ice_ballerina",
-                                        "color": "dark_gray",
-                                        "hover_event": {
-                                            "action": "show_text",
-                                            "value": {
-                                                "translate": "aspect.reclaimed.frostling.ice_ballerina.description"
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
-                                "with": [
-                                    {
-                                        "translate": "aspect.reclaimed.frostling.cold_feet",
-                                        "color": "dark_gray",
-                                        "hover_event": {
-                                            "action": "show_text",
-                                            "value": {
-                                                "translate": "aspect.reclaimed.frostling.cold_feet.description"
+                                                "translate": "aspect.reclaimed.remnant.gravity_control.description"
                                             }
                                         }
                                     }
@@ -810,13 +838,13 @@
                                 "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
                                 "with": [
                                     {
-                                        "translate": "item.reclaimed.focus.frostling.use_name_1",
+                                        "translate": "item.reclaimed.focus.remnant.use_name_1",
                                         "color": "dark_gray",
                                         "hover_event": {
                                             "action": "show_text",
                                             "value": [
                                                 {
-                                                    "translate": "item.modifiers.use",
+                                                    "translate": "item.modifiers.use_offhand",
                                                     "color": "gray",
                                                     "italic": false
                                                 },
@@ -827,7 +855,586 @@
                                                     "italic": false,
                                                     "extra": [
                                                         {
-                                                            "translate": "item.reclaimed.focus.frostling.use_result_1"
+                                                            "translate": "item.reclaimed.focus.remnant.use_result_1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.reclaimed.focus.remnant.use_name_2",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.modifiers.use_mainhand",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.reclaimed.focus.remnant.use_result_2"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.reclaimed.voidborne",
+                        "color": "#550085",
+                        "shadow_color": -16777216
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "120",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.void",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.reclaimed.voidborne.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.reclaimed.voidborne",
+                        "color": "#550085",
+                        "shadow_color": -16777216
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.reclaimed.voidborne.singularity",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.reclaimed.voidborne.singularity.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.reclaimed.voidborne.gravitational_pull",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.reclaimed.voidborne.gravitational_pull.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.reclaimed.voidborne.spatial_instability",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.reclaimed.voidborne.spatial_instability.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.reclaimed.focus.voidborne.use_name_1",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.modifiers.attack",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.reclaimed.focus.voidborne.use_result_1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.reclaimed.focus.voidborne.use_name_2",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.reclaimed.focus.voidborne.use_condition_2",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.reclaimed.focus.voidborne.use_result_2"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.reclaimed.focus.voidborne.use_name_3",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.reclaimed.focus.voidborne.use_condition_3",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.reclaimed.focus.voidborne.use_result_3"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.reclaimed.focus.voidborne.use_name_4",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.reclaimed.focus.voidborne.use_condition_4",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.reclaimed.focus.voidborne.use_result_4"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.reclaimed.focus.voidborne.use_name_5",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.reclaimed.focus.voidborne.use_condition_5",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.reclaimed.focus.voidborne.use_result_5"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.reclaimed.pheonix",
+                        "color": "#d13232"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "60",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.fire",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "60",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.flying",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.reclaimed.pheonix.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.reclaimed.pheonix",
+                        "color": "#d13232"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.generic.hydrophobic",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.generic.hydrophobic.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.reclaimed.pheonix.flaming_feathers",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.reclaimed.pheonix.flaming_feathers.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.reclaimed.pheonix.reckless_descent",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.reclaimed.pheonix.reckless_descent.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.reclaimed.pheonix.adrenaline_rush",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.reclaimed.pheonix.adrenaline_rush.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.reclaimed.focus.pheonix.use_name_1",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.reclaimed.focus.pheonix.use_condition_1",
+                                                    "with": [
+                                                        "14"
+                                                    ],
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.reclaimed.focus.pheonix.use_result_1",
+                                                            "with": [
+                                                                {
+                                                                    "text": "10"
+                                                                },
+                                                                {
+                                                                    "translate": "potion.withAmplifier",
+                                                                    "with": [
+                                                                        {
+                                                                            "translate": "effect.minecraft.resistance"
+                                                                        },
+                                                                        {
+                                                                            "translate": "potion.potency.2"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "text": "20"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.reclaimed.focus.pheonix.use_name_2",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.reclaimed.focus.pheonix.use_condition_2",
+                                                    "with": [
+                                                        "14"
+                                                    ],
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.reclaimed.focus.pheonix.use_result_2",
+                                                            "with": [
+                                                                {
+                                                                    "text": "1"
+                                                                },
+                                                                {
+                                                                    "text": "8"
+                                                                },
+                                                                {
+                                                                    "translate": "potion.withAmplifier",
+                                                                    "with": [
+                                                                        {
+                                                                            "translate": "effect.minecraft.resistance"
+                                                                        },
+                                                                        {
+                                                                            "translate": "potion.potency.2"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "text": "20"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.reclaimed.focus.pheonix.use_name_3",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.reclaimed.focus.pheonix.use_condition_3",
+                                                    "with": [
+                                                        "14"
+                                                    ],
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.reclaimed.focus.pheonix.use_result_3",
+                                                            "with": [
+                                                                {
+                                                                    "translate": "effect.minecraft.slow_falling"
+                                                                },
+                                                                {
+                                                                    "text": "3"
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }

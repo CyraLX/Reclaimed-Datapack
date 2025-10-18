@@ -46,7 +46,7 @@
                     "type": "minecraft:attribute",
                     "attribute": "minecraft:gravity",
                     "id": "reclaimed:pheonix/flying_gravity",
-                    "amount": 0.75,
+                    "amount": 0.5,
                     "operation": "add_multiplied_base"
                 }
             }

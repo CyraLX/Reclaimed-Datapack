@@ -134,6 +134,9 @@
                 "",
                 {
                     "translate": "item.reclaimed.focus.pheonix.use_condition_1",
+                    "with": [
+                        "14"
+                    ],
                     "color": "gray",
                     "italic": false
                 },
@@ -169,6 +172,9 @@
                 "",
                 {
                     "translate": "item.reclaimed.focus.pheonix.use_condition_2",
+                    "with": [
+                        "14"
+                    ],
                     "color": "gray",
                     "italic": false
                 },
@@ -179,6 +185,44 @@
                     "extra": [
                         {
                             "translate": "item.reclaimed.focus.pheonix.use_result_2",
+                            "with": [
+                                {
+                                    "text": "1"
+                                },
+                                {
+                                    "text": "8"
+                                },
+                                {
+                                    "translate": "potion.withAmplifier",
+                                    "with": [
+                                        {
+                                            "translate": "effect.minecraft.resistance"
+                                        },
+                                        {
+                                            "translate": "potion.potency.2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.reclaimed.focus.pheonix.use_condition_3",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.pheonix.use_result_3",
                             "with": [
                                 {
                                     "translate": "effect.minecraft.slow_falling"
