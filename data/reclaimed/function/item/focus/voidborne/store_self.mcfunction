@@ -23,4 +23,5 @@ $execute as @p[scores={aspectlib.player_id=$(id)}] at @s run function reclaimed:
 
 # /kill to clear the entities
 kill @n[type=minecraft:armor_stand,tag=reclaimed_voidborne_vehicle_temp,distance=..4]
+kill @s
 
