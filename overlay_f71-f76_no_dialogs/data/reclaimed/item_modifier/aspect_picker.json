@@ -53,21 +53,6 @@
                 "extra": [
                     "\n\n> ",
                     {
-                        "translate": "aspect.reclaimed.remnant",
-                        "color": "#024050",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
-                                "translate": "aspect.reclaimed.remnant.description"
-                            }
-                        },
-                        "click_event": {
-                            "action": "run_command",
-                            "command": "trigger aspects.choose_aspect set 1668047"
-                        }
-                    },
-                    "\n> ",
-                    {
                         "translate": "aspect.reclaimed.dragonkin",
                         "color": "#8e00db",
                         "hover_event": {
@@ -79,6 +64,21 @@
                         "click_event": {
                             "action": "run_command",
                             "command": "trigger aspects.choose_aspect set 1668017"
+                        }
+                    },
+                    "\n> ",
+                    {
+                        "translate": "aspect.reclaimed.frostling",
+                        "color": "#31eaf4",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.reclaimed.frostling.description"
+                            }
+                        },
+                        "click_event": {
+                            "action": "run_command",
+                            "command": "trigger aspects.choose_aspect set 1668027"
                         }
                     },
                     "\n> ",
@@ -98,17 +98,48 @@
                     },
                     "\n> ",
                     {
-                        "translate": "aspect.reclaimed.frostling",
-                        "color": "#31eaf4",
+                        "translate": "aspect.reclaimed.remnant",
+                        "color": "#024050",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
-                                "translate": "aspect.reclaimed.frostling.description"
+                                "translate": "aspect.reclaimed.remnant.description"
                             }
                         },
                         "click_event": {
                             "action": "run_command",
-                            "command": "trigger aspects.choose_aspect set 1668027"
+                            "command": "trigger aspects.choose_aspect set 1668047"
+                        }
+                    },
+                    "\n> ",
+                    {
+                        "translate": "aspect.reclaimed.voidborne",
+                        "color": "#550085",
+                        "shadow_color": -16777216,
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.reclaimed.voidborne.description"
+                            }
+                        },
+                        "click_event": {
+                            "action": "run_command",
+                            "command": "trigger aspects.choose_aspect set 1668057"
+                        }
+                    },
+                    "\n> ",
+                    {
+                        "translate": "aspect.reclaimed.pheonix",
+                        "color": "#d13232",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.reclaimed.pheonix.description"
+                            }
+                        },
+                        "click_event": {
+                            "action": "run_command",
+                            "command": "trigger aspects.choose_aspect set 1668067"
                         }
                     }
                 ]

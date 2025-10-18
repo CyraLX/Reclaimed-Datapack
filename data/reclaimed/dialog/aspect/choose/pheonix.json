@@ -269,7 +269,7 @@
                                         "translate": "badge_details.aspects.effect.attribute_modifiers",
                                         "color": "yellow",
                                         "with": [
-                                            "+75%",
+                                            "+50%",
                                             {
                                                 "translate": "attribute.name.gravity"
                                             },
@@ -551,7 +551,7 @@
                                                 "with": [
                                                     "+10%",
                                                     {
-                                                        "translate": "attribute.name.attack_damage"
+                                                        "translate": "attribute.name.movement_speed"
                                                     }
                                                 ]
                                             }
@@ -750,7 +750,7 @@
                                         "translate": "badge_details.aspects.effect.attribute_modifiers",
                                         "color": "yellow",
                                         "with": [
-                                            "+75%",
+                                            "+50%",
                                             {
                                                 "translate": "attribute.name.gravity"
                                             },
@@ -1031,7 +1031,7 @@
                                         "with": [
                                             "+10%",
                                             {
-                                                "translate": "attribute.name.attack_damage"
+                                                "translate": "attribute.name.movement_speed"
                                             }
                                         ]
                                     }
@@ -1212,6 +1212,9 @@
                             "value": [
                                 {
                                     "translate": "item.reclaimed.focus.pheonix.use_condition_1",
+                                    "with": [
+                                        "14"
+                                    ],
                                     "color": "gray",
                                     "italic": false
                                 },
@@ -1262,6 +1265,9 @@
                             "value": [
                                 {
                                     "translate": "item.reclaimed.focus.pheonix.use_condition_2",
+                                    "with": [
+                                        "14"
+                                    ],
                                     "color": "gray",
                                     "italic": false
                                 },
@@ -1273,6 +1279,59 @@
                                     "extra": [
                                         {
                                             "translate": "item.reclaimed.focus.pheonix.use_result_2",
+                                            "with": [
+                                                {
+                                                    "text": "1"
+                                                },
+                                                {
+                                                    "text": "8"
+                                                },
+                                                {
+                                                    "translate": "potion.withAmplifier",
+                                                    "with": [
+                                                        {
+                                                            "translate": "effect.minecraft.resistance"
+                                                        },
+                                                        {
+                                                            "translate": "potion.potency.2"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "20"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.reclaimed.focus.pheonix.use_name_3"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.reclaimed.focus.pheonix.use_condition_3",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.reclaimed.focus.pheonix.use_result_3",
                                             "with": [
                                                 {
                                                     "translate": "effect.minecraft.slow_falling"
