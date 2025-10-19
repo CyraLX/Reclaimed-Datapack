@@ -288,7 +288,12 @@
                                                     {
                                                         "translate": "entity.minecraft.item"
                                                     },
-                                                    "8"
+                                                    {
+                                                        "translate": "extra.aspects.meter_distance",
+                                                        "with": [
+                                                            "8"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -342,7 +347,12 @@
                                             {
                                                 "translate": "extra.aspects.random"
                                             },
-                                            "6",
+                                            {
+                                                "translate": "extra.aspects.meter_distance",
+                                                "with": [
+                                                    "6"
+                                                ]
+                                            },
                                             {
                                                 "translate": "badge_details.aspects.modifier.chance",
                                                 "color": "gray",
@@ -481,7 +491,12 @@
                                             {
                                                 "translate": "entity.minecraft.item"
                                             },
-                                            "8"
+                                            {
+                                                "translate": "extra.aspects.meter_distance",
+                                                "with": [
+                                                    "8"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -503,7 +518,12 @@
                                             {
                                                 "translate": "extra.aspects.random"
                                             },
-                                            "6",
+                                            {
+                                                "translate": "extra.aspects.meter_distance",
+                                                "with": [
+                                                    "6"
+                                                ]
+                                            },
                                             {
                                                 "translate": "badge_details.aspects.modifier.chance",
                                                 "color": "gray",

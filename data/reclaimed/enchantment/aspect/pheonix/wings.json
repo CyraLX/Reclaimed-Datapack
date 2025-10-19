@@ -25,7 +25,7 @@
             {
                 "effect": {
                     "type": "minecraft:multiply",
-                    "factor": 25
+                    "factor": 24
                 }
             }
         ],
@@ -46,7 +46,7 @@
                     "type": "minecraft:attribute",
                     "attribute": "minecraft:gravity",
                     "id": "reclaimed:pheonix/flying_gravity",
-                    "amount": 0.5,
+                    "amount": 0.75,
                     "operation": "add_multiplied_base"
                 }
             }

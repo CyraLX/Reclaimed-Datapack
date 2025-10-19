@@ -113,7 +113,12 @@
                                                 "color": "red",
                                                 "with": [
                                                     "2",
-                                                    "1s",
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    },
                                                     {
                                                         "text": "",
                                                         "color": "gray",
@@ -242,7 +247,11 @@
                                                             },
                                                             " ",
                                                             {
-                                                                "translate": "badge_details.aspects.modifier.mending"
+                                                                "translate": "badge_details.aspects.modifier.mending",
+                                                                "with": [
+                                                                    "1",
+                                                                    "24"
+                                                                ]
                                                             }
                                                         ]
                                                     }
@@ -261,22 +270,22 @@
                                                         "color": "light_purple"
                                                     }
                                                 ]
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
-                                        "color": "yellow",
-                                        "with": [
-                                            "+50%",
-                                            {
-                                                "translate": "attribute.name.gravity"
                                             },
+                                            "\n",
                                             {
-                                                "translate": "badge_details.aspects.modifier.when_fall_flying",
-                                                "color": "gray",
-                                                "italic": true
+                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "color": "yellow",
+                                                "with": [
+                                                    "+75%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.when_fall_flying",
+                                                        "color": "gray",
+                                                        "italic": true
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
@@ -668,7 +677,12 @@
                                                 "translate": "badge_details.aspects.effect.ignite_self",
                                                 "color": "red",
                                                 "with": [
-                                                    "8s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "8"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -725,7 +739,11 @@
                                                     },
                                                     " ",
                                                     {
-                                                        "translate": "badge_details.aspects.modifier.mending"
+                                                        "translate": "badge_details.aspects.modifier.mending",
+                                                        "with": [
+                                                            "1",
+                                                            "24"
+                                                        ]
                                                     }
                                                 ]
                                             }
@@ -750,7 +768,7 @@
                                         "translate": "badge_details.aspects.effect.attribute_modifiers",
                                         "color": "yellow",
                                         "with": [
-                                            "+50%",
+                                            "+75%",
                                             {
                                                 "translate": "attribute.name.gravity"
                                             },
@@ -867,7 +885,12 @@
                                         "color": "red",
                                         "with": [
                                             "2",
-                                            "1s",
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "1"
+                                                ]
+                                            },
                                             {
                                                 "text": "",
                                                 "color": "gray",
@@ -1148,7 +1171,12 @@
                                         "translate": "badge_details.aspects.effect.ignite_self",
                                         "color": "red",
                                         "with": [
-                                            "8s"
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "8"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]

@@ -85,7 +85,7 @@
             {
                 "attribute": "minecraft:block_interaction_range",
                 "id": "reclaimed:dragonkin/block_interaction_range",
-                "amount": 0.8,
+                "amount": 1.0,
                 "operation": "add_multiplied_base"
             },
             {
