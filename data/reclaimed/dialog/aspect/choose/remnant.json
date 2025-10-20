@@ -433,85 +433,6 @@
                         "text": "",
                         "extra": [
                             {
-                                "translate": "badge_details.aspects.trigger.wet",
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
-                                        "color": "red",
-                                        "with": [
-                                            "2",
-                                            {
-                                                "translate": "extra.aspects.seconds",
-                                                "with": [
-                                                    "1"
-                                                ]
-                                            },
-                                            {
-                                                "text": "",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "extra": [
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.ignores_armor"
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.ignores_enchantments"
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.suppressed_by",
-                                                        "with": [
-                                                            {
-                                                                "translate": "enchantment.aspects.water_ward"
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.used",
-                                "with": [
-                                    {
-                                        "translate": "item.minecraft.potion",
-                                        "extra": [
-                                            "+"
-                                        ]
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.damage_user_modifiers",
-                                        "color": "red",
-                                        "with": [
-                                            "2",
-                                            {
-                                                "text": "",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "extra": [
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.ignores_armor"
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.ignores_enchantments"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
                                 "translate": "badge_details.aspects.trigger.basic",
                                 "extra": [
                                     "\n",
@@ -600,24 +521,109 @@
                             },
                             "\n\n",
                             {
-                                "translate": "badge_details.aspects.effect.teleport_user_to_thing_in_range_modifier",
-                                "color": "yellow",
+                                "translate": "badge_details.aspects.trigger.wet",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                        "color": "red",
+                                        "with": [
+                                            "2",
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "1"
+                                                ]
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_armor"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_enchantments"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.suppressed_by",
+                                                        "with": [
+                                                            {
+                                                                "translate": "enchantment.aspects.water_ward"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.used",
                                 "with": [
                                     {
-                                        "translate": "extra.aspects.random"
-                                    },
-                                    {
-                                        "translate": "extra.aspects.meter_distance",
-                                        "with": [
-                                            "8"
+                                        "translate": "item.minecraft.potion",
+                                        "extra": [
+                                            "+"
                                         ]
-                                    },
+                                    }
+                                ],
+                                "extra": [
+                                    "\n",
                                     {
-                                        "translate": "badge_details.aspects.modifier.chance",
-                                        "color": "gray",
-                                        "italic": true,
+                                        "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                        "color": "red",
                                         "with": [
-                                            "10"
+                                            "2",
+                                            {
+                                                "text": "",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_armor"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_enchantments"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.damaged",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.teleport_user_to_thing_in_range_modifier",
+                                        "color": "yellow",
+                                        "with": [
+                                            {
+                                                "translate": "extra.aspects.random"
+                                            },
+                                            {
+                                                "translate": "extra.aspects.meter_distance",
+                                                "with": [
+                                                    "8"
+                                                ]
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.chance",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    "10"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]

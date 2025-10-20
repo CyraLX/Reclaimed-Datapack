@@ -16,6 +16,10 @@
         {
             "required": false,
             "id": "minecraft:creaking"
+        },
+        {
+            "required": false,
+            "id": "minecraft:player"
         }
     ]
 }
