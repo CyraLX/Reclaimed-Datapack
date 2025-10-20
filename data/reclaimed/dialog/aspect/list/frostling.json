@@ -44,11 +44,14 @@
                 "id": "minecraft:jigsaw",
                 "count": 1,
                 "components": {
-                    "minecraft:item_model": "aspects:awakened_essence_cage",
+                    "minecraft:item_model": "reclaimed:awakened_essence_cage",
                     "minecraft:custom_data": {
                         "aspects": {
                             "awakened_essence_cage": {
-                                "aspect": "frostling"
+                                "aspect": {
+                                    "namespace": "reclaimed",
+                                    "name": "frostling"
+                                }
                             }
                         }
                     }
@@ -1282,7 +1285,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.focus",
+                "translate": "dialog.aspects.aspect_info.focus",
                 "extra": [
                     " ",
                     {
@@ -1296,7 +1299,7 @@
                         "hover_event": {
                             "action": "show_text",
                             "value": {
-                                "translate": "dialog.aspects.chosen_aspect.focus.hover"
+                                "translate": "dialog.aspects.aspect_info.focus.hover"
                             }
                         }
                     }
