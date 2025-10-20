@@ -74,8 +74,13 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "aspect.aspects.generic.hydrophobic",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.generic.hydrophobic"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -85,10 +90,111 @@
                             }
                         }
                     },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
+                                "extra": [
+                                    {
+                                        "translate": "badge_details.aspects.trigger.wet",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                                "color": "red",
+                                                "with": [
+                                                    "2",
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.ignores_armor"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.ignores_enchantments"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.suppressed_by",
+                                                                "with": [
+                                                                    {
+                                                                        "translate": "enchantment.aspects.water_ward"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.used",
+                                        "with": [
+                                            {
+                                                "translate": "item.minecraft.potion",
+                                                "extra": [
+                                                    "+"
+                                                ]
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                                "color": "red",
+                                                "with": [
+                                                    "2",
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.ignores_armor"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.ignores_enchantments"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
                     "\n",
                     {
-                        "translate": "aspect.reclaimed.remnant.gravity_restructured",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.reclaimed.remnant.gravity_restructured"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -98,10 +204,98 @@
                             }
                         }
                     },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
+                                "extra": [
+                                    {
+                                        "translate": "badge_details.aspects.trigger.basic",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "-100%",
+                                                    {
+                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "yellow",
+                                                "with": [
+                                                    "-95%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "color": "yellow",
+                                                "with": [
+                                                    "+45%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.when_fall_flying",
+                                                        "color": "gray",
+                                                        "italic": true
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-50%",
+                                                    {
+                                                        "translate": "attribute.name.jump_strength"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "+20%",
+                                                    {
+                                                        "translate": "attribute.name.scale"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
                     "\n",
                     {
-                        "translate": "aspect.reclaimed.remnant.gravity_control",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.reclaimed.remnant.gravity_control"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -110,8 +304,327 @@
                                 "italic": true
                             }
                         }
+                    },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
+                                "extra": [
+                                    {
+                                        "translate": "badge_details.aspects.trigger.basic",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "color": "green",
+                                                "with": [
+                                                    "+296%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    },
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.when_sneaking"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.when_fall_flying_not"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.reclaimed.remnant.spatial_displacement"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.reclaimed.remnant.spatial_displacement.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "badge_details.aspects.trigger.damaged",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.teleport_user_to_thing_in_range_modifier",
+                                        "color": "yellow",
+                                        "with": [
+                                            {
+                                                "translate": "extra.aspects.random"
+                                            },
+                                            {
+                                                "translate": "extra.aspects.meter_distance",
+                                                "with": [
+                                                    "8"
+                                                ]
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.chance",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    "10"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "extra.aspects.hover_context",
+                "color": "green",
+                "with": [
+                    {
+                        "translate": "badge_details.aspects.hover_all"
+                    }
+                ],
+                "hover_event": {
+                    "action": "show_text",
+                    "value": {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "badge_details.aspects.trigger.wet",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                        "color": "red",
+                                        "with": [
+                                            "2",
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "1"
+                                                ]
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_armor"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_enchantments"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.suppressed_by",
+                                                        "with": [
+                                                            {
+                                                                "translate": "enchantment.aspects.water_ward"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.used",
+                                "with": [
+                                    {
+                                        "translate": "item.minecraft.potion",
+                                        "extra": [
+                                            "+"
+                                        ]
+                                    }
+                                ],
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                        "color": "red",
+                                        "with": [
+                                            "2",
+                                            {
+                                                "text": "",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_armor"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_enchantments"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-100%",
+                                            {
+                                                "translate": "attribute.name.fall_damage_multiplier"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "yellow",
+                                        "with": [
+                                            "-95%",
+                                            {
+                                                "translate": "attribute.name.gravity"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "yellow",
+                                        "with": [
+                                            "+45%",
+                                            {
+                                                "translate": "attribute.name.gravity"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.when_fall_flying",
+                                                "color": "gray",
+                                                "italic": true
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-50%",
+                                            {
+                                                "translate": "attribute.name.jump_strength"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "+20%",
+                                            {
+                                                "translate": "attribute.name.scale"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.sneaking",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            "+296%",
+                                            {
+                                                "translate": "attribute.name.gravity"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.when_fall_flying_not",
+                                                "color": "gray",
+                                                "italic": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.effect.teleport_user_to_thing_in_range_modifier",
+                                "color": "yellow",
+                                "with": [
+                                    {
+                                        "translate": "extra.aspects.random"
+                                    },
+                                    {
+                                        "translate": "extra.aspects.meter_distance",
+                                        "with": [
+                                            "8"
+                                        ]
+                                    },
+                                    {
+                                        "translate": "badge_details.aspects.modifier.chance",
+                                        "color": "gray",
+                                        "italic": true,
+                                        "with": [
+                                            "10"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
             }
         },
         {
@@ -128,7 +641,25 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.focus"
+                "translate": "dialog.aspects.chosen_aspect.focus",
+                "extra": [
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "dialog.aspects.chosen_aspect.focus.hover"
+                            }
+                        }
+                    }
+                ]
             }
         },
         {
@@ -138,8 +669,13 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "item.reclaimed.focus.remnant.use_name_1",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.reclaimed.focus.remnant.use_name_1"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -164,8 +700,13 @@
                     },
                     "\n",
                     {
-                        "translate": "item.reclaimed.focus.remnant.use_name_2",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.reclaimed.focus.remnant.use_name_2"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -218,7 +759,7 @@
             "translate": "gui.yes"
         },
         "action": {
-            "type": "run_command",
+            "type": "minecraft:run_command",
             "command": "trigger aspects.choose_aspect set 1668047"
         }
     },
@@ -227,7 +768,7 @@
             "translate": "gui.no"
         },
         "action": {
-            "type": "show_dialog",
+            "type": "minecraft:show_dialog",
             "dialog": "aspects:menu/choose_aspect"
         }
     }

@@ -168,6 +168,18 @@
                                 "italic": true
                             }
                         ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.reclaimed.remnant.spatial_displacement",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.reclaimed.remnant.spatial_displacement.description",
+                                "italic": true
+                            }
+                        ]
                     }
                 ]
             }
