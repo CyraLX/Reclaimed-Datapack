@@ -2,11 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "reclaimed:config/help/voidborne/storage_cap",
-            "required": true
-        },
-        {
-            "id": "reclaimed:config/help/voidborne/storage_hp_threshold",
+            "id": "#reclaimed:config/aspect/all",
             "required": true
         }
     ]
