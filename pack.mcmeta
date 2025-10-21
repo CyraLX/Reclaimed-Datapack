@@ -3,10 +3,10 @@
 		"pack_format": 71,
 		"supported_formats": {
 			"min_inclusive": 71,
-			"max_inclusive": 88
+			"max_inclusive": 91
 		},
 		"min_format": 71,
-		"max_format": 88,
+		"max_format": 91,
 		"description": [
 			{
 				"translate": "dataPack.reclaimed.description.header_format",
@@ -14,7 +14,7 @@
 				"color": "dark_gray",
 				"with": [
 					{
-						"text": "PR2",
+						"text": "v1.0.0",
 						"color": "dark_purple"
 					},
 					{
