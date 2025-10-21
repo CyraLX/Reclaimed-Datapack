@@ -6,5 +6,3 @@ function aspects:aspect/generic/give_aspect with storage aspects:aspect_list rec
 # Aspect specific POST-GIVE_ASPECT logic
 ## Give unique Elytra
 function reclaimed:aspect/pheonix/wings/equip
-## Refill "Hydrophobia" meter
-function aspects:aspect/generic/hydrophobia/scoreboard/fill
