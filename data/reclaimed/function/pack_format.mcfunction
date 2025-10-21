@@ -4,8 +4,8 @@ scoreboard objectives add reclaimed.version.major dummy
 scoreboard objectives add reclaimed.version.minor dummy
 scoreboard objectives add reclaimed.version.is_dev dummy
 # Define current version
-scoreboard players set #reclaimed reclaimed.version.release 0
-scoreboard players set #reclaimed reclaimed.version.major 1
+scoreboard players set #reclaimed reclaimed.version.release 1
+scoreboard players set #reclaimed reclaimed.version.major 0
 scoreboard players set #reclaimed reclaimed.version.minor 0
 scoreboard players set #reclaimed reclaimed.version.is_dev 1
 # Initialize trigger to get current version
