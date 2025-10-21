@@ -123,28 +123,6 @@
                                                 "translate": "badge_details.aspects.effect.attribute",
                                                 "color": "green",
                                                 "with": [
-                                                    "+10",
-                                                    {
-                                                        "translate": "attribute.name.armor"
-                                                    }
-                                                ]
-                                            },
-                                            "\n",
-                                            {
-                                                "translate": "badge_details.aspects.effect.attribute",
-                                                "color": "green",
-                                                "with": [
-                                                    "+6",
-                                                    {
-                                                        "translate": "attribute.name.armor_toughness"
-                                                    }
-                                                ]
-                                            },
-                                            "\n",
-                                            {
-                                                "translate": "badge_details.aspects.effect.attribute",
-                                                "color": "green",
-                                                "with": [
                                                     "+20%",
                                                     {
                                                         "translate": "attribute.name.movement_speed"
@@ -230,17 +208,6 @@
                                                     "+1",
                                                     {
                                                         "translate": "attribute.name.oxygen_bonus"
-                                                    }
-                                                ]
-                                            },
-                                            "\n",
-                                            {
-                                                "translate": "badge_details.aspects.effect.attribute",
-                                                "color": "yellow",
-                                                "with": [
-                                                    "+2",
-                                                    {
-                                                        "translate": "attribute.name.knockback_resistance"
                                                     }
                                                 ]
                                             },
@@ -376,6 +343,39 @@
                                                     {
                                                         "translate": "item.reclaimed.wings.dragonkin",
                                                         "color": "light_purple"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+10",
+                                                    {
+                                                        "translate": "attribute.name.armor"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+6",
+                                                    {
+                                                        "translate": "attribute.name.armor_toughness"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "yellow",
+                                                "with": [
+                                                    "+2",
+                                                    {
+                                                        "translate": "attribute.name.knockback_resistance"
                                                     }
                                                 ]
                                             }
