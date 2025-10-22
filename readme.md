@@ -19,7 +19,7 @@
 - **Pebblemite:** Born from the stone, seeks the stone, their bug like form makes them hard to catch, but also becomes their biggest weakness.
 - **Remnant:** Tall and capable of controling gravity itself. Can create teleportation points.
 - **Voidborne:** Void thing capable of storing mobs themselves and retrieving them on command.
-- **Pheonix:** Winged daredevils that seek nothing but the thrill of adrenaline. Great at lower health levels.
+- **Phoenix:** Winged daredevils that seek nothing but the thrill of adrenaline. Great at lower health levels.
 
 <details>
 <summary>See Available Aspects (check out Gallery for even more details)</summary>
@@ -31,7 +31,7 @@
 | **Pebblemite** | - Smaller and weaker<br>- Faster and stronger on stone-like blocks | - Teleports a very short distance through stone-like blocks |
 | **Remnant** | - Taller with more health<br>- Takes damage from water<br>- Has much less gravity pull<br>- Can increase gravity pull when sneaking<br>- Taking damage has a chance to randomly teleport the user | - Save a teleport position<br>- Teleport to saved location while saving current location |
 | **Voidborne** | - Smaller and weaker<br>- Sneaking teleports nearby items<br>- Taking damage has a small chance to randomly teleport the attacker | - Store a non-powerful entity<br>- Select and check stored entities<br>- Summon a selected stored entity<br>- Summon all stored entites at once |
-| **Pheonix** | - Starts with an Elytra that is accelerates faster<br>- Takes water damage<br>- Weaker when healthy<br>- Stronger the weaker it gets | - Damage self for Resistance<br>- Launch into the air while in Lava |
+| **Phoenix** | - Starts with an Elytra that is accelerates faster<br>- Takes water damage<br>- Weaker when healthy<br>- Stronger the weaker it gets | - Damage self for Resistance<br>- Launch into the air while in Lava |
 
 </details>
 

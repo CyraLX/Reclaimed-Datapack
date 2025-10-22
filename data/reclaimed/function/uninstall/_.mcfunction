@@ -19,10 +19,6 @@ scoreboard objectives remove reclaimed.remnant.unstable_form.max_y
 scoreboard objectives remove reclaimed.voidborne.spatial_instability.max_y
 scoreboard objectives remove reclaimed.voidborne.store_entity.index
 scoreboard objectives remove reclaimed.voidborne.store_entity.length
-scoreboard objectives remove reclaimed.voidling.spatial_instability.max_y
-scoreboard objectives remove reclaimed.voidling.store_entity.index
-scoreboard objectives remove reclaimed.voidling.store_entity.length
-scoreboard objectives remove reclaimed.voidling.store_entity.max_length
 scoreboard objectives remove reclaimed.pack_format
 scoreboard objectives remove reclaimed.pack_format.dependency.max
 scoreboard objectives remove reclaimed.pack_format.dependency.min
@@ -40,6 +36,7 @@ data remove storage aspects:aspect_list reclaimed:dragonkin
 data remove storage aspects:aspect_list reclaimed:frostling
 data remove storage aspects:aspect_list reclaimed:pebblemite
 data remove storage aspects:aspect_list reclaimed:pheonix
+data remove storage aspects:aspect_list reclaimed:phoenix
 data remove storage aspects:aspect_list reclaimed:remnant
 data remove storage aspects:aspect_list reclaimed:voidborne
 

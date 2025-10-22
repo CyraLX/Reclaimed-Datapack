@@ -1,0 +1,9 @@
+attribute @s minecraft:max_absorption modifier add reclaimed:phoenix/critical_max_absorption 4 add_value
+attribute @s minecraft:armor modifier add reclaimed:phoenix/critical_armor 3 add_value
+attribute @s minecraft:armor_toughness modifier add reclaimed:phoenix/critical_armor_toughness 3 add_value
+attribute @s minecraft:attack_damage modifier add reclaimed:phoenix/critical_attack_damage 0.2 add_multiplied_base
+attribute @s minecraft:attack_speed modifier add reclaimed:phoenix/critical_attack_speed 0.2 add_multiplied_base
+attribute @s minecraft:burning_time modifier add reclaimed:phoenix/critical_burning_time 1 add_multiplied_base
+attribute @s minecraft:knockback_resistance modifier add reclaimed:phoenix/critical_knockback_resistance 0.5 add_value
+attribute @s minecraft:movement_speed modifier add reclaimed:phoenix/critical_movement_speed 0.2 add_multiplied_base
+attribute @s minecraft:movement_efficiency modifier add reclaimed:phoenix/critical_movement_efficiency 1 add_value

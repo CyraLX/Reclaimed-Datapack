@@ -22,7 +22,7 @@
             "required": false
         },
         {
-            "id": "reclaimed:aspect/pheonix/setup_aspect",
+            "id": "reclaimed:aspect/phoenix/setup_aspect",
             "required": false
         }
     ]

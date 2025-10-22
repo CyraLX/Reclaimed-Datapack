@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "reclaimed:pheonix/empowered",
+            "id": "reclaimed:phoenix/empowered",
             "required": false
         }
     ]

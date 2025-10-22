@@ -22,7 +22,7 @@
             "required": false
         },
         {
-            "id": "reclaimed:aspect/pheonix/body",
+            "id": "reclaimed:aspect/phoenix/body",
             "required": false
         }
     ]

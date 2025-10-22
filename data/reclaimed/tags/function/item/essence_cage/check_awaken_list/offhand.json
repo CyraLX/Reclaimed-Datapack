@@ -18,7 +18,7 @@
             "required": false
         },
         {
-            "id": "reclaimed:item/essence_cage/check_awaken_list/offhand/pheonix",
+            "id": "reclaimed:item/essence_cage/check_awaken_list/offhand/phoenix",
             "required": false
         }
     ]

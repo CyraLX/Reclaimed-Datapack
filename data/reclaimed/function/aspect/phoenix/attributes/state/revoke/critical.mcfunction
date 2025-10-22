@@ -1,0 +1,9 @@
+attribute @s minecraft:max_absorption modifier remove reclaimed:phoenix/critical_max_absorption
+attribute @s minecraft:armor modifier remove reclaimed:phoenix/critical_armor
+attribute @s minecraft:armor_toughness modifier remove reclaimed:phoenix/critical_armor_toughness
+attribute @s minecraft:attack_damage modifier remove reclaimed:phoenix/critical_attack_damage
+attribute @s minecraft:attack_speed modifier remove reclaimed:phoenix/critical_attack_speed
+attribute @s minecraft:burning_time modifier remove reclaimed:phoenix/critical_burning_time
+attribute @s minecraft:knockback_resistance modifier remove reclaimed:phoenix/critical_knockback_resistance
+attribute @s minecraft:movement_speed modifier remove reclaimed:phoenix/critical_movement_speed
+attribute @s minecraft:movement_efficiency modifier remove reclaimed:phoenix/critical_movement_efficiency

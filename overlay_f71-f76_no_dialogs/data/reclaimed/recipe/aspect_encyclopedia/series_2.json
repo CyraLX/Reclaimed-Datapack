@@ -215,7 +215,7 @@
                                 "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
                                 "with": [
                                     {
-                                        "translate": "aspect.reclaimed.pheonix",
+                                        "translate": "aspect.reclaimed.phoenix",
                                         "color": "#d13232"
                                     }
                                 ],
@@ -226,7 +226,7 @@
                                         "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
                                         "with": [
                                             {
-                                                "translate": "aspect.reclaimed.pheonix"
+                                                "translate": "aspect.reclaimed.phoenix"
                                             }
                                         ]
                                     }
@@ -1174,7 +1174,7 @@
                         "extra": [
                             ": ",
                             {
-                                "translate": "aspect.reclaimed.pheonix",
+                                "translate": "aspect.reclaimed.phoenix",
                                 "color": "#d13232"
                             },
                             "\n\n",
@@ -1213,7 +1213,7 @@
                             },
                             "\n\n",
                             {
-                                "translate": "aspect.reclaimed.pheonix.description",
+                                "translate": "aspect.reclaimed.phoenix.description",
                                 "italic": true
                             }
                         ]
@@ -1223,7 +1223,7 @@
                         "extra": [
                             ": ",
                             {
-                                "translate": "aspect.reclaimed.pheonix",
+                                "translate": "aspect.reclaimed.phoenix",
                                 "color": "#d13232"
                             },
                             "\n\n",
@@ -1251,12 +1251,12 @@
                                         "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
                                         "with": [
                                             {
-                                                "translate": "aspect.reclaimed.pheonix.flaming_feathers",
+                                                "translate": "aspect.reclaimed.phoenix.flaming_feathers",
                                                 "color": "dark_gray",
                                                 "hover_event": {
                                                     "action": "show_text",
                                                     "value": {
-                                                        "translate": "aspect.reclaimed.pheonix.flaming_feathers.description"
+                                                        "translate": "aspect.reclaimed.phoenix.flaming_feathers.description"
                                                     }
                                                 }
                                             }
@@ -1267,12 +1267,12 @@
                                         "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
                                         "with": [
                                             {
-                                                "translate": "aspect.reclaimed.pheonix.reckless_descent",
+                                                "translate": "aspect.reclaimed.phoenix.reckless_descent",
                                                 "color": "dark_gray",
                                                 "hover_event": {
                                                     "action": "show_text",
                                                     "value": {
-                                                        "translate": "aspect.reclaimed.pheonix.reckless_descent.description"
+                                                        "translate": "aspect.reclaimed.phoenix.reckless_descent.description"
                                                     }
                                                 }
                                             }
@@ -1283,12 +1283,12 @@
                                         "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
                                         "with": [
                                             {
-                                                "translate": "aspect.reclaimed.pheonix.adrenaline_rush",
+                                                "translate": "aspect.reclaimed.phoenix.adrenaline_rush",
                                                 "color": "dark_gray",
                                                 "hover_event": {
                                                     "action": "show_text",
                                                     "value": {
-                                                        "translate": "aspect.reclaimed.pheonix.adrenaline_rush.description"
+                                                        "translate": "aspect.reclaimed.phoenix.adrenaline_rush.description"
                                                     }
                                                 }
                                             }
@@ -1305,13 +1305,13 @@
                                         "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
                                         "with": [
                                             {
-                                                "translate": "item.reclaimed.focus.pheonix.use_name_1",
+                                                "translate": "item.reclaimed.focus.phoenix.use_name_1",
                                                 "color": "dark_gray",
                                                 "hover_event": {
                                                     "action": "show_text",
                                                     "value": [
                                                         {
-                                                            "translate": "item.reclaimed.focus.pheonix.use_condition_1",
+                                                            "translate": "item.reclaimed.focus.phoenix.use_condition_1",
                                                             "with": [
                                                                 "14"
                                                             ],
@@ -1325,7 +1325,7 @@
                                                             "italic": false,
                                                             "extra": [
                                                                 {
-                                                                    "translate": "item.reclaimed.focus.pheonix.use_result_1",
+                                                                    "translate": "item.reclaimed.focus.phoenix.use_result_1",
                                                                     "with": [
                                                                         {
                                                                             "text": "10"
@@ -1358,13 +1358,13 @@
                                         "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
                                         "with": [
                                             {
-                                                "translate": "item.reclaimed.focus.pheonix.use_name_2",
+                                                "translate": "item.reclaimed.focus.phoenix.use_name_2",
                                                 "color": "dark_gray",
                                                 "hover_event": {
                                                     "action": "show_text",
                                                     "value": [
                                                         {
-                                                            "translate": "item.reclaimed.focus.pheonix.use_condition_2",
+                                                            "translate": "item.reclaimed.focus.phoenix.use_condition_2",
                                                             "with": [
                                                                 "14"
                                                             ],
@@ -1378,7 +1378,7 @@
                                                             "italic": false,
                                                             "extra": [
                                                                 {
-                                                                    "translate": "item.reclaimed.focus.pheonix.use_result_2",
+                                                                    "translate": "item.reclaimed.focus.phoenix.use_result_2",
                                                                     "with": [
                                                                         {
                                                                             "text": "1"
@@ -1414,13 +1414,13 @@
                                         "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
                                         "with": [
                                             {
-                                                "translate": "item.reclaimed.focus.pheonix.use_name_3",
+                                                "translate": "item.reclaimed.focus.phoenix.use_name_3",
                                                 "color": "dark_gray",
                                                 "hover_event": {
                                                     "action": "show_text",
                                                     "value": [
                                                         {
-                                                            "translate": "item.reclaimed.focus.pheonix.use_condition_3",
+                                                            "translate": "item.reclaimed.focus.phoenix.use_condition_3",
                                                             "with": [
                                                                 "14"
                                                             ],
@@ -1434,7 +1434,7 @@
                                                             "italic": false,
                                                             "extra": [
                                                                 {
-                                                                    "translate": "item.reclaimed.focus.pheonix.use_result_3",
+                                                                    "translate": "item.reclaimed.focus.phoenix.use_result_3",
                                                                     "with": [
                                                                         {
                                                                             "translate": "effect.minecraft.slow_falling"

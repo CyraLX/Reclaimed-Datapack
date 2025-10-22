@@ -22,7 +22,7 @@
             "required": false
         },
         {
-            "id": "reclaimed:aspect/choose/pheonix",
+            "id": "reclaimed:aspect/choose/phoenix",
             "required": false
         }
     ]

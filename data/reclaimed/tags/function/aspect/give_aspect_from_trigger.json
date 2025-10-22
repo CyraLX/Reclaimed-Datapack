@@ -22,7 +22,7 @@
             "required": false
         },
         {
-            "id": "reclaimed:aspect/pheonix/activate_from_trigger",
+            "id": "reclaimed:aspect/phoenix/activate_from_trigger",
             "required": false
         }
     ]

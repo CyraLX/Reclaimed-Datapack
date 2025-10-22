@@ -129,12 +129,12 @@
                     },
                     "\n> ",
                     {
-                        "translate": "aspect.reclaimed.pheonix",
+                        "translate": "aspect.reclaimed.phoenix",
                         "color": "#d13232",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
-                                "translate": "aspect.reclaimed.pheonix.description"
+                                "translate": "aspect.reclaimed.phoenix.description"
                             }
                         },
                         "click_event": {
