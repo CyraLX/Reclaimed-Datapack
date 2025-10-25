@@ -30,13 +30,3 @@ scoreboard objectives remove reclaimed.version.release
 
 # Reset other scoreboard scores
 scoreboard players reset #reclaimed
-
-# Remove aspect definitions
-data remove storage aspects:aspect_list reclaimed:dragonkin
-data remove storage aspects:aspect_list reclaimed:frostling
-data remove storage aspects:aspect_list reclaimed:pebblemite
-data remove storage aspects:aspect_list reclaimed:pheonix
-data remove storage aspects:aspect_list reclaimed:phoenix
-data remove storage aspects:aspect_list reclaimed:remnant
-data remove storage aspects:aspect_list reclaimed:voidborne
-

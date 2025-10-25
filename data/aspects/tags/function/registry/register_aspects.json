@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "#reclaimed:aspect/setup_aspect_list",
+            "id": "#reclaimed:registry/register_aspects",
             "required": false
         }
     ]

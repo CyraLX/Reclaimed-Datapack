@@ -1,0 +1,29 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "reclaimed:aspect/dragonkin/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "reclaimed:aspect/frostling/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "reclaimed:aspect/pebblemite/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "reclaimed:aspect/phoenix/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "reclaimed:aspect/remnant/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "reclaimed:aspect/voidborne/is_active"
+        }
+    ]
+}

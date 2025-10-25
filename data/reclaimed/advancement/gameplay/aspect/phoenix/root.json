@@ -27,7 +27,22 @@
     },
     "criteria": {
         "become_an_aspect": {
-            "trigger": "minecraft:impossible"
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "periodic_tick": 1000
+                        }
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "reclaimed:aspect/phoenix/is_active"
+                    }
+                ]
+            }
         }
     },
     "parent": "aspects:gameplay/aspect/become_any"
