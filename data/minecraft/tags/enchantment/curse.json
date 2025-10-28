@@ -16,6 +16,34 @@
         {
             "id": "reclaimed:focus/remnant/teleport",
             "required": false
+        },
+        {
+            "id": "reclaimed:focus/frostling/upgrade_ice",
+            "required": false
+        },
+        {
+            "id": "reclaimed:focus/phoenix/use",
+            "required": false
+        },
+        {
+            "id": "reclaimed:focus/voidborne/change_index",
+            "required": false
+        },
+        {
+            "id": "reclaimed:focus/voidborne/check_index",
+            "required": false
+        },
+        {
+            "id": "reclaimed:focus/voidborne/store_entity",
+            "required": false
+        },
+        {
+            "id": "reclaimed:focus/voidborne/summon_all",
+            "required": false
+        },
+        {
+            "id": "reclaimed:focus/voidborne/summon_index",
+            "required": false
         }
     ]
 }
