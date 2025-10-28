@@ -1,7 +1,7 @@
 # Aspect specific PRE-ACTIVATE logic
 
 # Generic ACTIVATE logic
-function aspects:aspect/generic/activate with storage aspects:registry aspect.reclaimed:pebblemite
+function aspects:aspect/generic/activate with storage aspects:registry aspect."reclaimed:pebblemite"
 
 # Aspect specific POST-ACTIVATE logic
 ## Set Aspect Group

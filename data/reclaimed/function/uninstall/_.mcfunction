@@ -1,11 +1,11 @@
 tag @s add addon_uninstaller
 
-execute if entity @p[tag=get_debug_logs, tag=get_debug_logs_expanded, tag=!addon_uninstaller] run tellraw @a[tag=get_debug_logs, tag=get_debug_logs_expanded, tag=!addon_uninstaller] [{translate:"%s has removed %s from this server!", color: "red", with: [{selector: "@s"}, {"translate":"[%s]","color":"#b741b6", "with": [{"translate": "reclaimed"}]}]}]
-tellraw @a [{translate:"%s has been uninstalled from this server!", color: "red", with: [{"translate":"[%s]","color":"#b741b6", "with": [{"translate": "reclaimed"}]}]}]
-tellraw @s [{translate:"Please remove the %s datapack/mod from this server/client and restart the server/client", color: "yellow", with: [{"translate":"[%s]","color":"#b741b6", "with": [{"translate": "reclaimed"}]}]}]
-tellraw @a[tag=!addon_uninstaller] [{translate:"Please wait until an admin/owner restarts the server", color: "yellow", with: [{"translate":"[%s]","color":"#b741b6", "with": [{"translate": "reclaimed"}]}]}]
+execute if entity @p[tag=get_debug_logs, tag=get_debug_logs_expanded, tag=!addon_uninstaller] run tellraw @a[tag=get_debug_logs, tag=get_debug_logs_expanded, tag=!addon_uninstaller] {text:"",color:"red",extra:[{selector:"@s",color:"gold"}," has uninstalled \"",{"text":"",color:"#b741b6",extra:["[",{translate:"reclaimed"},"]"]},"\" from this server/world!"]}
+tellraw @a {text:"",color:"red",extra:[{"text":"",color:"#b741b6",extra:["[",{translate:"reclaimed"},"]"]}," has been uninstalled from this server/world!"]}
+tellraw @s {text:"",color:"yellow",extra:["Please remove the ",{"text":"",color:"#b741b6",extra:["[",{translate:"reclaimed"},"]"]}," modification from this world/client and restart the world/client!"]}
+tellraw @a[tag=!addon_uninstaller] {text:"",color:"yellow",extra:["Please wait until an admin/owner restarts the server..."]}
 tellraw @a[tag=get_debug_logs, tag=get_debug_logs_expanded, tag=addon_uninstaller] ""
-tellraw @a[tag=get_debug_logs, tag=get_debug_logs_expanded, tag=addon_uninstaller] {text: "This action can be partially undone by restarting the world without removing the datapack/mod", color: "green"}
+tellraw @a[tag=get_debug_logs, tag=get_debug_logs_expanded, tag=addon_uninstaller] {text: "This action can be partially undone by restarting the server/world without removing the modification", color: "green"}
 
 tag @s remove addon_uninstaller
 

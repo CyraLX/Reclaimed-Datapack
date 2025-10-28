@@ -1,6 +1,6 @@
 # Aspect specific PRE-ACTIVATE logic
 # Generic ACTIVATE logic
-function aspects:aspect/generic/activate with storage aspects:registry aspect.reclaimed:voidborne
+function aspects:aspect/generic/activate with storage aspects:registry aspect."reclaimed:voidborne"
 
 # Aspect specific POST-ACTIVATE logic
 scoreboard players set @s reclaimed.voidborne.store_entity.index 0

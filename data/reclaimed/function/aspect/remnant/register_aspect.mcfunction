@@ -4,10 +4,10 @@
 ## name = Name string of your Aspect
 ## color = Hexidecimal color value for your Aspect
 ## sound = Sound Event for your Aspect
-data modify storage aspects:registry aspect.reclaimed:remnant set value {id: 1668047, namespace: "reclaimed", name: "remnant", color: "#024050", sound: "minecraft:entity.allay.ambient_without_item"}
+data modify storage aspects:registry aspect."reclaimed:remnant" set value {id: 1668047, namespace: "reclaimed", name: "remnant", color: "#024050", sound: "minecraft:entity.allay.ambient_without_item"}
 
 # Generic REGISTER_ASPECT logic
-function aspects:aspect/generic/register_aspect with storage aspects:registry aspect.reclaimed:remnant
+function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."reclaimed:remnant"
 
 # Setup scoreboard objectives for the Aspect
 function reclaimed:aspect/remnant/unstable_form/initialize_scoreboards

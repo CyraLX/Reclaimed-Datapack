@@ -3,7 +3,7 @@
 function reclaimed:aspect/remnant/control_gravity/remove
 
 # Generic DEACTIVATE logic
-function aspects:aspect/generic/deactivate with storage aspects:registry aspect.reclaimed:remnant
+function aspects:aspect/generic/deactivate with storage aspects:registry aspect."reclaimed:remnant"
 
 # Aspect specific POST-DEACTIVATE logic
 ## Remove attributes granted by Aspect
