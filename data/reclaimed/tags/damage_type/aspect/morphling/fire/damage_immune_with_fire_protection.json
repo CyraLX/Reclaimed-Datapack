@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#reclaimed:aspect/morphling/fire/damage_resistant",
+            "required": false
+        }
+    ]
+}

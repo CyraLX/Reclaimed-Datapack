@@ -1,0 +1,279 @@
+{
+    "description": {
+        "translate": "aspect.reclaimed.morphling",
+        "color": "#8c6178",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.reclaimed.morphling.form.fire",
+                "color": "red"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:scale",
+                "id": "reclaimed:morphling/fire/base_scale",
+                "amount": 0.10,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:burning_time",
+                "id": "reclaimed:morphling/fire/burning_time",
+                "amount": -0.80,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:armor",
+                "id": "reclaimed:morphling/fire/armor",
+                "amount": 2,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:movement_speed",
+                "id": "reclaimed:morphling/fire/movement_speed",
+                "amount": 0.10,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:jump_strength",
+                "id": "reclaimed:morphling/fire/jump_strength",
+                "amount": 0.10,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:gravity",
+                "id": "reclaimed:morphling/fire/gravity",
+                "amount": 0.20,
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "minecraft:damage_immunity": [
+            {
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "reclaimed:aspect/morphling/fire/damage_immune",
+                                "expected": true
+                            }
+                        ]
+                    }
+                },
+                "effect": {}
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:damage_source_properties",
+                            "predicate": {
+                                "tags": [
+                                    {
+                                        "id": "reclaimed:aspect/morphling/fire/damage_immune_with_fire_protection",
+                                        "expected": true
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "condition": "minecraft:any_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "head": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "chest": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "legs": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "feet": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "effect": {}
+            }
+        ],
+        "minecraft:damage_protection": [
+            {
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "reclaimed:aspect/morphling/fire/damage_resistant",
+                                "expected": true
+                            }
+                        ]
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": 20
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 7
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:small_flame"
+                            },
+                            "speed": 0.5,
+                            "horizontal_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": 0.5
+                            },
+                            "vertical_position": {
+                                "type": "in_bounding_box",
+                                "scale": 0.75,
+                                "offset": -0.25
+                            },
+                            "vertical_velocity": {
+                                "base": 0.02
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 8
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:small_flame"
+                            },
+                            "speed": 0.5,
+                            "horizontal_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": 0.5
+                            },
+                            "vertical_position": {
+                                "type": "in_bounding_box",
+                                "scale": 0.75,
+                                "offset": -0.25
+                            },
+                            "vertical_velocity": {
+                                "base": 0.02
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

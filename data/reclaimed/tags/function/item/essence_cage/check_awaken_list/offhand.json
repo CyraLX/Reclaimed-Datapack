@@ -20,6 +20,10 @@
         {
             "id": "reclaimed:item/essence_cage/check_awaken_list/offhand/phoenix",
             "required": false
+        },
+        {
+            "id": "reclaimed:item/essence_cage/check_awaken_list/offhand/morphling",
+            "required": false
         }
     ]
 }

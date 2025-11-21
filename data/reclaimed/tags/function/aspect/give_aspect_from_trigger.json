@@ -24,6 +24,10 @@
         {
             "id": "reclaimed:aspect/phoenix/activate_from_trigger",
             "required": false
+        },
+        {
+            "id": "reclaimed:aspect/morphling/activate_from_trigger",
+            "required": false
         }
     ]
 }

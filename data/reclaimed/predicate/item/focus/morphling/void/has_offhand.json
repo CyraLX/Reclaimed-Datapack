@@ -1,0 +1,25 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "offhand": {
+                "predicates": {
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "focus": {
+                                "aspect": {
+                                    "namespace": "reclaimed",
+                                    "name": "morphling"
+                                },
+                                "form": {
+                                    "active": 3
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

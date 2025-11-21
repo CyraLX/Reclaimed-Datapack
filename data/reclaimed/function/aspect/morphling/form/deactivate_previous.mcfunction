@@ -1,0 +1,3 @@
+execute if score @s reclaimed.morphling.form.previous matches 1 run return run function reclaimed:aspect/morphling/form/aquatic/deactivate_previous
+execute if score @s reclaimed.morphling.form.previous matches 2 run return run function reclaimed:aspect/morphling/form/fire/deactivate_previous
+execute if score @s reclaimed.morphling.form.previous matches 3 run return run function reclaimed:aspect/morphling/form/void/deactivate_previous

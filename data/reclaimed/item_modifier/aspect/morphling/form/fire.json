@@ -1,0 +1,10 @@
+{
+    "function": "minecraft:set_enchantments",
+    "add": false,
+    "enchantments": {
+        "reclaimed:aspect/morphling/form/aquatic": 0,
+        "reclaimed:aspect/morphling/form/fire": 1,
+        "reclaimed:aspect/morphling/form/void": 0,
+        "reclaimed:aspect/morphling/form/switching_effects": 0
+    }
+}

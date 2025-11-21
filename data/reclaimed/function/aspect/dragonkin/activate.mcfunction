@@ -6,3 +6,5 @@ execute unless predicate aspects:equipment/aspect_unique/chest run function aspe
 function aspects:aspect/generic/activate with storage aspects:registry aspect."reclaimed:dragonkin"
 
 # Aspect specific POST-ACTIVATE logic
+## Set Aspect Group
+function aspects:aspect_group/winged/activate

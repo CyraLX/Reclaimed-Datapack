@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:enderman",
+            "required": false
+        },
+        {
+            "id": "minecraft:endermite",
+            "required": false
+        }
+    ]
+}

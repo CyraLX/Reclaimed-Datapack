@@ -10,4 +10,4 @@ function aspects:aspect/generic/reactivate with storage aspectlib:dummy
 
 # Aspect specific POST-REACTIVATE logic
 ## Set Aspect Group
-function aspects:aspect_group/set/sensitive_to_bane_of_arthropods
+function aspects:aspect_group/sensitive_to_bane_of_arthropods/activate

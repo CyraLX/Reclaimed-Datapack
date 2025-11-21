@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "reclaimed:config/morphling/morph_duration/selection",
+            "required": false
+        },
+        {
+            "id": "reclaimed:config/morphling/morph_cooldown/selection",
+            "required": false
+        }
+    ]
+}

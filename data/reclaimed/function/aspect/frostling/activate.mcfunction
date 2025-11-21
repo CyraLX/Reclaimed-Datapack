@@ -5,4 +5,5 @@ function aspects:aspect/generic/activate with storage aspects:registry aspect."r
 
 # Aspect specific POST-ACTIVATE logic
 ## Set Aspect Group
-function aspects:aspect_group/set/ice_based
+function aspects:aspect_group/cold_natural/activate
+function aspects:aspect_group/coldproof/activate

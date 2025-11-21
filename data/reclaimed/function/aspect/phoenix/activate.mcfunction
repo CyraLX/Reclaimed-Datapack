@@ -7,4 +7,6 @@ function aspects:aspect/generic/activate with storage aspects:registry aspect."r
 
 # Aspect specific POST-ACTIVATE logic
 ## Set Aspect Group
-function aspects:aspect_group/set/hydrophobic
+function aspects:aspect_group/hydrophobic/activate
+function aspects:aspect_group/fire_natural/activate
+function aspects:aspect_group/winged/activate

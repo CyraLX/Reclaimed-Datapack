@@ -2,6 +2,10 @@
     "replace": false,
     "values": [
         {
+            "id": "reclaimed:morphling/immolation",
+            "required": false
+        },
+        {
             "id": "reclaimed:phoenix/empowered",
             "required": false
         }

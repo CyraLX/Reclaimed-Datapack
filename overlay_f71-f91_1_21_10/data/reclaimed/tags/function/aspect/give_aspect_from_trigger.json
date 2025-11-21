@@ -1,0 +1,29 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "reclaimed:aspect/dragonkin/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/frostling/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/remnant/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/pebblemite/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/voidborne/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/phoenix/activate_from_trigger",
+            "required": false
+        }
+    ]
+}

@@ -10,6 +10,22 @@
             "required": false
         },
         {
+            "id": "reclaimed:aspect/morphling/form/aquatic",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/morphling/form/fire",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/morphling/form/void",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/morphling/form/switching_effects",
+            "required": false
+        },
+        {
             "id": "reclaimed:focus/remnant/save",
             "required": false
         },
@@ -43,6 +59,14 @@
         },
         {
             "id": "reclaimed:focus/voidborne/summon_index",
+            "required": false
+        },
+        {
+            "id": "reclaimed:focus/morphling/modify_offhand",
+            "required": false
+        },
+        {
+            "id": "reclaimed:focus/morphling/use_mainhand",
             "required": false
         }
     ]

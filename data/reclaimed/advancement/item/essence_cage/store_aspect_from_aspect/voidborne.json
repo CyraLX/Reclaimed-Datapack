@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"kill_shulk_caged": {
+		"kill_voidborne_caged": {
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
 				"player": [

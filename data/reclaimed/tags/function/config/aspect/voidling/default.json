@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "reclaimed:config/voidborne/storage_cap/default",
+            "required": false
+        },
+        {
+            "id": "reclaimed:config/voidborne/storage_hp_threshold/default",
+            "required": false
+        }
+    ]
+}

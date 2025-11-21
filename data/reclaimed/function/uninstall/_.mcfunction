@@ -22,7 +22,7 @@ scoreboard objectives remove reclaimed.voidborne.store_entity.length
 scoreboard objectives remove reclaimed.pack_format
 scoreboard objectives remove reclaimed.pack_format.dependency.max
 scoreboard objectives remove reclaimed.pack_format.dependency.min
-scoreboard objectives remove reclaimed.version.get
+scoreboard objectives remove version.reclaimed
 scoreboard objectives remove reclaimed.version.is_dev
 scoreboard objectives remove reclaimed.version.major
 scoreboard objectives remove reclaimed.version.minor

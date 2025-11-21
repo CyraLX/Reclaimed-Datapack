@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#reclaimed:config/aspect/voidling/selection",
+            "required": false
+        },
+        {
+            "id": "#reclaimed:config/aspect/morphling/selection",
+            "required": false
+        }
+    ]
+}

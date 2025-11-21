@@ -1,0 +1,256 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "reclaimed:focus/morphling",
+    "category": "equipment",
+    "pattern": [
+        "aXa",
+        "qiq",
+        " q "
+    ],
+    "key": {
+        "X": [
+            "minecraft:red_dye"
+        ],
+        "a": [
+            "minecraft:amethyst_shard"
+        ],
+        "i": [
+            "minecraft:iron_ingot"
+        ],
+        "q": [
+            "minecraft:quartz"
+        ]
+    },
+    "result": {
+        "id": "minecraft:jigsaw",
+        "count": 1,
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:rarity": "uncommon",
+            "minecraft:enchantment_glint_override": false,
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:attribute_modifiers",
+                    "minecraft:enchantments"
+                ]
+            },
+            "minecraft:item_model": "reclaimed:focus/morphling_fire",
+            "!minecraft:enchantments": {},
+            "minecraft:consumable": {
+                "consume_seconds": 1.0,
+                "animation": "bow",
+                "sound": "minecraft:item.firecharge.use",
+                "has_consume_particles": false
+            },
+            "minecraft:use_cooldown": {
+                "seconds": 6.0,
+                "cooldown_group": "aspects:focus"
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:jigsaw",
+                "components": {
+                    "minecraft:item_name": {
+                        "translate": "item.reclaimed.focus.morphling",
+                        "color": "#ffff55",
+                        "with": [
+                            {
+                                "translate": "aspect.reclaimed.morphling.form.fire"
+                            }
+                        ]
+                    },
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:enchantment_glint_override": false,
+                    "minecraft:tooltip_display": {
+                        "hidden_components": [
+                            "minecraft:attribute_modifiers",
+                            "minecraft:enchantments"
+                        ]
+                    },
+                    "minecraft:item_model": "reclaimed:focus/morphling_fire",
+                    "minecraft:enchantments": {
+                        "reclaimed:focus/morphling/modify_mainhand": 1,
+                        "aspects:focus/generic/modify_offhand": 1,
+                        "reclaimed:focus/morphling/use_offhand": 1
+                    },
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "focus": {
+                                "aspect": {
+                                    "namespace": "reclaimed",
+                                    "name": "morphling"
+                                },
+                                "form": {
+                                    "active": 2
+                                }
+                            }
+                        }
+                    }
+                },
+                "count": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "focus": {
+                        "aspect": {
+                            "namespace": "reclaimed",
+                            "name": "morphling"
+                        },
+                        "form": {
+                            "active": 2
+                        }
+                    }
+                }
+            },
+            "minecraft:item_name": [
+                {
+                    "translate": "item.reclaimed.focus.morphling",
+                    "color": "#ffff55",
+                    "with": [
+                        {
+                            "translate": "aspect.reclaimed.morphling.form.fire"
+                        }
+                    ]
+                }
+            ],
+            "minecraft:lore": [
+                {
+                    "translate": "lore.equipment.use_time_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_time"
+                        },
+                        {
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "6"
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.held",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.morphling.use_result_1",
+                            "with": [
+                                {
+                                    "translate": "aspect.reclaimed.morphling.form.fire",
+                                    "color": "red"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_mainhand_sneak_not",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.morphling.use_result_2",
+                            "with": [
+                                {
+                                    "translate": "aspect.reclaimed.morphling.form.void",
+                                    "color": "dark_purple"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_mainhand_sneak",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.morphling.use_result_3",
+                            "with": [
+                                {
+                                    "translate": "aspect.reclaimed.morphling.form.aquatic",
+                                    "color": "aqua"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_offhand",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.morphling.use_result_4"
+                        }
+                    ]
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.morphling.use_result_4_2",
+                            "with": [
+                                "2",
+                                {
+                                    "text": "2 ",
+                                    "extra": [
+                                        {
+                                            "translate": "extra.aspects.block"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

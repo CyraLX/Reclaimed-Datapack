@@ -1,0 +1,29 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "reclaimed:aspect/list/dragonkin",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/list/frostling",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/list/pebblemite",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/list/remnant",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/list/voidborne",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/list/phoenix",
+            "required": false
+        }
+    ]
+}

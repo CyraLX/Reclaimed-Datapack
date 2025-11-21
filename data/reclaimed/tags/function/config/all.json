@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        {
-            "id": "#reclaimed:config/aspect/all",
-            "required": true
-        }
-    ]
-}

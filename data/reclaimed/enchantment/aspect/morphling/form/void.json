@@ -1,0 +1,173 @@
+{
+    "description": {
+        "translate": "aspect.reclaimed.morphling",
+        "color": "#8c6178",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.reclaimed.morphling.form.void",
+                "color": "dark_purple"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:scale",
+                "id": "reclaimed:morphling/void/base_scale",
+                "amount": 0.30,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:armor",
+                "id": "reclaimed:morphling/void/armor",
+                "amount": 6,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:armor_toughness",
+                "id": "reclaimed:morphling/void/armor_toughness",
+                "amount": 4,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:safe_fall_distance",
+                "id": "reclaimed:morphling/void/safe_fall_distance",
+                "amount": 0.5,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:fall_damage_multiplier",
+                "id": "reclaimed:morphling/void/fall_damage_multiplier",
+                "amount": -0.5,
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "minecraft:damage_protection": [
+            {
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "reclaimed:aspect/morphling/void/damage_resistant",
+                                "expected": true
+                            }
+                        ]
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": 20
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 7
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:reverse_portal"
+                            },
+                            "speed": 0.5,
+                            "horizontal_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": 0.5
+                            },
+                            "vertical_position": {
+                                "type": "in_bounding_box",
+                                "scale": 0.75,
+                                "offset": -0.25
+                            },
+                            "vertical_velocity": {
+                                "base": 0.02
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 8
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:reverse_portal"
+                            },
+                            "speed": 0.5,
+                            "horizontal_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": 0.5
+                            },
+                            "vertical_position": {
+                                "type": "in_bounding_box",
+                                "scale": 0.75,
+                                "offset": -0.25
+                            },
+                            "vertical_velocity": {
+                                "base": 0.02
+                            }
+                        },
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:witch"
+                            },
+                            "speed": 0.5,
+                            "horizontal_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": 0.5
+                            },
+                            "vertical_position": {
+                                "type": "entity_position",
+                                "offset": 0.25
+                            },
+                            "vertical_velocity": {
+                                "base": -0.02
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

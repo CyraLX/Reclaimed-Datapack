@@ -633,7 +633,7 @@
                             "action": "show_text",
                             "value": [
                                 {
-                                    "translate": "item.reclaimed.focus.voidborne.use_condition_2",
+                                    "translate": "item.modifiers.use_mainhand_sneak_not",
                                     "color": "gray",
                                     "italic": false
                                 },
@@ -664,7 +664,7 @@
                             "action": "show_text",
                             "value": [
                                 {
-                                    "translate": "item.reclaimed.focus.voidborne.use_condition_3",
+                                    "translate": "item.modifiers.use_mainhand_sneak",
                                     "color": "gray",
                                     "italic": false
                                 },
@@ -695,7 +695,7 @@
                             "action": "show_text",
                             "value": [
                                 {
-                                    "translate": "item.reclaimed.focus.voidborne.use_condition_4",
+                                    "translate": "item.modifiers.use_offhand_sneak_not",
                                     "color": "gray",
                                     "italic": false
                                 },
@@ -726,7 +726,7 @@
                             "action": "show_text",
                             "value": [
                                 {
-                                    "translate": "item.reclaimed.focus.voidborne.use_condition_5",
+                                    "translate": "item.modifiers.use_offhand_sneak",
                                     "color": "gray",
                                     "italic": false
                                 },

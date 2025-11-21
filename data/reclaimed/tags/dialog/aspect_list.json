@@ -24,6 +24,10 @@
         {
             "id": "reclaimed:aspect/list/phoenix",
             "required": false
+        },
+        {
+            "id": "reclaimed:aspect/list/morphling",
+            "required": false
         }
     ]
 }

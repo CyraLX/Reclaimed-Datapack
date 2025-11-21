@@ -1,0 +1,313 @@
+{
+    "description": {
+        "translate": "aspect.reclaimed.morphling",
+        "color": "#8c6178",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.reclaimed.morphling.form.aquatic",
+                "color": "aqua"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:oxygen_bonus",
+                "id": "reclaimed:morphling/aquatic/oxygen_bonus",
+                "amount": 2147483647,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:water_movement_efficiency",
+                "id": "reclaimed:morphling/aquatic/water_movement_efficiency_base",
+                "amount": 0.10,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:water_movement_efficiency",
+                "id": "reclaimed:morphling/aquatic/water_movement_efficiency_multiplier",
+                "amount": -0.09090909,
+                "operation": "add_multiplied_total"
+            }
+        ],
+        "minecraft:location_changed": [
+            {
+                "requirements": {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "head": {
+                                    "predicates": {
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minecraft:aqua_affinity",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:submerged_mining_speed",
+                    "id": "reclaimed:morphling/aquatic/submerged_mining_speed",
+                    "amount": 1,
+                    "operation": "add_multiplied_base"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "fluid": {
+                            "fluids": "#minecraft:water"
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "id": "reclaimed:morphling/aquatic/in_water_movement_speed",
+                    "amount": 0.30,
+                    "operation": "add_multiplied_base"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:location_check",
+                                "predicate": {
+                                    "block": {
+                                        "blocks": "minecraft:water_cauldron"
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:location_check",
+                                "predicate": {
+                                    "fluid": {
+                                        "fluids": "#minecraft:water"
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:all_of",
+                                "terms": [
+                                    {
+                                        "condition": "minecraft:weather_check",
+                                        "raining": true
+                                    },
+                                    {
+                                        "condition": "minecraft:location_check",
+                                        "predicate": {
+                                            "dimension": "minecraft:overworld",
+                                            "can_see_sky": true
+                                        }
+                                    },
+                                    {
+                                        "condition": "minecraft:inverted",
+                                        "term": {
+                                            "condition": "minecraft:location_check",
+                                            "predicate": {
+                                                "biomes": "#aspectlib:no_rain"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "id": "reclaimed:morphling/aquatic/out_of_water_movement_speed",
+                    "amount": -0.2,
+                    "operation": "add_multiplied_base"
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 7,
+                        "type_specific": {
+                            "type": "minecraft:player",
+                            "advancements": {
+                                "reclaimed:gameplay/aspect/morphling/form/aquatic": true
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:enchant"
+                            },
+                            "speed": 0.5,
+                            "horizontal_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": 0.5
+                            },
+                            "vertical_position": {
+                                "type": "in_bounding_box",
+                                "scale": 0.75,
+                                "offset": -0.25
+                            },
+                            "vertical_velocity": {
+                                "base": 0.02
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 7
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:falling_water"
+                            },
+                            "speed": 0.5,
+                            "horizontal_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": -0.2
+                            },
+                            "vertical_position": {
+                                "type": "in_bounding_box",
+                                "scale": 0.75,
+                                "offset": -0.25
+                            },
+                            "vertical_velocity": {
+                                "base": 0.1
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 18,
+                        "type_specific": {
+                            "type": "minecraft:player",
+                            "advancements": {
+                                "reclaimed:gameplay/aspect/morphling/form/aquatic": true
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:enchant"
+                            },
+                            "speed": 0.5,
+                            "horizontal_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": 0.5
+                            },
+                            "vertical_position": {
+                                "type": "in_bounding_box",
+                                "scale": 0.75,
+                                "offset": -0.25
+                            },
+                            "vertical_velocity": {
+                                "base": 0.02
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 18
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:falling_water"
+                            },
+                            "speed": 0.5,
+                            "horizontal_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": -0.2
+                            },
+                            "vertical_position": {
+                                "type": "in_bounding_box",
+                                "scale": 0.75,
+                                "offset": -0.25
+                            },
+                            "vertical_velocity": {
+                                "base": 0.1
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

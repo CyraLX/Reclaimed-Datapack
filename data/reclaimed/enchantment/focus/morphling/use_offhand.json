@@ -1,0 +1,382 @@
+{
+    "description": {
+        "translate": "enchantment.aspects.unobtainable"
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "offhand"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "reclaimed.morphling.form.active": 1
+                            }
+                        },
+                        {
+                            "condition": "minecraft:any_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "flags": {
+                                            "is_in_water": true
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "block": {
+                                            "blocks": "#aspectlib:contains_water"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "aspectlib.is_submerged_water": {
+                                    "min": 1
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:apply_impulse",
+                            "magnitude": 1.832,
+                            "direction": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "coordinate_scale": [
+                                1.0,
+                                0.75,
+                                1.0
+                            ]
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "reclaimed:item/focus/morphling/aquatic/offhand"
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "reclaimed.morphling.form.active": 1
+                            }
+                        },
+                        {
+                            "condition": "minecraft:any_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "flags": {
+                                            "is_in_water": true
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "block": {
+                                            "blocks": "#aspectlib:contains_water"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "aspectlib.is_submerged_water": {
+                                        "min": 1
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:apply_impulse",
+                            "magnitude": 1.832,
+                            "direction": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "coordinate_scale": [
+                                1.0,
+                                1.25,
+                                1.0
+                            ]
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "reclaimed:item/focus/morphling/aquatic/offhand"
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "reclaimed.morphling.form.active": 2
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "aspectlib.hp_total": {
+                                        "max": 200
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:explode",
+                            "attribute_to_user": true,
+                            "knockback_multiplier": 1.0,
+                            "radius": 2.0,
+                            "create_fire": false,
+                            "block_interaction": "none",
+                            "small_particle": {
+                                "type": "minecraft:lava"
+                            },
+                            "large_particle": {
+                                "type": "minecraft:lava"
+                            },
+                            "sound": "minecraft:entity.generic.explode",
+                            "damage_type": "minecraft:player_explosion"
+                        },
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "reclaimed:morphling/immolation",
+                            "min_damage": 2,
+                            "max_damage": 2
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "reclaimed:item/focus/morphling/fire/offhand"
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "reclaimed.morphling.form.active": 2,
+                        "aspectlib.hp_total": {
+                            "max": 200
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:play_sound",
+                            "sound": "minecraft:block.fire.extinguish",
+                            "volume": 1.0,
+                            "pitch": 1.0
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "reclaimed.morphling.form.active": 3
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "aspectlib.food_level": {
+                                        "max": 6
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "flags": {
+                                    "is_fall_flying": false
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:explode",
+                            "attribute_to_user": false,
+                            "knockback_multiplier": 0.5,
+                            "radius": 0.1,
+                            "create_fire": false,
+                            "block_interaction": "none",
+                            "small_particle": {
+                                "type": "minecraft:reverse_portal"
+                            },
+                            "large_particle": {
+                                "type": "minecraft:witch"
+                            },
+                            "sound": "minecraft:entity.player.teleport"
+                        },
+                        {
+                            "type": "minecraft:apply_impulse",
+                            "magnitude": 2.29,
+                            "direction": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "coordinate_scale": [
+                                1.0,
+                                0.75,
+                                1.0
+                            ]
+                        },
+                        {
+                            "type": "minecraft:apply_exhaustion",
+                            "amount": 4.0
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "reclaimed:item/focus/morphling/void/offhand"
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "reclaimed.morphling.form.active": 3
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "aspectlib.food_level": {
+                                        "max": 6
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "flags": {
+                                    "is_fall_flying": true
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:apply_impulse",
+                            "magnitude": 0.458,
+                            "direction": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "coordinate_scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "type": "minecraft:apply_exhaustion",
+                            "amount": 4.0
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "reclaimed:item/focus/morphling/void/offhand"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

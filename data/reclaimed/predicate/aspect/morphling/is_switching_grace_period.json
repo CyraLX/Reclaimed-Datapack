@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "reclaimed.morphling.form.switch_grace": {
+            "min": 1
+        }
+    }
+}

@@ -5,4 +5,4 @@ function aspects:aspect/generic/activate with storage aspects:registry aspect."r
 
 # Aspect specific POST-ACTIVATE logic
 ## Set Aspect Group
-function aspects:aspect_group/set/sensitive_to_bane_of_arthropods
+function aspects:aspect_group/sensitive_to_bane_of_arthropods/activate
