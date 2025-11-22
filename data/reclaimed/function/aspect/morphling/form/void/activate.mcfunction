@@ -20,3 +20,4 @@ playsound minecraft:entity.zombie_villager.converted player @a[distance=..16] ~ 
 
 item modify entity @s armor.body reclaimed:aspect/morphling/form/void
 execute unless score @s reclaimed.morphling.form.previous matches 2..3 run function aspects:aspect_group/hydrophobic/activate
+execute unless score @s reclaimed.morphling.form.previous matches 2..3 run function aspects:aspect_group/extreme_hydrophobia/activate

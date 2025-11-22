@@ -610,7 +610,7 @@
                                                 "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
+                                                    "4",
                                                     {
                                                         "translate": "extra.aspects.seconds",
                                                         "with": [
@@ -671,7 +671,7 @@
                                                 "translate": "badge_details.aspects.effect.damage_user_modifiers",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
+                                                    "4",
                                                     {
                                                         "text": "",
                                                         "color": "gray",
@@ -874,7 +874,7 @@
                                                 "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
+                                                    "4",
                                                     {
                                                         "translate": "extra.aspects.seconds",
                                                         "with": [
@@ -935,7 +935,7 @@
                                                 "translate": "badge_details.aspects.effect.damage_user_modifiers",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
+                                                    "4",
                                                     {
                                                         "text": "",
                                                         "color": "gray",
@@ -1450,7 +1450,7 @@
                                         "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
                                         "color": "red",
                                         "with": [
-                                            "2",
+                                            "4",
                                             {
                                                 "translate": "extra.aspects.seconds",
                                                 "with": [
@@ -1515,7 +1515,7 @@
                                         "translate": "badge_details.aspects.effect.damage_user_modifiers",
                                         "color": "red",
                                         "with": [
-                                            "2",
+                                            "4",
                                             {
                                                 "text": "",
                                                 "color": "gray",

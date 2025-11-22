@@ -88,6 +88,118 @@
                             "predicate": {
                                 "tags": [
                                     {
+                                        "id": "minecraft:is_fall",
+                                        "expected": true
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "fluid": {
+                                    "fluids": "#minecraft:lava"
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:any_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "head": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "chest": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "legs": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "feet": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "effect": {}
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:damage_source_properties",
+                            "predicate": {
+                                "tags": [
+                                    {
                                         "id": "reclaimed:aspect/morphling/fire/damage_immune_with_fire_protection",
                                         "expected": true
                                     }
@@ -204,6 +316,116 @@
             }
         ],
         "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 19
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "aspectlib.is_submerged_lava": 1
+                            }
+                        },
+                        {
+                            "condition": "minecraft:any_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "head": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "chest": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "legs": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "feet": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:fire_protection",
+                                                            "levels": {
+                                                                "min": 4
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "reclaimed:aspect/morphling/submerged_lava_fire_resistance"
+                }
+            },
             {
                 "requirements": {
                     "condition": "minecraft:entity_properties",
