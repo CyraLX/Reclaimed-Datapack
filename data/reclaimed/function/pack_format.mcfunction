@@ -16,7 +16,7 @@ scoreboard objectives add reclaimed.pack_format dummy
 scoreboard objectives add reclaimed.pack_format.dependency.min dummy
 scoreboard objectives add reclaimed.pack_format.dependency.max dummy
 # Define current pack format for this addon
-scoreboard players set #reclaimed reclaimed.pack_format 4
+scoreboard players set #reclaimed reclaimed.pack_format 3
 # Define dependencies and supported min and max pack formats
 scoreboard players set #reclaimed aspects.pack_format.dependency.min 7
 scoreboard players set #reclaimed aspects.pack_format.dependency.max 7
