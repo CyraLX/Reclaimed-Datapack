@@ -1,12 +1,12 @@
 ![Banner](https://cdn.modrinth.com/data/Y3QzViMQ/images/a26b427556f27a70a28432935267a05fabf99caf.png)
 
 > This addon contains content that did not make it to the main modification.  
-> Currently it contains 6 new Aspects with potentially more to come!
+> Currently it contains 7 new Aspects with potentially more to come!
 
 ## Requirements
 
 - **Minecraft Version**: 1.21.5+
-- **Aspects Version**: 1.1.3
+- **Aspects Version**: 1.2.0
 
 ## Optional
 
@@ -20,6 +20,7 @@
 - **Remnant:** Tall and capable of controling gravity itself. Can create teleportation points.
 - **Voidborne:** Void thing capable of storing mobs themselves and retrieving them on command.
 - **Phoenix:** Winged daredevils that seek nothing but the thrill of adrenaline. Great at lower health levels.
+- **Morphling:** Evolving and adaptable form changeling able to adapt to almost any environment.
 
 <details>
 <summary>See Available Aspects (check out Gallery for even more details)</summary>
@@ -32,6 +33,7 @@
 | **Remnant** | - Taller with more health<br>- Takes damage from water<br>- Has much less gravity pull<br>- Can increase gravity pull when sneaking<br>- Taking damage has a chance to randomly teleport the user | - Save a teleport position<br>- Teleport to saved location while saving current location |
 | **Voidborne** | - Smaller and weaker<br>- Sneaking teleports nearby items<br>- Taking damage has a small chance to randomly teleport the attacker | - Store a non-powerful entity<br>- Select and check stored entities<br>- Summon a selected stored entity<br>- Summon all stored entites at once |
 | **Phoenix** | - Starts with an Elytra that is accelerates faster<br>- Takes water damage<br>- Weaker when healthy<br>- Stronger the weaker it gets | - Damage self for Resistance<br>- Launch into the air while in Lava |
+| **Morphling** | - Smaller with Less Health<br>- Has unlockable forms Fire and Void<br>- Faster but taller in Fire form<br>- Tankier but even more taller in Void form<br>- Takes water damage in Fire and Void forms | - Forcefully change forms<br>- Dash in water in Aquatic form<br>- Damage self for an explosion centered on them<br>- Use Food Levels to Dash in Void form |
 
 </details>
 
