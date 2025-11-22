@@ -535,6 +535,51 @@
                                             },
                                             "\n",
                                             {
+                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "color": "green",
+                                                "with": [
+                                                    "-100%",
+                                                    {
+                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                    },
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.inside",
+                                                                "with": [
+                                                                    {
+                                                                        "translate": "block.minecraft.lava"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.when_equipped",
+                                                                "with": [
+                                                                    {
+                                                                        "text": "",
+                                                                        "extra": [
+                                                                            {
+                                                                                "translate": "enchantment.minecraft.fire_protection"
+                                                                            },
+                                                                            " ",
+                                                                            {
+                                                                                "translate": "enchantment.level.4"
+                                                                            },
+                                                                            "+"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
                                                 "translate": "badge_details.aspects.effect.attribute",
                                                 "color": "green",
                                                 "with": [
@@ -1289,6 +1334,51 @@
                                                                 "translate": "enchantment.level.4"
                                                             },
                                                             "+"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            "-100%",
+                                            {
+                                                "translate": "attribute.name.fall_damage_multiplier"
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.inside",
+                                                        "with": [
+                                                            {
+                                                                "translate": "block.minecraft.lava"
+                                                            }
+                                                        ]
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.when_equipped",
+                                                        "with": [
+                                                            {
+                                                                "text": "",
+                                                                "extra": [
+                                                                    {
+                                                                        "translate": "enchantment.minecraft.fire_protection"
+                                                                    },
+                                                                    " ",
+                                                                    {
+                                                                        "translate": "enchantment.level.4"
+                                                                    },
+                                                                    "+"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
