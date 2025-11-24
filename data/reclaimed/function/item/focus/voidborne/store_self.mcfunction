@@ -6,7 +6,7 @@ execute if score #reclaimed reclaimed.config.voidborne.storage_hp_threshold matc
 # Store NBT
 summon minecraft:armor_stand ~ ~ ~ {Invisible:true,Marker:true,Tags:["reclaimed_voidborne_vehicle_temp"]}
 ride @s mount @n[type=minecraft:armor_stand,tag=reclaimed_voidborne_vehicle_temp,distance=..4]
-$data modify storage aspectlib:player_$(id) aspects.aspect_data."reclaimed:voidborne".stored_entity_array append from entity @n[type=minecraft:armor_stand,tag=reclaimed_voidborne_vehicle_temp,distance=..4] Passengers[0]
+$data modify storage aspectlib:users player.$(id).aspects.aspect_data."reclaimed:voidborne".stored_entity_array append from entity @n[type=minecraft:armor_stand,tag=reclaimed_voidborne_vehicle_temp,distance=..4] Passengers[0]
 
 # Prepare for /kill
 data remove entity @s equipment

@@ -2,7 +2,7 @@ scoreboard players operation @s reclaimed.morphling.form.previous = @s reclaimed
 scoreboard players set @s reclaimed.morphling.form.switch_to 3
 function reclaimed:aspect/morphling/form/deactivate_previous
 
-$data modify storage aspectlib:player_$(id) aspects.aspect_data."reclaimed:morphling".form.active set value 2
+$data modify storage aspectlib:users player.$(id).aspects.aspect_data."reclaimed:morphling".form.active set value 2
 
 scoreboard players reset @s reclaimed.morphling.form.switch_to
 scoreboard players reset @s reclaimed.morphling.form.switch_time

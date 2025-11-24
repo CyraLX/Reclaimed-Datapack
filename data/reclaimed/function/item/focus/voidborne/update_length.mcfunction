@@ -1,1 +1,1 @@
-$execute store result score @s reclaimed.voidborne.store_entity.length run data get storage aspectlib:player_$(id) aspects.aspect_data."reclaimed:voidborne".stored_entity_array
+$execute store result score @s reclaimed.voidborne.store_entity.length run data get storage aspectlib:users player.$(id).aspects.aspect_data."reclaimed:voidborne".stored_entity_array
