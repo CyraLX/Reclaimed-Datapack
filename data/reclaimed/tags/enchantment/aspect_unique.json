@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "reclaimed:aspect/dragonkin/wings",
+            "required": false
+        },
+        {
+            "id": "reclaimed:aspect/phoenix/wings",
+            "required": false
+        }
+    ]
+}
