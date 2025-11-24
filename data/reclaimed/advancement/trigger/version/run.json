@@ -19,5 +19,6 @@
     },
     "rewards": {
         "function": "reclaimed:trigger/version/run"
-    }
+    },
+    "parent": "reclaimed:root"
 }

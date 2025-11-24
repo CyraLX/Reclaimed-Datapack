@@ -1,22 +1,23 @@
 {
     "criteria": {
-      "got_hit": {
-        "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "player": [
-            {
-              "condition": "minecraft:reference",
-              "name": "aspectlib:random/010"
-            },
-            {
-              "condition": "minecraft:reference",
-              "name": "reclaimed:aspect/remnant/is_active"
+        "got_hit": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspectlib:random/010"
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "reclaimed:aspect/remnant/is_active"
+                    }
+                ]
             }
-          ]
         }
-      }
     },
     "rewards": {
-      "function": "reclaimed:aspect/remnant/unstable_form/activate"
-    }
-  }
+        "function": "reclaimed:aspect/remnant/unstable_form/activate"
+    },
+    "parent": "reclaimed:root"
+}

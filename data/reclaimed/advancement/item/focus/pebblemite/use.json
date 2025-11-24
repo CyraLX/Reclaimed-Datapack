@@ -28,5 +28,6 @@
     },
     "rewards": {
         "function": "reclaimed:item/focus/pebblemite/trigger"
-    }
+    },
+    "parent": "reclaimed:root"
 }

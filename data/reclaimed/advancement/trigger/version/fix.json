@@ -22,5 +22,6 @@
     },
     "rewards": {
         "function": "reclaimed:trigger/version/fix"
-    }
+    },
+    "parent": "reclaimed:root"
 }

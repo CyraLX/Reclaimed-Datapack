@@ -23,5 +23,6 @@
 	},
 	"rewards": {
 		"function": "reclaimed:item/essence_cage/store_aspect_from_aspect/voidborne"
-	}
+	},
+    "parent": "reclaimed:root"
 }

@@ -28,5 +28,6 @@
     },
     "rewards": {
         "function": "reclaimed:item/focus/dragonkin/trigger"
-    }
+    },
+    "parent": "reclaimed:root"
 }

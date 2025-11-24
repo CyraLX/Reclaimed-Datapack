@@ -22,5 +22,6 @@
     },
     "rewards": {
         "function": "reclaimed:item/essence_cage/activate_aspect/phoenix"
-    }
+    },
+    "parent": "reclaimed:root"
 }

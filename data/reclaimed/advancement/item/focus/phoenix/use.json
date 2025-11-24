@@ -28,5 +28,6 @@
     },
     "rewards": {
         "function": "reclaimed:item/focus/phoenix/trigger"
-    }
+    },
+    "parent": "reclaimed:root"
 }

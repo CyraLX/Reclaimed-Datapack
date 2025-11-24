@@ -22,5 +22,6 @@
     },
     "rewards": {
         "function": "reclaimed:item/essence_cage/activate_aspect/remnant"
-    }
+    },
+    "parent": "reclaimed:root"
 }
