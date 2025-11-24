@@ -23,5 +23,6 @@
     },
     "rewards": {
         "function": "reclaimed:debug/give/aspect_picker"
-    }
+    },
+    "parent": "reclaimed:root"
 }
