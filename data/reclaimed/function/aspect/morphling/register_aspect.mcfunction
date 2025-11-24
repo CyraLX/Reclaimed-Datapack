@@ -9,5 +9,5 @@ data modify storage aspects:registry aspect."reclaimed:morphling" set value {id:
 # Generic REGISTER_ASPECT logic
 function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."reclaimed:morphling"
 
-# Setup scoreboard objectives for the Aspect
+# Setup scoreboard objectives and custom data for the Aspect
 function reclaimed:aspect/morphling/form/initialize

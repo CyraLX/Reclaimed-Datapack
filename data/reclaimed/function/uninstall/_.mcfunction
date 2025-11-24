@@ -12,6 +12,8 @@ tag @s remove addon_uninstaller
 # Remove scoreboard objectives
 scoreboard objectives remove reclaimed.config.voidborne.storage_cap
 scoreboard objectives remove reclaimed.config.voidborne.storage_hp_threshold
+scoreboard objectives remove reclaimed.config.morphling.morph_cooldown
+scoreboard objectives remove reclaimed.config.morphling.morph_duration
 scoreboard objectives remove reclaimed.focus.rascal.raycast
 scoreboard objectives remove reclaimed.frostling.ticksfrozen
 scoreboard objectives remove reclaimed.remnant.control_gravity.is_active
@@ -19,6 +21,13 @@ scoreboard objectives remove reclaimed.remnant.unstable_form.max_y
 scoreboard objectives remove reclaimed.voidborne.spatial_instability.max_y
 scoreboard objectives remove reclaimed.voidborne.store_entity.index
 scoreboard objectives remove reclaimed.voidborne.store_entity.length
+scoreboard objectives remove reclaimed.morphling.form.active
+scoreboard objectives remove reclaimed.morphling.form.previous
+scoreboard objectives remove reclaimed.morphling.form.switch_cooldown
+scoreboard objectives remove reclaimed.morphling.form.switch_grace
+scoreboard objectives remove reclaimed.morphling.form.switch_to
+scoreboard objectives remove reclaimed.morphling.form.switch_time
+scoreboard objectives remove reclaimed.morphling.form.switch_time_max
 scoreboard objectives remove reclaimed.pack_format
 scoreboard objectives remove reclaimed.pack_format.dependency.max
 scoreboard objectives remove reclaimed.pack_format.dependency.min
