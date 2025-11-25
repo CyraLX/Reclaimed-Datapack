@@ -36,13 +36,13 @@
             {
                 "attribute": "minecraft:armor",
                 "id": "reclaimed:morphling/void/armor",
-                "amount": 6,
+                "amount": 5,
                 "operation": "add_value"
             },
             {
                 "attribute": "minecraft:armor_toughness",
                 "id": "reclaimed:morphling/void/armor_toughness",
-                "amount": 4,
+                "amount": 2,
                 "operation": "add_value"
             },
             {
