@@ -24,6 +24,10 @@
         {
             "condition": "minecraft:reference",
             "name": "reclaimed:aspect/voidborne/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "reclaimed:aspect/morphling/is_active"
         }
     ]
 }
