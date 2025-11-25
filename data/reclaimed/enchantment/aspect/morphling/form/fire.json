@@ -46,12 +46,6 @@
                 "operation": "add_value"
             },
             {
-                "attribute": "minecraft:movement_speed",
-                "id": "reclaimed:morphling/fire/movement_speed",
-                "amount": 0.10,
-                "operation": "add_multiplied_base"
-            },
-            {
                 "attribute": "minecraft:jump_strength",
                 "id": "reclaimed:morphling/fire/jump_strength",
                 "amount": 0.10,

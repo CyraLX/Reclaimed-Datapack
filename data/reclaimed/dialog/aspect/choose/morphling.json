@@ -533,17 +533,6 @@
                                                 "with": [
                                                     "+10%",
                                                     {
-                                                        "translate": "attribute.name.movement_speed"
-                                                    }
-                                                ]
-                                            },
-                                            "\n",
-                                            {
-                                                "translate": "badge_details.aspects.effect.attribute",
-                                                "color": "green",
-                                                "with": [
-                                                    "+10%",
-                                                    {
                                                         "translate": "attribute.name.jump_strength"
                                                     }
                                                 ]
@@ -1330,17 +1319,6 @@
                                             "+2",
                                             {
                                                 "translate": "attribute.name.armor"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+10%",
-                                            {
-                                                "translate": "attribute.name.movement_speed"
                                             }
                                         ]
                                     },
