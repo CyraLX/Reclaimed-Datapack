@@ -45,6 +45,10 @@
                         "predicate": {
                             "type_specific": {
                                 "type": "minecraft:player",
+                                "gamemode": [
+                                    "survival",
+                                    "adventure"
+                                ],
                                 "level": {
                                     "min": 15
                                 }
