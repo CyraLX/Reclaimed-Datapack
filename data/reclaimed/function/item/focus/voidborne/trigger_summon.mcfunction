@@ -8,7 +8,7 @@ function reclaimed:item/focus/voidborne/expose_index
 function reclaimed:item/focus/voidborne/expose_stored_entity with storage aspectlib:dummy
 # Summon stored entity
 function reclaimed:item/focus/voidborne/summon_stored_entity with storage aspectlib:dummy
-# Print Index
-function reclaimed:item/focus/voidborne/trigger_check
+# Cache Display Name
+function reclaimed:item/focus/voidborne/trigger_cache
 # Update Bossbar
 function reclaimed:item/focus/voidborne/bossbar/update

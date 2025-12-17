@@ -2,7 +2,7 @@
 execute unless score @s reclaimed.voidborne.store_entity.length matches 1.. run return run playsound minecraft:entity.ender_eye.death
 # Update Index
 function reclaimed:item/focus/voidborne/change_index
-# Print Index
-function reclaimed:item/focus/voidborne/trigger_check
+# Cache Display Name
+function reclaimed:item/focus/voidborne/trigger_cache
 # Update Bossbar
 function reclaimed:item/focus/voidborne/bossbar/update

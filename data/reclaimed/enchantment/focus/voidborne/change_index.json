@@ -27,15 +27,6 @@
                         "scores": {
                             "aspects.aspect_id": 1668057
                         }
-                    },
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "flags": {
-                                "is_sneaking": false
-                            }
-                        }
                     }
                 ],
                 "effect": {

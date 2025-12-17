@@ -46,10 +46,6 @@
             "required": false
         },
         {
-            "id": "reclaimed:focus/voidborne/check_index",
-            "required": false
-        },
-        {
             "id": "reclaimed:focus/voidborne/store_entity",
             "required": false
         },

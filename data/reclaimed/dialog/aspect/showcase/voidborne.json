@@ -257,7 +257,7 @@
                         "extra": [
                             "\n",
                             {
-                                "translate": "item.modifiers.use_offhand_sneak_not",
+                                "translate": "item.modifiers.use_offhand",
                                 "italic": true
                             },
                             " ",
@@ -267,28 +267,6 @@
                                 "extra": [
                                     {
                                         "translate": "item.reclaimed.focus.voidborne.use_result_4"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    "\n",
-                    {
-                        "translate": "item.reclaimed.focus.voidborne.use_name_5",
-                        "color": "#d6d6d6",
-                        "extra": [
-                            "\n",
-                            {
-                                "translate": "item.modifiers.use_offhand_sneak",
-                                "italic": true
-                            },
-                            " ",
-                            {
-                                "text": "",
-                                "italic": true,
-                                "extra": [
-                                    {
-                                        "translate": "item.reclaimed.focus.voidborne.use_result_5"
                                     }
                                 ]
                             }

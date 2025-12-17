@@ -647,7 +647,7 @@
                             "action": "show_text",
                             "value": [
                                 {
-                                    "translate": "item.modifiers.use_offhand_sneak_not",
+                                    "translate": "item.modifiers.use_offhand",
                                     "color": "gray",
                                     "italic": false
                                 },
@@ -659,37 +659,6 @@
                                     "extra": [
                                         {
                                             "translate": "item.reclaimed.focus.voidborne.use_result_4"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    },
-                    "\n",
-                    {
-                        "translate": "extra.aspects.hover_context",
-                        "color": "#d6d6d6",
-                        "with": [
-                            {
-                                "translate": "item.reclaimed.focus.voidborne.use_name_5"
-                            }
-                        ],
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "item.modifiers.use_offhand_sneak",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                "\n",
-                                {
-                                    "text": "",
-                                    "color": "blue",
-                                    "italic": false,
-                                    "extra": [
-                                        {
-                                            "translate": "item.reclaimed.focus.voidborne.use_result_5"
                                         }
                                     ]
                                 }

@@ -53,7 +53,6 @@
                         "reclaimed:focus/voidborne/summon_index":1,
                         "reclaimed:focus/voidborne/summon_all":1,
                         "reclaimed:focus/voidborne/change_index":1,
-                        "reclaimed:focus/voidborne/check_index":1,
                         "aspects:focus/generic/modify_mainhand": 1,
                         "aspects:focus/generic/modify_offhand": 1
                     },
@@ -179,7 +178,7 @@
             },
             "",
             {
-                "translate": "item.modifiers.use_offhand_sneak_not",
+                "translate": "item.modifiers.use_offhand",
                 "color": "gray",
                 "italic": false
             },
@@ -190,22 +189,6 @@
                 "extra": [
                     {
                         "translate": "item.reclaimed.focus.voidborne.use_result_4"
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.use_offhand_sneak",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.reclaimed.focus.voidborne.use_result_5"
                     }
                 ]
             }
