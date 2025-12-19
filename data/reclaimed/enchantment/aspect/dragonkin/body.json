@@ -27,6 +27,29 @@
     "effects": {
         "minecraft:prevent_equipment_drop": {},
         "minecraft:prevent_armor_change": {},
+        "minecraft:damage_protection": [
+            {
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_explosion",
+                                "expected": true
+                            },
+                            {
+                                "id": "minecraft:bypasses_invulnerability",
+                                "expected": false
+                            }
+                        ]
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": 8
+                }
+            }
+        ],
         "minecraft:attributes": [
             {
                 "attribute": "minecraft:scale",

@@ -208,6 +208,20 @@
                                             },
                                             "\n",
                                             {
+                                                "translate": "badge_details.aspects.effect.damage_protection_add",
+                                                "color": "green",
+                                                "with": [
+                                                    "8",
+                                                    {
+                                                        "translate": "block.minecraft.tnt",
+                                                        "extra": [
+                                                            "+"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
                                                 "translate": "badge_details.aspects.effect.attribute",
                                                 "color": "green",
                                                 "with": [
@@ -726,6 +740,20 @@
                                             "+20%",
                                             {
                                                 "translate": "attribute.name.movement_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_protection_add",
+                                        "color": "green",
+                                        "with": [
+                                            "8",
+                                            {
+                                                "translate": "block.minecraft.tnt",
+                                                "extra": [
+                                                    "+"
+                                                ]
                                             }
                                         ]
                                     },

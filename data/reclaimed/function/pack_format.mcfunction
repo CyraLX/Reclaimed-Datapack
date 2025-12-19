@@ -7,7 +7,7 @@ scoreboard objectives add reclaimed.version.is_dev dummy
 scoreboard players set #reclaimed reclaimed.version.release 1
 scoreboard players set #reclaimed reclaimed.version.major 1
 scoreboard players set #reclaimed reclaimed.version.minor 1
-scoreboard players set #reclaimed reclaimed.version.is_dev 1
+scoreboard players set #reclaimed reclaimed.version.is_dev 0
 # Initialize trigger to get current version
 function reclaimed:trigger/version/initialize
 
@@ -16,7 +16,7 @@ scoreboard objectives add reclaimed.pack_format dummy
 scoreboard objectives add reclaimed.pack_format.dependency.min dummy
 scoreboard objectives add reclaimed.pack_format.dependency.max dummy
 # Define current pack format for this addon
-scoreboard players set #reclaimed reclaimed.pack_format 3
+scoreboard players set #reclaimed reclaimed.pack_format 4
 # Define dependencies and supported min and max pack formats
 scoreboard players set #reclaimed aspects.pack_format.dependency.min 7
 scoreboard players set #reclaimed aspects.pack_format.dependency.max 7

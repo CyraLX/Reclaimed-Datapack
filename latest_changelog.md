@@ -1,19 +1,18 @@
-# Reclaimed 1.1.0
+# Reclaimed 1.1.1
 
-## Aspect Additions
-### Morphling
-> Very adaptable to any situation if left alone for enough time. They endure great challenges to master the elements for their own gain.
-- It can evolve itself via challenge advancements to unlock new forms that will be picked based on your situation for most effectiveness
-- Their Focus allows to force a specific form while using each forms ability
-- Aquatic form allows to dash when in water
-- Fire form creates a small explosion centered on yourself
-- Void form allows to dash anywhere, in exchange for food points
+## General Changes
+- Updated Turkish translations
 
 ## Aspect Changes
-### Phoenix
-- Now uses `damage_immune` instead of `location_changed` along with attributes to nulify fall damage in lava more consistently
+### Morphling
+- Focus now requires a Gold Ingot instead of an Iron Ingot
+- Focus recipe suggestions now show up as forms become unlocked
+- Fixed damage reductions granted not respecting damage reduction piercing damage types
+- (1.21.10 and less) Hidden advancements related to this Aspect
+### Voidling
+- Fixed its Awakened Essence Cage from being unobtainable
+### Dragonkin
+- Now has natural Blast Protection IV equivalent of damage resistance
 
 ## Technical Changes
-- Increased Pack Format to `3`
-- Required `aspects` version is now `v1.2.0`
-- All technical advancements now have a root parent for each namespace to link them all together 
+- Increased Pack Format to `4`

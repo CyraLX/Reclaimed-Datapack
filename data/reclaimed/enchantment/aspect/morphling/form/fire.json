@@ -299,6 +299,10 @@
                             {
                                 "id": "reclaimed:aspect/morphling/fire/damage_resistant",
                                 "expected": true
+                            },
+                            {
+                                "id": "minecraft:bypasses_invulnerability",
+                                "expected": false
                             }
                         ]
                     }

@@ -67,6 +67,10 @@
                             {
                                 "id": "reclaimed:aspect/morphling/void/damage_resistant",
                                 "expected": true
+                            },
+                            {
+                                "id": "minecraft:bypasses_invulnerability",
+                                "expected": false
                             }
                         ]
                     }
