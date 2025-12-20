@@ -26,7 +26,7 @@
             "required": false
         },
         {
-            "id": "reclaimed:item/essence_cage/check_awaken_list/offhand/voidborne",
+            "id": "reclaimed:item/essence_cage/check_awaken_list/mainhand/voidborne",
             "required": false
         }
     ]
