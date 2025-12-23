@@ -1,0 +1,1 @@
+execute if score #aspects aspects.essence.void matches 40.. if score #aspects aspects.essence.flying matches 40.. if score #aspects aspects.essence.apex matches 40.. run return run function aspects:item/essence_cage/awaken with storage aspects:registry aspect."reclaimed:dragonkin"

@@ -1,2 +1,0 @@
-execute if predicate reclaimed:aspect/morphling/should_awaken_essence_cage run return run function aspects:item/essence_cage/awaken/offhand with storage aspects:registry aspect."reclaimed:morphling"
-
