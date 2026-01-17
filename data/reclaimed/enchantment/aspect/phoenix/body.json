@@ -157,7 +157,7 @@
                             "condition": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
-                                "aspectlib.hp_relative": {
+                                "aspects.aspect_group.track_hp.relative": {
                                     "max": 20
                                 }
                             }

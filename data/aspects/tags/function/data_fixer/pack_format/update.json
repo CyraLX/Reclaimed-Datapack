@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "reclaimed:data_fixer/pack_format/update",
+            "required": false
+        }
+    ]
+}
