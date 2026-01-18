@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "reclaimed:config/morphling/morph_cooldown",
+            "required": false
+        },
+        {
+            "id": "reclaimed:config/morphling/morph_duration",
+            "required": false
+        },
+        {
+            "id": "reclaimed:config/voidborne/storage_cap",
+            "required": false
+        },
+        {
+            "id": "reclaimed:config/voidborne/storage_hp_threshold",
+            "required": false
+        }
+    ]
+}
