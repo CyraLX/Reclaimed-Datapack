@@ -277,12 +277,17 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
-                                                    "+25%",
                                                     {
-                                                        "translate": "attribute.name.jump_strength"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "+25%",
+                                                            {
+                                                                "translate": "attribute.name.jump_strength"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.when_sprinting",
@@ -389,12 +394,17 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.starting_equipment_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "item.reclaimed.wings.dragonkin",
-                                                        "color": "light_purple"
+                                                        "translate": "badge_details.aspects.effect.starting_equipment",
+                                                        "with": [
+                                                            {
+                                                                "translate": "item.reclaimed.wings.dragonkin",
+                                                                "color": "light_purple"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "text": "",
@@ -478,12 +488,17 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
-                                                    "-55%",
                                                     {
-                                                        "translate": "attribute.name.gravity"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "-55%",
+                                                            {
+                                                                "translate": "attribute.name.gravity"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.when_sneaking",
@@ -494,12 +509,17 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
-                                                    "-35%",
                                                     {
-                                                        "translate": "attribute.name.gravity"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "-35%",
+                                                            {
+                                                                "translate": "attribute.name.gravity"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "text": "",
@@ -651,12 +671,17 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.starting_equipment_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "item.reclaimed.wings.dragonkin",
-                                                "color": "light_purple"
+                                                "translate": "badge_details.aspects.effect.starting_equipment",
+                                                "with": [
+                                                    {
+                                                        "translate": "item.reclaimed.wings.dragonkin",
+                                                        "color": "light_purple"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "text": "",
@@ -814,12 +839,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "+25%",
                                             {
-                                                "translate": "attribute.name.jump_strength"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+25%",
+                                                    {
+                                                        "translate": "attribute.name.jump_strength"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.when_sprinting",
@@ -902,12 +932,17 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "-55%",
                                             {
-                                                "translate": "attribute.name.gravity"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "-55%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.when_sneaking",
@@ -918,12 +953,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "-35%",
                                             {
-                                                "translate": "attribute.name.gravity"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "-35%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "text": "",

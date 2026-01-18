@@ -173,14 +173,19 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
                                                     {
-                                                        "translate": "extra.aspects.seconds",
+                                                        "translate": "badge_details.aspects.effect.damage_user_overtime",
                                                         "with": [
-                                                            "1"
+                                                            "2",
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     {
@@ -224,10 +229,15 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
+                                                    {
+                                                        "translate": "badge_details.aspects.effect.damage_user",
+                                                        "with": [
+                                                            "2"
+                                                        ]
+                                                    },
                                                     {
                                                         "text": "",
                                                         "color": "gray",
@@ -309,12 +319,17 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "yellow",
                                                 "with": [
-                                                    "+45%",
                                                     {
-                                                        "translate": "attribute.name.gravity"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "+45%",
+                                                            {
+                                                                "translate": "attribute.name.gravity"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.when_fall_flying",
@@ -388,12 +403,17 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
-                                                    "+296%",
                                                     {
-                                                        "translate": "attribute.name.gravity"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "+296%",
+                                                            {
+                                                                "translate": "attribute.name.gravity"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "text": "",
@@ -451,16 +471,21 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.teleport_user_to_thing_in_range_modifier",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "yellow",
                                         "with": [
                                             {
-                                                "translate": "extra.aspects.random"
-                                            },
-                                            {
-                                                "translate": "extra.aspects.meter_distance",
+                                                "translate": "badge_details.aspects.effect.teleport_user_to_thing_in_range",
                                                 "with": [
-                                                    "8"
+                                                    {
+                                                        "translate": "extra.aspects.random"
+                                                    },
+                                                    {
+                                                        "translate": "extra.aspects.meter_distance",
+                                                        "with": [
+                                                            "8"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {
@@ -523,12 +548,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "yellow",
                                         "with": [
-                                            "+45%",
                                             {
-                                                "translate": "attribute.name.gravity"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+45%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.when_fall_flying",
@@ -567,17 +597,31 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "+296%",
                                             {
-                                                "translate": "attribute.name.gravity"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+296%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    }
+                                                ]
                                             },
                                             {
-                                                "translate": "badge_details.aspects.modifier.when_fall_flying_not",
+                                                "text": "",
                                                 "color": "gray",
-                                                "italic": true
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.when_sneaking"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.when_fall_flying_not"
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
@@ -589,14 +633,19 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "2",
                                             {
-                                                "translate": "extra.aspects.seconds",
+                                                "translate": "badge_details.aspects.effect.damage_user_overtime",
                                                 "with": [
-                                                    "1"
+                                                    "2",
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {
@@ -640,10 +689,15 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "2",
+                                            {
+                                                "translate": "badge_details.aspects.effect.damage_user",
+                                                "with": [
+                                                    "2"
+                                                ]
+                                            },
                                             {
                                                 "text": "",
                                                 "color": "gray",
@@ -668,16 +722,21 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.teleport_user_to_thing_in_range_modifier",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "yellow",
                                         "with": [
                                             {
-                                                "translate": "extra.aspects.random"
-                                            },
-                                            {
-                                                "translate": "extra.aspects.meter_distance",
+                                                "translate": "badge_details.aspects.effect.teleport_user_to_thing_in_range",
                                                 "with": [
-                                                    "8"
+                                                    {
+                                                        "translate": "extra.aspects.random"
+                                                    },
+                                                    {
+                                                        "translate": "extra.aspects.meter_distance",
+                                                        "with": [
+                                                            "8"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {

@@ -112,14 +112,19 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
                                                     {
-                                                        "translate": "extra.aspects.seconds",
+                                                        "translate": "badge_details.aspects.effect.damage_user_overtime",
                                                         "with": [
-                                                            "1"
+                                                            "2",
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     {
@@ -163,10 +168,15 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
+                                                    {
+                                                        "translate": "badge_details.aspects.effect.damage_user",
+                                                        "with": [
+                                                            "2"
+                                                        ]
+                                                    },
                                                     {
                                                         "text": "",
                                                         "color": "gray",
@@ -226,12 +236,17 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.starting_equipment_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "item.reclaimed.wings.phoenix",
-                                                        "color": "light_purple"
+                                                        "translate": "badge_details.aspects.effect.starting_equipment",
+                                                        "with": [
+                                                            {
+                                                                "translate": "item.reclaimed.wings.phoenix",
+                                                                "color": "light_purple"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "text": "",
@@ -276,12 +291,17 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "yellow",
                                                 "with": [
-                                                    "+75%",
                                                     {
-                                                        "translate": "attribute.name.gravity"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "+75%",
+                                                            {
+                                                                "translate": "attribute.name.gravity"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.when_fall_flying",
@@ -371,12 +391,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "-100%",
                                             {
-                                                "translate": "attribute.name.fall_damage_multiplier"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "-100%",
+                                                    {
+                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.inside",
@@ -392,12 +417,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "+100%",
                                             {
-                                                "translate": "attribute.name.fall_damage_multiplier"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+100%",
+                                                    {
+                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.outside",
@@ -718,12 +748,17 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.starting_equipment_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "item.reclaimed.wings.phoenix",
-                                                "color": "light_purple"
+                                                "translate": "badge_details.aspects.effect.starting_equipment",
+                                                "with": [
+                                                    {
+                                                        "translate": "item.reclaimed.wings.phoenix",
+                                                        "color": "light_purple"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "text": "",
@@ -768,12 +803,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "yellow",
                                         "with": [
-                                            "+75%",
                                             {
-                                                "translate": "attribute.name.gravity"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+75%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.when_fall_flying",
@@ -836,12 +876,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "-100%",
                                             {
-                                                "translate": "attribute.name.fall_damage_multiplier"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "-100%",
+                                                    {
+                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.inside",
@@ -857,12 +902,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "+100%",
                                             {
-                                                "translate": "attribute.name.fall_damage_multiplier"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+100%",
+                                                    {
+                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.outside",
@@ -884,14 +934,19 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "2",
                                             {
-                                                "translate": "extra.aspects.seconds",
+                                                "translate": "badge_details.aspects.effect.damage_user_overtime",
                                                 "with": [
-                                                    "1"
+                                                    "2",
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {
@@ -935,10 +990,15 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "2",
+                                            {
+                                                "translate": "badge_details.aspects.effect.damage_user",
+                                                "with": [
+                                                    "2"
+                                                ]
+                                            },
                                             {
                                                 "text": "",
                                                 "color": "gray",

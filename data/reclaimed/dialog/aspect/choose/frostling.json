@@ -297,10 +297,15 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
+                                                    {
+                                                        "translate": "badge_details.aspects.effect.damage_user",
+                                                        "with": [
+                                                            "2"
+                                                        ]
+                                                    },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.overtime",
                                                         "color": "gray",
@@ -403,11 +408,16 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "effect.minecraft.regeneration"
+                                                        "translate": "badge_details.aspects.effect.give_potion_effect",
+                                                        "with": [
+                                                            {
+                                                                "translate": "effect.minecraft.regeneration"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.duration",
@@ -620,19 +630,24 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.replace_thing_within_radius_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "yellow",
                                                 "with": [
                                                     {
-                                                        "translate": "block.minecraft.water"
-                                                    },
-                                                    {
-                                                        "translate": "block.minecraft.frosted_ice"
-                                                    },
-                                                    {
-                                                        "translate": "extra.aspects.meter_distance",
+                                                        "translate": "badge_details.aspects.effect.replace_thing_within_radius",
                                                         "with": [
-                                                            "4"
+                                                            {
+                                                                "translate": "block.minecraft.water"
+                                                            },
+                                                            {
+                                                                "translate": "block.minecraft.frosted_ice"
+                                                            },
+                                                            {
+                                                                "translate": "extra.aspects.meter_distance",
+                                                                "with": [
+                                                                    "4"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     {
@@ -644,19 +659,24 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.replace_thing_within_radius_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "yellow",
                                                 "with": [
                                                     {
-                                                        "translate": "block.minecraft.frosted_ice"
-                                                    },
-                                                    {
-                                                        "translate": "block.minecraft.ice"
-                                                    },
-                                                    {
-                                                        "translate": "extra.aspects.meter_distance",
+                                                        "translate": "badge_details.aspects.effect.replace_thing_within_radius",
                                                         "with": [
-                                                            "2"
+                                                            {
+                                                                "translate": "block.minecraft.frosted_ice"
+                                                            },
+                                                            {
+                                                                "translate": "block.minecraft.ice"
+                                                            },
+                                                            {
+                                                                "translate": "extra.aspects.meter_distance",
+                                                                "with": [
+                                                                    "2"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     {
@@ -702,19 +722,24 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.replace_thing_within_radius_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "yellow",
                                                 "with": [
                                                     {
-                                                        "translate": "block.minecraft.lava"
-                                                    },
-                                                    {
-                                                        "translate": "block.minecraft.basalt"
-                                                    },
-                                                    {
-                                                        "translate": "extra.aspects.meter_distance",
+                                                        "translate": "badge_details.aspects.effect.replace_thing_within_radius",
                                                         "with": [
-                                                            "1"
+                                                            {
+                                                                "translate": "block.minecraft.lava"
+                                                            },
+                                                            {
+                                                                "translate": "block.minecraft.basalt"
+                                                            },
+                                                            {
+                                                                "translate": "extra.aspects.meter_distance",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     {
@@ -914,10 +939,15 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "2",
+                                            {
+                                                "translate": "badge_details.aspects.effect.damage_user",
+                                                "with": [
+                                                    "2"
+                                                ]
+                                            },
                                             {
                                                 "translate": "badge_details.aspects.modifier.overtime",
                                                 "color": "gray",
@@ -969,11 +999,16 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.regeneration"
+                                                "translate": "badge_details.aspects.effect.give_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.regeneration"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.duration",
@@ -1116,19 +1151,24 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.replace_thing_within_radius_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "yellow",
                                         "with": [
                                             {
-                                                "translate": "block.minecraft.water"
-                                            },
-                                            {
-                                                "translate": "block.minecraft.frosted_ice"
-                                            },
-                                            {
-                                                "translate": "extra.aspects.meter_distance",
+                                                "translate": "badge_details.aspects.effect.replace_thing_within_radius",
                                                 "with": [
-                                                    "4"
+                                                    {
+                                                        "translate": "block.minecraft.water"
+                                                    },
+                                                    {
+                                                        "translate": "block.minecraft.frosted_ice"
+                                                    },
+                                                    {
+                                                        "translate": "extra.aspects.meter_distance",
+                                                        "with": [
+                                                            "4"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {
@@ -1140,19 +1180,24 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.replace_thing_within_radius_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "yellow",
                                         "with": [
                                             {
-                                                "translate": "block.minecraft.frosted_ice"
-                                            },
-                                            {
-                                                "translate": "block.minecraft.ice"
-                                            },
-                                            {
-                                                "translate": "extra.aspects.meter_distance",
+                                                "translate": "badge_details.aspects.effect.replace_thing_within_radius",
                                                 "with": [
-                                                    "2"
+                                                    {
+                                                        "translate": "block.minecraft.frosted_ice"
+                                                    },
+                                                    {
+                                                        "translate": "block.minecraft.ice"
+                                                    },
+                                                    {
+                                                        "translate": "extra.aspects.meter_distance",
+                                                        "with": [
+                                                            "2"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {
@@ -1198,19 +1243,24 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.replace_thing_within_radius_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "yellow",
                                         "with": [
                                             {
-                                                "translate": "block.minecraft.lava"
-                                            },
-                                            {
-                                                "translate": "block.minecraft.basalt"
-                                            },
-                                            {
-                                                "translate": "extra.aspects.meter_distance",
+                                                "translate": "badge_details.aspects.effect.replace_thing_within_radius",
                                                 "with": [
-                                                    "1"
+                                                    {
+                                                        "translate": "block.minecraft.lava"
+                                                    },
+                                                    {
+                                                        "translate": "block.minecraft.basalt"
+                                                    },
+                                                    {
+                                                        "translate": "extra.aspects.meter_distance",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {

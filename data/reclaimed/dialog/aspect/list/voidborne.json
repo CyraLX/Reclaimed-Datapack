@@ -348,16 +348,21 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.teleport_attacker_to_thing_in_range_modifier",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "yellow",
                                         "with": [
                                             {
-                                                "translate": "extra.aspects.random"
-                                            },
-                                            {
-                                                "translate": "extra.aspects.meter_distance",
+                                                "translate": "badge_details.aspects.effect.teleport_attacker_to_thing_in_range",
                                                 "with": [
-                                                    "6"
+                                                    {
+                                                        "translate": "extra.aspects.random"
+                                                    },
+                                                    {
+                                                        "translate": "extra.aspects.meter_distance",
+                                                        "with": [
+                                                            "6"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {
@@ -519,16 +524,21 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.teleport_attacker_to_thing_in_range_modifier",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "yellow",
                                         "with": [
                                             {
-                                                "translate": "extra.aspects.random"
-                                            },
-                                            {
-                                                "translate": "extra.aspects.meter_distance",
+                                                "translate": "badge_details.aspects.effect.teleport_attacker_to_thing_in_range",
                                                 "with": [
-                                                    "6"
+                                                    {
+                                                        "translate": "extra.aspects.random"
+                                                    },
+                                                    {
+                                                        "translate": "extra.aspects.meter_distance",
+                                                        "with": [
+                                                            "6"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {

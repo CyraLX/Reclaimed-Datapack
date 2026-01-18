@@ -173,11 +173,16 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_immune_to_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "extra.aspects.block"
+                                                        "translate": "badge_details.aspects.effect.damage_immune_to",
+                                                        "with": [
+                                                            {
+                                                                "translate": "extra.aspects.block"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.inside",
@@ -193,11 +198,16 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "effect.minecraft.night_vision"
+                                                        "translate": "badge_details.aspects.effect.give_potion_effect",
+                                                        "with": [
+                                                            {
+                                                                "translate": "effect.minecraft.night_vision"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.duration",
@@ -449,11 +459,16 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_immune_to_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "extra.aspects.block"
+                                                "translate": "badge_details.aspects.effect.damage_immune_to",
+                                                "with": [
+                                                    {
+                                                        "translate": "extra.aspects.block"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.inside",
@@ -469,11 +484,16 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.night_vision"
+                                                "translate": "badge_details.aspects.effect.give_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.night_vision"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.duration",
