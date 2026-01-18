@@ -1,1 +1,1 @@
-scoreboard players set #aspects aspects.config.aspectless_players_invisible 40
+scoreboard players set #reclaimed reclaimed.config.voidborne.storage_hp_threshold 5
