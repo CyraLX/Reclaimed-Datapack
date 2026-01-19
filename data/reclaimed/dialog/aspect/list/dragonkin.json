@@ -2,30 +2,34 @@
     "type": "minecraft:notice",
     "title": {
         "translate": "dialog.aspects.aspect_info",
-        "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "reclaimed",
+                "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
                 "color": "blue",
                 "italic": true
             },
             {
                 "translate": "aspect.reclaimed.dragonkin",
+                "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
                 "color": "#8e00db"
             }
         ]
     },
     "external_title": {
         "translate": "dialog.aspects.aspect_info.external_title",
-        "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "reclaimed",
+                "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
                 "color": "blue",
                 "italic": true
             },
             {
                 "translate": "aspect.reclaimed.dragonkin",
+                "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
                 "color": "#8e00db"
             }
         ]

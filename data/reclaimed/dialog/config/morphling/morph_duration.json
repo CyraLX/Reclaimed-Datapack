@@ -2,27 +2,31 @@
     "type": "minecraft:multi_action",
     "title": {
         "translate": "dialog.aspects.configs.entry",
-        "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "reclaimed",
+                "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
                 "color": "blue"
             },
             {
-                "translate": "config.reclaimed.morphling.morph_duration"
+                "translate": "config.reclaimed.morphling.morph_duration",
+                "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!"
             }
         ]
     },
     "external_title": {
         "translate": "dialog.aspects.configs.entry.external_title",
-        "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "reclaimed",
+                "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
                 "color": "blue"
             },
             {
-                "translate": "config.reclaimed.morphling.morph_duration"
+                "translate": "config.reclaimed.morphling.morph_duration",
+                "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!"
             }
         ]
     },
