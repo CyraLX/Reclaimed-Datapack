@@ -89,7 +89,7 @@
             "key": "value",
             "width": 225,
             "start": -1,
-            "end": 1024,
+            "end": 512,
             "initial": 40,
             "step": 1
         }
