@@ -8,6 +8,10 @@
         {
             "id": "#reclaimed:config/aspect/morphling/default",
             "required": false
+        },
+        {
+            "id": "reclaimed:config/pebblemite/teleport_distance/default",
+            "required": false
         }
     ]
 }
