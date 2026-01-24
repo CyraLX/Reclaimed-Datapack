@@ -16,6 +16,10 @@
         {
             "id": "reclaimed:config/voidborne/storage_hp_threshold",
             "required": false
+        },
+        {
+            "id": "reclaimed:config/pebblemite/teleport_distance",
+            "required": false
         }
     ]
 }
