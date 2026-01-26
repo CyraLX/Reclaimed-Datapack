@@ -772,7 +772,7 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.ignite_self",
+                                                "translate": "badge_details.aspects.effect.ignite_user",
                                                 "color": "red",
                                                 "with": [
                                                     {
@@ -1296,7 +1296,7 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.ignite_self",
+                                        "translate": "badge_details.aspects.effect.ignite_user",
                                         "color": "red",
                                         "with": [
                                             {

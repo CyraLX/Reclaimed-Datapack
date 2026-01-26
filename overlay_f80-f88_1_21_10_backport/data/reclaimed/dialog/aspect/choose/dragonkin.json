@@ -1,7 +1,7 @@
 {
-    "type": "minecraft:notice",
+    "type": "minecraft:confirmation",
     "title": {
-        "translate": "dialog.aspects.aspect_info",
+        "translate": "dialog.aspects.chosen_aspect",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -18,7 +18,7 @@
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.aspect_info.external_title",
+        "translate": "dialog.aspects.chosen_aspect.external_title",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -45,84 +45,10 @@
             }
         },
         {
-            "type": "minecraft:item",
-            "item": {
-                "id": "minecraft:jigsaw",
-                "count": 1,
-                "components": {
-                    "minecraft:item_model": "reclaimed:awakened_essence_cage",
-                    "minecraft:custom_data": {
-                        "aspects": {
-                            "awakened_essence_cage": {
-                                "aspect": {
-                                    "namespace": "reclaimed",
-                                    "name": "dragonkin"
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "width": 18,
-            "show_decorations": true,
-            "show_tooltip": false,
-            "description": {
-                "translate": "dialog.aspects.aspect_info.essence_combination",
-                "color": "#c7ffe8"
-            }
-        },
-        {
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "text": "",
-                "extra": [
-                    {
-                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
-                        "color": "#d6d6d6",
-                        "with": [
-                            {
-                                "text": "40"
-                            },
-                            {
-                                "translate": "lore.essence.void"
-                            }
-                        ]
-                    },
-                    "\n",
-                    {
-                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
-                        "color": "#d6d6d6",
-                        "with": [
-                            {
-                                "text": "40"
-                            },
-                            {
-                                "translate": "lore.essence.flying"
-                            }
-                        ]
-                    },
-                    "\n",
-                    {
-                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
-                        "color": "#d6d6d6",
-                        "with": [
-                            {
-                                "text": "40"
-                            },
-                            {
-                                "translate": "lore.essence.apex"
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.aspect_info.hover_tutorial",
+                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
                 "italic": true,
                 "color": "gold"
             }
@@ -144,7 +70,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.aspect_info.effects",
+                "translate": "dialog.aspects.chosen_aspect.effects",
                 "color": "#f6c7ff"
             }
         },
@@ -536,63 +462,6 @@
                                                             " ",
                                                             {
                                                                 "translate": "badge_details.aspects.modifier.when_moving_dowm"
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            "\n",
-                                            {
-                                                "translate": "badge_details.aspects.modifier_format",
-                                                "color": "green",
-                                                "with": [
-                                                    {
-                                                        "translate": "badge_details.aspects.effect.apply_impulse_user_forward",
-                                                        "with": [
-                                                            "0.0075"
-                                                        ]
-                                                    },
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.when_sneaking",
-                                                        "color": "gray",
-                                                        "italic": true
-                                                    }
-                                                ]
-                                            },
-                                            "\n",
-                                            {
-                                                "translate": "badge_details.aspects.modifier_format",
-                                                "color": "red",
-                                                "with": [
-                                                    {
-                                                        "translate": "badge_details.aspects.effect.damage_item",
-                                                        "with": [
-                                                            {
-                                                                "translate": "item.reclaimed.wings.dragonkin",
-                                                                "color": "light_purple"
-                                                            },
-                                                            "1"
-                                                        ]
-                                                    },
-                                                    {
-                                                        "text": "",
-                                                        "color": "gray",
-                                                        "italic": true,
-                                                        "extra": [
-                                                            {
-                                                                "translate": "badge_details.aspects.modifier.when_sneaking"
-                                                            },
-                                                            " ",
-                                                            {
-                                                                "translate": "badge_details.aspects.modifier.overtime",
-                                                                "with": [
-                                                                    {
-                                                                        "translate": "extra.aspects.seconds",
-                                                                        "with": [
-                                                                            "1"
-                                                                        ]
-                                                                    }
-                                                                ]
                                                             }
                                                         ]
                                                     }
@@ -1041,63 +910,6 @@
                                                 ]
                                             }
                                         ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "green",
-                                        "with": [
-                                            {
-                                                "translate": "badge_details.aspects.effect.apply_impulse_user_forward",
-                                                "with": [
-                                                    "0.0075"
-                                                ]
-                                            },
-                                            {
-                                                "translate": "badge_details.aspects.modifier.when_sneaking",
-                                                "color": "gray",
-                                                "italic": true
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "red",
-                                        "with": [
-                                            {
-                                                "translate": "badge_details.aspects.effect.damage_item",
-                                                "with": [
-                                                    {
-                                                        "translate": "item.reclaimed.wings.dragonkin",
-                                                        "color": "light_purple"
-                                                    },
-                                                    "1"
-                                                ]
-                                            },
-                                            {
-                                                "text": "",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "extra": [
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.when_sneaking"
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.overtime",
-                                                        "with": [
-                                                            {
-                                                                "translate": "extra.aspects.seconds",
-                                                                "with": [
-                                                                    "1"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
                                     }
                                 ]
                             },
@@ -1189,7 +1001,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.aspect_info.focus",
+                "translate": "dialog.aspects.chosen_aspect.focus",
                 "color": "#c7fdff",
                 "extra": [
                     " ",
@@ -1204,7 +1016,7 @@
                         "hover_event": {
                             "action": "show_text",
                             "value": {
-                                "translate": "dialog.aspects.aspect_info.focus.hover"
+                                "translate": "dialog.aspects.chosen_aspect.focus.hover"
                             }
                         }
                     }
@@ -1271,17 +1083,45 @@
                     }
                 ]
             }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": ""
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.chosen_aspect.confirmation",
+                "bold": false,
+                "with": [
+                    {
+                        "translate": "aspect.reclaimed.dragonkin",
+                        "italic": true,
+                        "color": "#8e00db"
+                    }
+                ]
+            }
         }
     ],
     "can_close_with_escape": true,
     "pause": true,
-    "action": {
+    "yes": {
         "label": {
-            "translate": "gui.back"
+            "translate": "gui.yes"
+        },
+        "action": {
+            "type": "run_command",
+            "command": "trigger aspects.choose_aspect set 1668017"
+        }
+    },
+    "no": {
+        "label": {
+            "translate": "gui.no"
         },
         "action": {
             "type": "show_dialog",
-            "dialog": "aspects:menu/aspect_list"
+            "dialog": "aspects:menu/choose_aspect"
         }
     }
 }
