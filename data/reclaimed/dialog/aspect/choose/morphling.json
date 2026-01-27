@@ -48,6 +48,20 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
+                "translate": "aspect.reclaimed.morphling.has_progression",
+                "italic": true,
+                "color": "aqua",
+                "with": [
+                    {
+                        "translate": "gui.advancements"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
                 "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
                 "italic": true,
                 "color": "gold"
