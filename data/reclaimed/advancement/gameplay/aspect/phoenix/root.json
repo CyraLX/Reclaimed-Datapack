@@ -45,5 +45,5 @@
             }
         }
     },
-    "parent": "aspects:gameplay/aspect/become_any"
+    "parent": "reclaimed:gameplay/root"
 }
