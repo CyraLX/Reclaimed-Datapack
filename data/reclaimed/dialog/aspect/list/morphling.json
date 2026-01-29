@@ -480,7 +480,7 @@
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "block.minecraft.magma_block"
+                                                        "translate": "damage_types.minecraft.in_wall"
                                                     }
                                                 ]
                                             },
@@ -1326,7 +1326,7 @@
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "block.minecraft.magma_block"
+                                                "translate": "damage_types.minecraft.in_wall"
                                             }
                                         ]
                                     },

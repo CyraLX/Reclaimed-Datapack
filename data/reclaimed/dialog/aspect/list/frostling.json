@@ -420,7 +420,7 @@
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "block.minecraft.powder_snow"
+                                                        "translate": "damage_types.minecraft.freeze"
                                                     }
                                                 ]
                                             }
@@ -846,7 +846,7 @@
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "block.minecraft.powder_snow"
+                                                "translate": "damage_types.minecraft.freeze"
                                             }
                                         ]
                                     },

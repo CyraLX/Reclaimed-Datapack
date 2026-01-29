@@ -116,26 +116,11 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.modifier_format",
+                                                "translate": "badge_details.aspects.effect.damage_immune_to",
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "badge_details.aspects.effect.damage_immune_to",
-                                                        "with": [
-                                                            {
-                                                                "translate": "extra.aspects.block"
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.inside",
-                                                        "color": "gray",
-                                                        "italic": true,
-                                                        "with": [
-                                                            {
-                                                                "translate": "extra.aspects.blocks"
-                                                            }
-                                                        ]
+                                                        "translate": "damage_types.minecraft.in_wall"
                                                     }
                                                 ]
                                             },
@@ -402,26 +387,11 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.modifier_format",
+                                        "translate": "badge_details.aspects.effect.damage_immune_to",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_immune_to",
-                                                "with": [
-                                                    {
-                                                        "translate": "extra.aspects.block"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "translate": "badge_details.aspects.modifier.inside",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "with": [
-                                                    {
-                                                        "translate": "extra.aspects.blocks"
-                                                    }
-                                                ]
+                                                "translate": "damage_types.minecraft.in_wall"
                                             }
                                         ]
                                     },

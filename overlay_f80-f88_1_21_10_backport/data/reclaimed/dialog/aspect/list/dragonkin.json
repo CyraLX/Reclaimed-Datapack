@@ -217,10 +217,7 @@
                                                 "with": [
                                                     "8",
                                                     {
-                                                        "translate": "block.minecraft.tnt",
-                                                        "extra": [
-                                                            "+"
-                                                        ]
+                                                        "translate": "damage_types.minecraft.explosion"
                                                     }
                                                 ]
                                             },
@@ -779,10 +776,7 @@
                                         "with": [
                                             "8",
                                             {
-                                                "translate": "block.minecraft.tnt",
-                                                "extra": [
-                                                    "+"
-                                                ]
+                                                "translate": "damage_types.minecraft.explosion"
                                             }
                                         ]
                                     },
