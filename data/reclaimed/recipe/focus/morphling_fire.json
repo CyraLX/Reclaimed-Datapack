@@ -34,8 +34,8 @@
                     "minecraft:enchantments"
                 ]
             },
-            "minecraft:item_model": "reclaimed:focus/morphling_fire",
             "!minecraft:enchantments": {},
+            "minecraft:item_model": "reclaimed:focus/morphling_fire",
             "minecraft:consumable": {
                 "consume_seconds": 1.0,
                 "animation": "bow",

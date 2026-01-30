@@ -34,8 +34,8 @@
                     "minecraft:enchantments"
                 ]
             },
-            "minecraft:item_model": "reclaimed:focus/morphling_aquatic",
             "!minecraft:enchantments": {},
+            "minecraft:item_model": "reclaimed:focus/morphling_aquatic",
             "minecraft:consumable": {
                 "consume_seconds": 1.0,
                 "animation": "bow",

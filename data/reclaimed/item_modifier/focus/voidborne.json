@@ -14,8 +14,8 @@
             "minecraft:enchantments": {
                 "reclaimed:focus/voidborne/store_entity": 1
             },
-            "minecraft:item_model": "reclaimed:focus/voidborne",
             "minecraft:minimum_attack_charge": 1.0,
+            "minecraft:item_model": "reclaimed:focus/voidborne",
             "minecraft:attribute_modifiers": [
                 {
                     "type": "minecraft:attack_damage",

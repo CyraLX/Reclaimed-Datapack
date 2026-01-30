@@ -34,8 +34,8 @@
                     "minecraft:enchantments"
                 ]
             },
-            "minecraft:item_model": "reclaimed:focus/phoenix",
             "!minecraft:enchantments": {},
+            "minecraft:item_model": "reclaimed:focus/phoenix",
             "minecraft:consumable": {
                 "consume_seconds": 2.0,
                 "animation": "bow",

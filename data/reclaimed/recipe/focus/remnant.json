@@ -34,8 +34,8 @@
                     "minecraft:enchantments"
                 ]
             },
-            "minecraft:item_model": "reclaimed:focus/remnant",
             "!minecraft:enchantments": {},
+            "minecraft:item_model": "reclaimed:focus/remnant",
             "minecraft:consumable": {
                 "consume_seconds": 8,
                 "animation": "bow",

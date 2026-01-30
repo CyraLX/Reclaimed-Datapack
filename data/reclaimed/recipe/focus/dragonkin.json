@@ -34,8 +34,8 @@
                     "minecraft:enchantments"
                 ]
             },
-            "minecraft:item_model": "reclaimed:focus/dragonkin",
             "!minecraft:enchantments": {},
+            "minecraft:item_model": "reclaimed:focus/dragonkin",
             "minecraft:consumable": {
                 "consume_seconds": 2.0,
                 "animation": "bow",
