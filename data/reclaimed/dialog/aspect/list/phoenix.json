@@ -13,7 +13,8 @@
             {
                 "translate": "aspect.reclaimed.phoenix",
                 "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
-                "color": "#d13232"
+                "color": "#d13232",
+                "shadow_color": -13366260
             }
         ]
     },
@@ -30,7 +31,8 @@
             {
                 "translate": "aspect.reclaimed.phoenix",
                 "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
-                "color": "#d13232"
+                "color": "#d13232",
+                "shadow_color": -13366260
             }
         ]
     },
@@ -1335,6 +1337,11 @@
             "description": {
                 "translate": "dialog.aspects.aspect_info.focus",
                 "color": "#c7fdff",
+                "with": [
+                    {
+                        "translate": "extra.aspects.focus_powers"
+                    }
+                ],
                 "extra": [
                     " ",
                     {

@@ -13,7 +13,8 @@
             {
                 "translate": "aspect.reclaimed.morphling",
                 "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
-                "color": "#8c6178"
+                "color": "#8c6178",
+                "shadow_color": -14477282
             }
         ]
     },
@@ -30,7 +31,8 @@
             {
                 "translate": "aspect.reclaimed.morphling",
                 "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
-                "color": "#8c6178"
+                "color": "#8c6178",
+                "shadow_color": -14477282
             }
         ]
     },
@@ -1678,7 +1680,7 @@
                 "color": "#c7fdff",
                 "with": [
                     {
-                        "translate": "extra.aspects.aspect_effect"
+                        "translate": "extra.aspects.focus_powers"
                     }
                 ],
                 "extra": [
@@ -1977,7 +1979,8 @@
                     {
                         "translate": "aspect.reclaimed.morphling",
                         "italic": true,
-                        "color": "#8c6178"
+                        "color": "#8c6178",
+                        "shadow_color": -14477282
                     }
                 ]
             }
