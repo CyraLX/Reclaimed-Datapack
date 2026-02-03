@@ -58,12 +58,6 @@
                 "operation": "add_multiplied_base"
             },
             {
-                "attribute": "minecraft:movement_speed",
-                "id": "reclaimed:dragonkin/movement_speed",
-                "amount": 0.2,
-                "operation": "add_multiplied_base"
-            },
-            {
                 "attribute": "minecraft:attack_speed",
                 "id": "reclaimed:dragonkin/attack_speed",
                 "amount": -0.2,

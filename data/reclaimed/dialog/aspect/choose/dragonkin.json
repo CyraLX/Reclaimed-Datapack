@@ -134,17 +134,6 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute",
-                                                "color": "green",
-                                                "with": [
-                                                    "+20%",
-                                                    {
-                                                        "translate": "attribute.name.movement_speed"
-                                                    }
-                                                ]
-                                            },
-                                            "\n",
-                                            {
                                                 "translate": "badge_details.aspects.effect.damage_protection_add",
                                                 "color": "green",
                                                 "with": [
@@ -582,7 +571,7 @@
                                                 "translate": "badge_details.aspects.effect.attribute",
                                                 "color": "green",
                                                 "with": [
-                                                    "+20%",
+                                                    "+2",
                                                     {
                                                         "translate": "attribute.name.max_health"
                                                     }
@@ -745,17 +734,6 @@
                                             "+6",
                                             {
                                                 "translate": "attribute.name.armor_toughness"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+20%",
-                                            {
-                                                "translate": "attribute.name.movement_speed"
                                             }
                                         ]
                                     },
@@ -1045,7 +1023,7 @@
                                         "translate": "badge_details.aspects.effect.attribute",
                                         "color": "green",
                                         "with": [
-                                            "+20%",
+                                            "+2",
                                             {
                                                 "translate": "attribute.name.max_health"
                                             }
