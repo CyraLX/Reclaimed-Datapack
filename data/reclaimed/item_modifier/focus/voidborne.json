@@ -29,7 +29,7 @@
                             "text": "",
                             "color": "dark_green",
                             "extra": [
-                                " 0 " ,
+                                " 0 ",
                                 {
                                     "translate": "attribute.name.attack_damage"
                                 }
@@ -49,7 +49,7 @@
                             "text": "",
                             "color": "dark_green",
                             "extra": [
-                                " 2 " ,
+                                " 2 ",
                                 {
                                     "translate": "attribute.name.attack_speed"
                                 }
@@ -69,7 +69,7 @@
                             "text": "",
                             "color": "dark_green",
                             "extra": [
-                                " 0.5 " ,
+                                " 0.5 ",
                                 {
                                     "translate": "attribute.name.attack_knockback"
                                 }
@@ -100,9 +100,9 @@
                         ]
                     },
                     "minecraft:enchantments": {
-                        "reclaimed:focus/voidborne/summon_index":1,
-                        "reclaimed:focus/voidborne/summon_all":1,
-                        "reclaimed:focus/voidborne/change_index":1,
+                        "reclaimed:focus/voidborne/summon_index": 1,
+                        "reclaimed:focus/voidborne/summon_all": 1,
+                        "reclaimed:focus/voidborne/change_index": 1,
                         "aspects:focus/generic/modify_mainhand": 1,
                         "aspects:focus/generic/modify_offhand": 1
                     },
@@ -128,120 +128,108 @@
                         }
                     }
                 }
-            }
-        }
-    },
-    {
-        "function": "minecraft:set_name",
-        "target": "item_name",
-        "entity": "this",
-        "name": [
-            {
+            },
+            "minecraft:item_name": {
                 "translate": "item.reclaimed.focus.voidborne",
                 "color": "#ffff55"
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_all",
-        "lore": [
-            {
-                "translate": "lore.equipment.use_time_format",
-                "color": "gray",
-                "italic": false,
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_time"
-                    },
-                    {
-                        "translate": "lore.equipment.use_time.seconds",
-                        "color": "#757575",
-                        "with": [
-                            "1"
-                        ]
-                    }
-                ]
             },
-            {
-                "translate": "lore.equipment.use_cooldown_format",
-                "color": "gray",
-                "italic": false,
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_cooldown"
-                    },
-                    {
-                        "translate": "lore.equipment.use_cooldown.none",
-                        "color": "#757575"
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.attack",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.reclaimed.focus.voidborne.use_result_1"
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.use_mainhand_sneak_not",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.reclaimed.focus.voidborne.use_result_2"
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.use_mainhand_sneak",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.reclaimed.focus.voidborne.use_result_3"
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.use_offhand",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.reclaimed.focus.voidborne.use_result_4"
-                    }
-                ]
-            }
-        ]
+            "minecraft:lore": [
+                {
+                    "translate": "lore.equipment.use_time_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_time"
+                        },
+                        {
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.none",
+                            "color": "#757575"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.attack",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.voidborne.use_result_1"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_mainhand_sneak_not",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.voidborne.use_result_2"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_mainhand_sneak",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.voidborne.use_result_3"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_offhand",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.voidborne.use_result_4"
+                        }
+                    ]
+                }
+            ]
+        }
     }
 ]

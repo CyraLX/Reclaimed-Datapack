@@ -71,15 +71,8 @@
                         }
                     }
                 }
-            }
-        }
-    },
-    {
-        "function": "minecraft:set_name",
-        "target": "item_name",
-        "entity": "this",
-        "name": [
-            {
+            },
+            "minecraft:item_name": {
                 "translate": "item.reclaimed.focus.morphling",
                 "color": "#ffff55",
                 "with": [
@@ -87,140 +80,135 @@
                         "translate": "aspect.reclaimed.morphling.form.aquatic"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_all",
-        "lore": [
-            {
-                "translate": "lore.equipment.use_time_format",
-                "color": "gray",
-                "italic": false,
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_time"
-                    },
-                    {
-                        "translate": "lore.equipment.use_time.seconds",
-                        "color": "#757575",
-                        "with": [
-                            "1"
-                        ]
-                    }
-                ]
             },
-            {
-                "translate": "lore.equipment.use_cooldown_format",
-                "color": "gray",
-                "italic": false,
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_cooldown"
-                    },
-                    {
-                        "translate": "lore.equipment.use_cooldown.seconds",
-                        "color": "#757575",
-                        "with": [
-                            "5"
-                        ]
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.held",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.reclaimed.focus.morphling.use_result_1",
-                        "with": [
-                            {
-                                "translate": "aspect.reclaimed.morphling.form.aquatic",
-                                "color": "aqua"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.use_mainhand_sneak_not",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.reclaimed.focus.morphling.use_result_2",
-                        "with": [
-                            {
-                                "translate": "aspect.reclaimed.morphling.form.fire",
-                                "color": "red"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.use_mainhand_sneak",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.reclaimed.focus.morphling.use_result_3",
-                        "with": [
-                            {
-                                "translate": "aspect.reclaimed.morphling.form.void",
-                                "color": "dark_purple"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.use_offhand",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.reclaimed.focus.morphling.use_result_4"
-                    }
-                ]
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.reclaimed.focus.morphling.use_result_4_1"
-                    }
-                ]
-            }
-        ]
+            "minecraft:lore": [
+                {
+                    "translate": "lore.equipment.use_time_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_time"
+                        },
+                        {
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "5"
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.held",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.morphling.use_result_1",
+                            "with": [
+                                {
+                                    "translate": "aspect.reclaimed.morphling.form.aquatic",
+                                    "color": "aqua"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_mainhand_sneak_not",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.morphling.use_result_2",
+                            "with": [
+                                {
+                                    "translate": "aspect.reclaimed.morphling.form.fire",
+                                    "color": "red"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_mainhand_sneak",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.morphling.use_result_3",
+                            "with": [
+                                {
+                                    "translate": "aspect.reclaimed.morphling.form.void",
+                                    "color": "dark_purple"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_offhand",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.morphling.use_result_4"
+                        }
+                    ]
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.morphling.use_result_4_1"
+                        }
+                    ]
+                }
+            ]
+        }
     }
 ]
