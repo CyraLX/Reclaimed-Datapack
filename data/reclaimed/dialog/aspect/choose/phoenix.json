@@ -385,7 +385,7 @@
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "damage_types.minecraft.in_wall"
+                                                "translate": "damage_types.minecraft.hot_floor"
                                             }
                                         ]
                                     },
@@ -859,7 +859,7 @@
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "damage_types.minecraft.in_wall"
+                                                "translate": "damage_types.minecraft.hot_floor"
                                             }
                                         ]
                                     },
