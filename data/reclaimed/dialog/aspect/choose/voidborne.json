@@ -315,16 +315,16 @@
                                         "color": "yellow",
                                         "with": [
                                             {
-                                                "translate": "badge_details.aspects.effect.teleport_attacker_to_thing_in_range",
+                                                "translate": "badge_details.aspects.effect.teleport_attacker_in_range_custom",
                                                 "with": [
-                                                    {
-                                                        "translate": "extra.aspects.random"
-                                                    },
                                                     {
                                                         "translate": "extra.aspects.meter_distance",
                                                         "with": [
                                                             "6"
                                                         ]
+                                                    },
+                                                    {
+                                                        "translate": "extra.aspects.randomly_low"
                                                     }
                                                 ]
                                             },
@@ -491,16 +491,16 @@
                                         "color": "yellow",
                                         "with": [
                                             {
-                                                "translate": "badge_details.aspects.effect.teleport_attacker_to_thing_in_range",
+                                                "translate": "badge_details.aspects.effect.teleport_attacker_in_range_custom",
                                                 "with": [
-                                                    {
-                                                        "translate": "extra.aspects.random"
-                                                    },
                                                     {
                                                         "translate": "extra.aspects.meter_distance",
                                                         "with": [
                                                             "6"
                                                         ]
+                                                    },
+                                                    {
+                                                        "translate": "extra.aspects.randomly_low"
                                                     }
                                                 ]
                                             },
