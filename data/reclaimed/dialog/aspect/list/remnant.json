@@ -857,7 +857,7 @@
                             "action": "show_text",
                             "value": [
                                 {
-                                    "translate": "item.modifiers.use_mainhand",
+                                    "translate": "item.reclaimed.focus.remnant.use_condition_2",
                                     "color": "gray",
                                     "italic": false
                                 },
@@ -869,6 +869,41 @@
                                     "extra": [
                                         {
                                             "translate": "item.reclaimed.focus.remnant.use_result_2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.reclaimed.focus.remnant.use_name_3"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.reclaimed.focus.remnant.use_condition_3",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.reclaimed.focus.remnant.use_result_3_1"
+                                        },
+                                        "\n",
+                                        {
+                                            "translate": "item.reclaimed.focus.remnant.use_result_3_2"
                                         }
                                     ]
                                 }
