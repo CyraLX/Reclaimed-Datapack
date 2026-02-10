@@ -490,7 +490,7 @@
                                                                 "translate": "item.reclaimed.wings.dragonkin",
                                                                 "color": "light_purple"
                                                             },
-                                                            "1"
+                                                            "2"
                                                         ]
                                                     },
                                                     {
@@ -977,7 +977,7 @@
                                                         "translate": "item.reclaimed.wings.dragonkin",
                                                         "color": "light_purple"
                                                     },
-                                                    "1"
+                                                    "2"
                                                 ]
                                             },
                                             {

@@ -157,7 +157,7 @@
                 ],
                 "effect": {
                     "type": "minecraft:change_item_damage",
-                    "amount": 1
+                    "amount": 2
                 }
             },
             {
