@@ -23,7 +23,7 @@
 - **Morphling:** Evolving and adaptable form changeling able to adapt to almost any environment.
 
 <details>
-<summary>See Available Aspects (check out Gallery for even more details)</summary>
+<summary>See Available Aspects</summary>
 
 | Aspect    | Effect(s) | Focus Ability(s) |
 |:----------|:-----------|:----------------|
@@ -41,13 +41,22 @@
 
 This extends the base mods documentation
 
-Access from the Pause Menu → **Aspects**
+Access from the Pause Menu → **Aspects Menu**
 
 Includes:
 - List of Aspects and their information
 
 ## FAQ
 
-### My Mods button is overlapping the Aspects button in the Pause Menu!
+> *Why is there a missing Resource Pack?*
 
-This issue can be the fault of the Mod Menu (Fabric) mod itself, you can fix it by going into the Mod Menu settings and changing **Game Menu** option to anything else, except for **insert**.
+Likely due to the downloaded Datapack version. You **need** to download the bundled Resource Pack from the same download location where you got the Datapack.
+
+The download for it can be found always on the version page directly, not on the main page of this modification.
+
+Below is an example what the Datapack (top) and Resource Pack (bottom) downloads look like on Modrinth:
+![Datapack and Resource Pack download examples](https://cdn.modrinth.com/data/Y3QzViMQ/images/d6fecb01cd0e74d4bea75dcfc462d500d42cf068.png)
+
+> *My Mods button is overlapping the Aspects button in the Pause Menu!*
+
+This issue can be the fault of the Mod Menu (Fabric) mod itself. Make sure that in the Mod Menu settings the **Game Menu** option is **NOT** set to **insert**, if it is, set it to anything else.
