@@ -13,7 +13,7 @@
             {
                 "translate": "aspect.reclaimed.remnant",
                 "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
-                "color": "#024050",
+                "color": "#026b85",
                 "shadow_color": -16773100
             }
         ]
@@ -31,7 +31,7 @@
             {
                 "translate": "aspect.reclaimed.remnant",
                 "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
-                "color": "#024050",
+                "color": "#026b85",
                 "shadow_color": -16773100
             }
         ]
@@ -862,7 +862,7 @@
                     {
                         "translate": "aspect.reclaimed.remnant",
                         "italic": true,
-                        "color": "#024050",
+                        "color": "#026b85",
                         "shadow_color": -16773100
                     }
                 ]

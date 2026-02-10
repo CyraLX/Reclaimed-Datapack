@@ -10,7 +10,7 @@
             },
             {
                 "translate": "aspect.reclaimed.voidborne",
-                "color": "#550085",
+                "color": "#6902a5",
                 "shadow_color": -15400927
             }
         ]
@@ -25,7 +25,7 @@
             },
             {
                 "translate": "aspect.reclaimed.voidborne",
-                "color": "#550085",
+                "color": "#6902a5",
                 "shadow_color": -15400927
             }
         ]
@@ -39,7 +39,7 @@
                 "extra": [
                     {
                         "translate": "aspect.reclaimed.voidborne",
-                        "color": "#550085",
+                        "color": "#6902a5",
                         "shadow_color": -15400927
                     },
                     "\n",

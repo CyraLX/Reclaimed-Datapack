@@ -10,7 +10,7 @@
             },
             {
                 "translate": "aspect.reclaimed.remnant",
-                "color": "#024050",
+                "color": "#026b85",
                 "shadow_color": -16773100
             }
         ]
@@ -25,7 +25,7 @@
             },
             {
                 "translate": "aspect.reclaimed.remnant",
-                "color": "#024050",
+                "color": "#026b85",
                 "shadow_color": -16773100
             }
         ]
@@ -39,7 +39,7 @@
                 "extra": [
                     {
                         "translate": "aspect.reclaimed.remnant",
-                        "color": "#024050",
+                        "color": "#026b85",
                         "shadow_color": -16773100
                     },
                     "\n",

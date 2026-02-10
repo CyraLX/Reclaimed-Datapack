@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.reclaimed.phoenix",
-                "color": "#d13232"
+                "color": "#d13232",
+                "shadow_color": -13366260
             }
         ]
     },

@@ -6,7 +6,7 @@
 ## shadow_color = ARGB hex code of your Aspect color converted to a decimal number, usually 25% of the original brightness
 ## sound = Sound Event for your Aspect
 ## prevent_random = Boolean to prevent the Aspect from appearing when one is randomly assigned; defaults to false
-data modify storage aspects:registry aspect."reclaimed:morphling" set value {id: 1668077, namespace: "reclaimed", name: "morphling", color: "#8c6178", shadow_color: -14477282, sound: "minecraft:entity.generic.splash"}
+data modify storage aspects:registry aspect."reclaimed:morphling" set value {id: 1668077, namespace: "reclaimed", name: "morphling", color: "#0089a1", shadow_color: -12844981, sound: "minecraft:entity.generic.splash"}
 
 # Generic REGISTER_ASPECT logic
 function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."reclaimed:morphling"

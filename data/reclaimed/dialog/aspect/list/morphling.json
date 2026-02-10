@@ -13,8 +13,8 @@
             {
                 "translate": "aspect.reclaimed.morphling",
                 "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
-                "color": "#8c6178",
-                "shadow_color": -14477282
+                "color": "#0089a1",
+                "shadow_color": -12844981
             }
         ]
     },
@@ -31,8 +31,8 @@
             {
                 "translate": "aspect.reclaimed.morphling",
                 "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!",
-                "color": "#8c6178",
-                "shadow_color": -14477282
+                "color": "#0089a1",
+                "shadow_color": -12844981
             }
         ]
     },

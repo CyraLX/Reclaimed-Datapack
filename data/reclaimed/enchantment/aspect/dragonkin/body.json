@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.reclaimed.dragonkin",
-                "color": "#8e00db"
+                "color": "#8e00db",
+                "shadow_color": -14483402
             }
         ]
     },

@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.reclaimed.pebblemite",
-                "color": "#D3D3D3"
+                "color": "#D3D3D3",
+                "shadow_color": -13355980
             }
         ]
     },

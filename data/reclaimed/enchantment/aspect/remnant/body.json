@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.reclaimed.remnant",
-                "color": "#024050"
+                "color": "#026b85",
+                "shadow_color": -16773100
             }
         ]
     },
