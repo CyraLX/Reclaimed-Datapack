@@ -19,7 +19,7 @@
         },
         {
             "required": false,
-            "id": "minecraft:player"
+            "id": "#aspectlib:player-like"
         }
     ]
 }
