@@ -3,6 +3,7 @@
 ## Overview
 - Removed Minecraft 1.21.5 support due to the lack of Dialogs.
 - Updated to support up to 26.1 snapshot 7.
+- Moved addon's advancements into its own tab.
 
 ## General Changes
 - Updated Lithuanian Translations.
@@ -23,6 +24,7 @@
 
 ## Technical Changes
 - Increased Pack Format to `5`.
+- Required `aspects` version is now `v1.3.0`
 - Hardened Datapack validation.
 - > It will no longer apply datafixers if dependancies are missing or wrong versions.
 - Rewritten configs to use Dialogs instead.
