@@ -1,0 +1,76 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "translate": "aspects.addon_format",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects"
+            },
+            {
+                "translate": "reclaimed",
+                "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "reclaimed.description",
+                "fallback": "!! Missing Resource Pack for Aspects: Reclaimed !!"
+            },
+            "width": 300
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "menu.aspects.about.version_author_format",
+                "color": "gray",
+                "with": [
+                    {
+                        "translate": "reclaimed.version"
+                    },
+                    {
+                        "translate": "aspects.authors_format",
+                        "with": [
+                            {
+                                "translate": "reclaimed.authors"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "width": 300
+        }
+    ],
+    "actions": [
+        {
+            "label": {
+                "translate": "menu.aspects.about.website"
+            },
+            "action": {
+                "type": "minecraft:open_url",
+                "url": "https://modrinth.com/datapack/corrupted-aspects-reclaimed"
+            }
+        },
+        {
+            "label": {
+                "translate": "menu.aspects.about.issues"
+            },
+            "action": {
+                "type": "minecraft:open_url",
+                "url": "https://github.com/CyraLX/Aspects-Reclaimed/issues"
+            }
+        }
+    ],
+    "exit_action": {
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "smithed:data_packs"
+        },
+        "label": {
+            "translate": "gui.back"
+        }
+    }
+}
