@@ -4,6 +4,22 @@
         "name": "aspects:focus_dummy"
     },
     {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "aspects": {
+                "focus": {
+                    "aspect": {
+                        "namespace": "reclaimed",
+                        "name": "morphling"
+                    },
+                    "form": {
+                        "active": 2
+                    }
+                }
+            }
+        }
+    },
+    {
         "function": "minecraft:set_components",
         "components": {
             "minecraft:item_model": "reclaimed:focus/morphling_fire",
@@ -58,19 +74,6 @@
                     }
                 },
                 "count": 1
-            },
-            "minecraft:custom_data": {
-                "aspects": {
-                    "focus": {
-                        "aspect": {
-                            "namespace": "reclaimed",
-                            "name": "morphling"
-                        },
-                        "form": {
-                            "active": 2
-                        }
-                    }
-                }
             },
             "minecraft:item_name": {
                 "translate": "item.reclaimed.focus.morphling",
