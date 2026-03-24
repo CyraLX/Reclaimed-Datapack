@@ -1152,6 +1152,7 @@
         "action": {
             "type": "show_dialog",
             "dialog": "aspects:menu/aspect_list"
-        }
+        },
+        "width": 200
     }
 }
