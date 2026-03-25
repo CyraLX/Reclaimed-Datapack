@@ -1,31 +1,20 @@
-# Reclaimed 1.2.0
+# Reclaimed 1.2.1
 
 ## Overview
-- Removed Minecraft 1.21.5 support due to the lack of Dialogs.
-- Updated to support up to 26.1 snapshot 7.
-- Moved addon's advancements into its own tab.
+- Updated to support up to Minecraft 26.1.
+- Dropped support for `Quilt` and `Forge` Mod Loaders and seperated Mod Loader files into seperate versions.
+- > This means for `Fabric` and `NeoForge` there is no longer a universal `.jar` file unlike the Data Pack version.
+- Added Italian Translations (Thanks to `Crafty` and `Zane`).
+- Overhauled the `Aspects Menu` into a generic `Data Packs...` menu to be more in-line with other Data Pack conventions.
+- > This new menu is a lot like the Mod Menu's from Fabric and/or Forge/NeoForge.
 
 ## General Changes
 - Updated Lithuanian Translations.
-- Retouched colors of some Aspects for readability.
-
-## Aspect Changes
-### Morphling
-- Now directly adresses the required advancements in the Dialogs page.
-- Advancements that unlock forms are now broadcasted to players.
-### Voidborne
-- (1.21.11+) Focus now cannot attack until Attack Cooldown is full, while having the Attack Speed set to 2.
-### Remnant
-- Focus now mentions that you can transport entities.
-### Dragonkin
-- (1.21.11+) Now sneak flying with the Wings will propel you forward at a cost of extra durability damage.
-- Removed the movement speed bonus
-- Changed the Max Health bonus of the Dragon Head from +20% to +2
+- Updated Turkish Translations.
+- Configuration sliders now are capped at certain steps where it made sense.
 
 ## Technical Changes
-- Increased Pack Format to `5`.
-- Required `aspects` version is now `v1.3.0`
-- Hardened Datapack validation.
-- > It will no longer apply datafixers if dependancies are missing or wrong versions.
-- Rewritten configs to use Dialogs instead.
-- Added Pebblemite specific config options: `reclaimed.config.pebblemite.teleport_distance`.
+- Increased Pack Format to `6`.
+- Required `aspects` version is now `v1.3.1`
+- Now attempts to follow [Smithed Conventions](https://docs.smithed.dev/conventions).
+- Adjusted most `Back` buttons in dialogs to be consistently 200px wide just like vanilla menus.
