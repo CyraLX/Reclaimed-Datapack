@@ -92,6 +92,16 @@
                 "url": "https://github.com/CyraLX/Aspects-Reclaimed/issues"
             },
             "width": 150
+        },
+        {
+            "label": {
+                "translate": "dialog.aspects.addons.external_title"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "reclaimed:menu/addons"
+            },
+            "width": 250
         }
     ],
     "exit_action": {
