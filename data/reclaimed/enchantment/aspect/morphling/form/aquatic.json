@@ -30,7 +30,7 @@
             {
                 "attribute": "minecraft:oxygen_bonus",
                 "id": "reclaimed:morphling/aquatic/oxygen_bonus",
-                "amount": 2147483647,
+                "amount": 3,
                 "operation": "add_value"
             },
             {
@@ -47,6 +47,35 @@
             }
         ],
         "minecraft:location_changed": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "head": {
+                                "predicates": {
+                                    "minecraft:enchantments": [
+                                        {
+                                            "enchantments": "minecraft:respiration",
+                                            "levels": {
+                                                "min": 3
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:oxygen_bonus",
+                    "id": "reclaimed:morphling/aquatic/respiration_oxygen_bonus",
+                    "amount": 1,
+                    "operation": "add_value"
+                }
+            },
             {
                 "requirements": {
                     "condition": "minecraft:inverted",

@@ -297,11 +297,49 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.can_breathe_in",
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+3",
+                                                    {
+                                                        "translate": "attribute.name.oxygen_bonus"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "block.minecraft.water"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "color": "green",
+                                                        "with": [
+                                                            "+1",
+                                                            {
+                                                                "translate": "attribute.name.oxygen_bonus"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.when_equipped",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            {
+                                                                "text": "",
+                                                                "extra": [
+                                                                    {
+                                                                        "translate": "enchantment.minecraft.respiration"
+                                                                    },
+                                                                    " ",
+                                                                    {
+                                                                        "translate": "enchantment.level.3"
+                                                                    },
+                                                                    "+"
+                                                                ]
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             },
@@ -1213,11 +1251,49 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.can_breathe_in",
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+3",
+                                            {
+                                                "translate": "attribute.name.oxygen_bonus"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "block.minecraft.water"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+1",
+                                                    {
+                                                        "translate": "attribute.name.oxygen_bonus"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.when_equipped",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "text": "",
+                                                        "extra": [
+                                                            {
+                                                                "translate": "enchantment.minecraft.respiration"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "enchantment.level.3"
+                                                            },
+                                                            "+"
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },

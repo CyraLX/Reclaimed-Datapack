@@ -20,4 +20,3 @@ playsound minecraft:entity.zombie_villager.converted player @a[distance=..16] ~ 
 
 item modify entity @s armor.body reclaimed:aspect/morphling/form/aquatic
 function aspects:aspect_group/sensitive_to_impaling/activate
-function aspects:aspect_group/water_breathing/activate
