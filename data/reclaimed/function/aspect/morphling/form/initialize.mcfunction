@@ -9,9 +9,9 @@ scoreboard objectives add reclaimed.morphling.form.switch_grace dummy
 scoreboard players set #reclaimed reclaimed.morphling.form.switch_grace 4
 
 # Setup storage lookup table
-data modify storage aspects:registry aspect."reclaimed:morphling".data.form.1 set value {id: 1, name: "aquatic", color: "aqua", bossbar_color: "blue"}
-data modify storage aspects:registry aspect."reclaimed:morphling".data.form.aquatic set from storage aspects:registry aspect."reclaimed:morphling".data.form.1
-data modify storage aspects:registry aspect."reclaimed:morphling".data.form.2 set value {id: 2, name: "fire", color: "red", bossbar_color: "red"}
-data modify storage aspects:registry aspect."reclaimed:morphling".data.form.fire set from storage aspects:registry aspect."reclaimed:morphling".data.form.2
-data modify storage aspects:registry aspect."reclaimed:morphling".data.form.3 set value {id: 3, name: "void", color: "dark_purple", bossbar_color: "purple"}
-data modify storage aspects:registry aspect."reclaimed:morphling".data.form.void set from storage aspects:registry aspect."reclaimed:morphling".data.form.3
+data modify storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}].data.form.1 set value {id: 1, name: "aquatic", color: "aqua", bossbar_color: "blue"}
+data modify storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}].data.form.aquatic set from storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}].data.form.1
+data modify storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}].data.form.2 set value {id: 2, name: "fire", color: "red", bossbar_color: "red"}
+data modify storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}].data.form.fire set from storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}].data.form.2
+data modify storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}].data.form.3 set value {id: 3, name: "void", color: "dark_purple", bossbar_color: "purple"}
+data modify storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}].data.form.void set from storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}].data.form.3

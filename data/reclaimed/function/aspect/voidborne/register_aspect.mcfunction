@@ -5,11 +5,11 @@
 ## color = Hexidecimal color value for your Aspect
 ## shadow_color = ARGB hex code of your Aspect color converted to a decimal number, usually 25% of the original brightness
 ## sound = Sound Event for your Aspect
-## prevent_random = Boolean to prevent the Aspect from appearing when one is randomly assigned; defaults to false
-data modify storage aspects:registry aspect."reclaimed:voidborne" set value {id: 1668057, namespace: "reclaimed", name: "voidborne", color: "#6902a5", shadow_color: -15400927, sound: "minecraft:block.ender_chest.open"}
+## prevent_random = Boolean to prevent the Aspect from appearing when one is randomly assigned
+data modify storage aspects:registry aspect append value {id: 1668057, namespace: "reclaimed", name: "voidborne", color: "#6902a5", shadow_color: -15400927, sound: "minecraft:block.ender_chest.open", prevent_random: false}
 
 # Generic REGISTER_ASPECT logic
-function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."reclaimed:voidborne"
+function aspects:aspect/generic/register_aspect with storage aspects:registry aspect[{namespace: "reclaimed", name: "voidborne"}]
 
 # Setup scoreboard objectives for the Aspect
 function reclaimed:aspect/voidborne/spatial_instability/initialize_scoreboards

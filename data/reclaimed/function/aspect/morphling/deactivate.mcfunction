@@ -8,6 +8,6 @@ scoreboard players reset @s reclaimed.morphling.form.switch_time
 scoreboard players reset @s reclaimed.morphling.form.switch_cooldown
 
 # Generic DEACTIVATE logic
-function aspects:aspect/generic/deactivate with storage aspects:registry aspect."reclaimed:morphling"
+function aspects:aspect/generic/deactivate with storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}]
 
 # Aspect specific POST-DEACTIVATE logic

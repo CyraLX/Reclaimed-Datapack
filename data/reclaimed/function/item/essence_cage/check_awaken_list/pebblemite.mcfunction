@@ -1,1 +1,1 @@
-execute if score #aspects aspects.essence.bug matches 60.. if score #aspects aspects.essence.steel matches 60.. run return run function aspects:item/essence_cage/awaken with storage aspects:registry aspect."reclaimed:pebblemite"
+execute if score #aspects aspects.essence.bug matches 60.. if score #aspects aspects.essence.steel matches 60.. run return run function aspects:item/essence_cage/awaken with storage aspects:registry aspect[{namespace: "reclaimed", name: "pebblemite"}]

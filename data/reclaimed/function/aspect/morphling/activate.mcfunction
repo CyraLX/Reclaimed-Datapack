@@ -1,7 +1,7 @@
 # Aspect specific PRE-ACTIVATE logic
 
 # Generic ACTIVATE logic
-function aspects:aspect/generic/activate with storage aspects:registry aspect."reclaimed:morphling"
+function aspects:aspect/generic/activate with storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}]
 
 # Aspect specific POST-ACTIVATE logic
 ## Initialize Morph Aspect Effect

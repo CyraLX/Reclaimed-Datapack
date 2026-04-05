@@ -4,4 +4,4 @@ advancement revoke @s only reclaimed:item/essence_cage_awakened/consume/morphlin
 function reclaimed:aspect/morphling/activate
 
 # Perform generic logic
-function aspects:item/essence_cage_awakened/post-consume_effects with storage aspects:registry aspect."reclaimed:morphling"
+function aspects:item/essence_cage_awakened/post-consume_effects with storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}]

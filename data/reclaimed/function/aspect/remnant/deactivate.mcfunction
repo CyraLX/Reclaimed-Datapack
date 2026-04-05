@@ -1,7 +1,7 @@
 # Aspect specific PRE-DEACTIVATE logic
 
 # Generic DEACTIVATE logic
-function aspects:aspect/generic/deactivate with storage aspects:registry aspect."reclaimed:remnant"
+function aspects:aspect/generic/deactivate with storage aspects:registry aspect[{namespace: "reclaimed", name: "remnant"}]
 
 # Aspect specific POST-DEACTIVATE logic
 ## Remove attributes granted by Aspect
