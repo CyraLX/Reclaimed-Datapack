@@ -1,5 +1,5 @@
 # Get ID for the Bossbar
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 # Get Entity name
 function reclaimed:item/focus/voidborne/expose_entity_name with storage aspectlib:dummy
 

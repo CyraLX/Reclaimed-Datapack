@@ -1,4 +1,4 @@
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 function reclaimed:item/focus/remnant/store_position with storage aspectlib:dummy
 $execute if predicate aspectlib:has_vehicle on vehicle in $(Dimension) run tp @s $(Pos_X) $(Pos_Y) $(Pos_Z)
 $execute unless predicate aspectlib:has_vehicle in $(Dimension) run tp @s $(Pos_X) $(Pos_Y) $(Pos_Z)

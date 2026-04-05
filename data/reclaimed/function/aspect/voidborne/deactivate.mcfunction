@@ -1,5 +1,5 @@
 # Aspect specific PRE-DEACTIVATE logic
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 function reclaimed:item/focus/voidborne/trigger_empty
 function reclaimed:item/focus/voidborne/bossbar/destroy with storage aspectlib:dummy
 

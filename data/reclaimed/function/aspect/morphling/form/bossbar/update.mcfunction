@@ -1,5 +1,5 @@
 # Expose Player ID for further functions
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 # If currently switching to a Form, display it
 execute if score @s reclaimed.morphling.form.switch_to matches 1..3 if score @s reclaimed.morphling.form.switch_time matches 1.. store result storage aspectlib:dummy form int 1 run scoreboard players get @s reclaimed.morphling.form.switch_to
 execute if score @s reclaimed.morphling.form.switch_to matches 1..3 if score @s reclaimed.morphling.form.switch_time matches 1.. run return run function reclaimed:aspect/morphling/form/bossbar/set_value_time with storage aspectlib:dummy

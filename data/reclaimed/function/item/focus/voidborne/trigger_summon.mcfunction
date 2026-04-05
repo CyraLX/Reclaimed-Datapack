@@ -1,7 +1,7 @@
 # Check if any stored
 execute unless score @s reclaimed.voidborne.store_entity.length matches 1.. run return run playsound minecraft:entity.ender_eye.death
 # Expose the player ID
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 # Expose the stored entity index
 function reclaimed:item/focus/voidborne/expose_index
 # Expose stored entity

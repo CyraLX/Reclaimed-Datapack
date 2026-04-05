@@ -1,4 +1,4 @@
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 function reclaimed:aspect/morphling/form/bossbar/hide with storage aspectlib:dummy
 
 scoreboard players reset @s reclaimed.morphling.form.switch_to

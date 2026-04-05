@@ -1,5 +1,5 @@
 # Expose the player ID
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 # Expose entity index
 function reclaimed:item/focus/voidborne/expose_index
 # Expose entity

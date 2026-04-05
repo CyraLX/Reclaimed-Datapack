@@ -2,7 +2,7 @@
 execute if score @s reclaimed.morphling.form.switch_time matches 1.. run function reclaimed:aspect/morphling/form/cancel_switch
 # Set active form depending in which dimension they respawned
 ## Expose Player ID
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 ## Default: Aquatic
 execute unless dimension minecraft:the_nether unless dimension minecraft:the_end run function reclaimed:aspect/morphling/form/aquatic/activate with storage aspectlib:dummy
 ## The Nether
