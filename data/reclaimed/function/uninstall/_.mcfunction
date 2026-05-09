@@ -10,10 +10,21 @@ tellraw @a[tag=aspectlib.receive_logs, tag=aspectlib.receive_logs_expanded, tag=
 tag @s remove reclaimed.pack_uninstaller
 
 # Remove scoreboard objectives
-scoreboard objectives remove reclaimed.config.voidborne.storage_cap
-scoreboard objectives remove reclaimed.config.voidborne.storage_hp_threshold
-scoreboard objectives remove reclaimed.config.morphling.morph_cooldown
-scoreboard objectives remove reclaimed.config.morphling.morph_duration
+scoreboard objectives remove reclaimed.config.aspect.voidborne_storage_cap
+scoreboard objectives remove reclaimed.config.aspect.voidborne_storage_cap.default
+scoreboard objectives remove reclaimed.config.aspect.voidborne_storage_cap.advanced_inputs
+scoreboard objectives remove reclaimed.config.aspect.voidborne_storage_hp_threshold
+scoreboard objectives remove reclaimed.config.aspect.voidborne_storage_hp_threshold.default
+scoreboard objectives remove reclaimed.config.aspect.voidborne_storage_hp_threshold.advanced_inputs
+scoreboard objectives remove reclaimed.config.aspect.pebblemite_teleport_distance
+scoreboard objectives remove reclaimed.config.aspect.pebblemite_teleport_distance.default
+scoreboard objectives remove reclaimed.config.aspect.pebblemite_teleport_distance.advanced_inputs
+scoreboard objectives remove reclaimed.config.aspect.morphling_morph_cooldown
+scoreboard objectives remove reclaimed.config.aspect.morphling_morph_cooldown.default
+scoreboard objectives remove reclaimed.config.aspect.morphling_morph_cooldown.advanced_inputs
+scoreboard objectives remove reclaimed.config.aspect.morphling_morph_duration
+scoreboard objectives remove reclaimed.config.aspect.morphling_morph_duration.default
+scoreboard objectives remove reclaimed.config.aspect.morphling_morph_duration.advanced_inputs
 scoreboard objectives remove reclaimed.focus.rascal.raycast
 scoreboard objectives remove reclaimed.frostling.ticksfrozen
 scoreboard objectives remove reclaimed.remnant.control_gravity.is_active

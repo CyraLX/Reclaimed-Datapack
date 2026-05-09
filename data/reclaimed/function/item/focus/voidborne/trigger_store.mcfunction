@@ -1,5 +1,5 @@
 # Check if can store
-execute if score #reclaimed reclaimed.config.voidborne.storage_cap matches 0.. if score @s reclaimed.voidborne.store_entity.length >= #reclaimed reclaimed.config.voidborne.storage_cap run return run playsound minecraft:entity.ender_eye.death
+execute if score #reclaimed reclaimed.config.aspect.voidborne_storage_cap matches 0.. if score @s reclaimed.voidborne.store_entity.length >= #reclaimed reclaimed.config.aspect.voidborne_storage_cap run return run playsound minecraft:entity.ender_eye.death
 # Expose the player ID
 function aspectlib:expose/player/id
 # Store Entity

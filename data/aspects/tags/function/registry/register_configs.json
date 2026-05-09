@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "#reclaimed:config/initialize",
+            "id": "#reclaimed:registry/register_configs",
             "required": false
         }
     ]

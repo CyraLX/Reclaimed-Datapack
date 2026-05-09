@@ -1,0 +1,25 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "reclaimed:config/aspect/morphling_morph_cooldown/register",
+            "required": false
+        },
+        {
+            "id": "reclaimed:config/aspect/morphling_morph_duration/register",
+            "required": false
+        },
+        {
+            "id": "reclaimed:config/aspect/pebblemite_teleport_distance/register",
+            "required": false
+        },
+        {
+            "id": "reclaimed:config/aspect/voidborne_storage_cap/register",
+            "required": false
+        },
+        {
+            "id": "reclaimed:config/aspect/voidborne_storage_hp_threshold/register",
+            "required": false
+        }
+    ]
+}
