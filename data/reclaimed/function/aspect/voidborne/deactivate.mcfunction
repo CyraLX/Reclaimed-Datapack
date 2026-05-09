@@ -1,7 +1,7 @@
 # Aspect specific PRE-DEACTIVATE logic
 function aspectlib:expose/player/id
 function reclaimed:item/focus/voidborne/trigger_empty
-function reclaimed:item/focus/voidborne/bossbar/destroy with storage aspectlib:dummy
+function reclaimed:item/focus/voidborne/bossbar/destroy with storage aspectlib:cache temp
 
 # Generic DEACTIVATE logic
 function aspects:aspect/generic/deactivate with storage aspects:registry aspect[{namespace: "reclaimed", name: "voidborne"}]

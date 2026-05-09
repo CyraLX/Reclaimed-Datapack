@@ -4,9 +4,9 @@ execute if predicate reclaimed:item/focus/morphling/common/has_mainhand unless p
 execute if predicate reclaimed:item/focus/morphling/common/has_offhand unless predicate reclaimed:item/focus/morphling/void/has_offhand run item modify entity @s weapon.offhand reclaimed:focus/morphling/void_focus
 
 function aspectlib:expose/player/id
-execute unless score #reclaimed reclaimed.config.aspect.morphling_morph_duration matches 1.. run return run function reclaimed:aspect/morphling/form/void/activate with storage aspectlib:dummy
+execute unless score #reclaimed reclaimed.config.aspect.morphling_morph_duration matches 1.. run return run function reclaimed:aspect/morphling/form/void/activate with storage aspectlib:cache temp
 
 scoreboard players operation @s reclaimed.morphling.form.switch_time = #reclaimed reclaimed.config.aspect.morphling_morph_duration
-data modify storage aspectlib:dummy form set value 3
+data modify storage aspectlib:cache temp.form set value 3
 item modify entity @s armor.body reclaimed:aspect/morphling/form/switching_effects
-function reclaimed:aspect/morphling/form/bossbar/state_switching with storage aspectlib:dummy
+function reclaimed:aspect/morphling/form/bossbar/state_switching with storage aspectlib:cache temp

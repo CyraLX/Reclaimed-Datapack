@@ -10,7 +10,7 @@ scoreboard players set @s reclaimed.voidborne.store_entity.length 0
 
 ## Initialize Entity name Cache
 function aspectlib:expose/player/id
-function reclaimed:item/focus/voidborne/cache_entity_name with storage aspectlib:dummy
+function reclaimed:item/focus/voidborne/cache_entity_name with storage aspectlib:cache temp
 
 ## Initialize Bossbar
 function reclaimed:item/focus/voidborne/bossbar/initialize

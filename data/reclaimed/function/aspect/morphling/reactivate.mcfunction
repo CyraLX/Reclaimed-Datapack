@@ -2,13 +2,13 @@
 
 # Generic REACTIVATE logic
 function aspectlib:expose/player/id
-data modify storage aspectlib:dummy aspect set from storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}]
-data modify storage aspectlib:dummy aspect_namespace set from storage aspectlib:dummy aspect.namespace
-data modify storage aspectlib:dummy aspect_name set from storage aspectlib:dummy aspect.name
-data modify storage aspectlib:dummy aspect_id set from storage aspectlib:dummy aspect.id
-function aspects:aspect/generic/reactivate with storage aspectlib:dummy
+data modify storage aspectlib:cache temp.aspect set from storage aspects:registry aspect[{namespace: "reclaimed", name: "morphling"}]
+data modify storage aspectlib:cache temp.aspect_namespace set from storage aspectlib:cache temp.aspect.namespace
+data modify storage aspectlib:cache temp.aspect_name set from storage aspectlib:cache temp.aspect.name
+data modify storage aspectlib:cache temp.aspect_id set from storage aspectlib:cache temp.aspect.id
+function aspects:aspect/generic/reactivate with storage aspectlib:cache temp
 
 # Aspect specific POST-REACTIVATE logic
 ## Initialize Morph Aspect Effect
 function reclaimed:aspect/morphling/form/bossbar/initialize
-function reclaimed:aspect/morphling/form/reactivate with storage aspectlib:dummy
+function reclaimed:aspect/morphling/form/reactivate with storage aspectlib:cache temp

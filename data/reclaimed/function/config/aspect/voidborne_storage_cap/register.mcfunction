@@ -66,7 +66,7 @@ scoreboard objectives add reclaimed.config.aspect.voidborne_storage_cap.advanced
 #     accepts_with       - SNBT Text Component array formatted into the "Accepts Values" translation key
 #                           Defaults to [""]
 #
-data modify storage aspectlib:dummy config set value {namespace:"reclaimed",type:"aspect",name:"voidborne_storage_cap",dialog_type:2,dialog_data:{start:-1,end:100,step:1,accepts_namespace:"aspects",accepts_name:".int"}}
+data modify storage aspectlib:cache temp.config set value {namespace:"reclaimed",type:"aspect",name:"voidborne_storage_cap",dialog_type:2,dialog_data:{start:-1,end:100,step:1,accepts_namespace:"aspects",accepts_name:".int"}}
 # Define Default value
 scoreboard players set #reclaimed aspectlib.dummy 5
 
@@ -76,4 +76,4 @@ execute if score #reclaimed reclaimed.config.voidborne.storage_cap = #reclaimed 
 execute if score #reclaimed reclaimed.config.voidborne.storage_cap = #reclaimed reclaimed.config.voidborne.storage_cap run scoreboard objectives remove reclaimed.config.voidborne.storage_cap
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:dummy config
+function aspects:config/_macros/register_config with storage aspectlib:cache temp.config

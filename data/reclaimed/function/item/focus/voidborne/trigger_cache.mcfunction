@@ -3,6 +3,6 @@ function aspectlib:expose/player/id
 # Expose entity index
 function reclaimed:item/focus/voidborne/expose_index
 # Expose entity
-function reclaimed:item/focus/voidborne/expose_stored_entity with storage aspectlib:dummy
+function reclaimed:item/focus/voidborne/expose_stored_entity with storage aspectlib:cache temp
 # Expose entity name and cache it
-function reclaimed:item/focus/voidborne/cache_entity_name with storage aspectlib:dummy
+function reclaimed:item/focus/voidborne/cache_entity_name with storage aspectlib:cache temp

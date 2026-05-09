@@ -3,7 +3,7 @@ execute if score #reclaimed reclaimed.config.aspect.voidborne_storage_cap matche
 # Expose the player ID
 function aspectlib:expose/player/id
 # Store Entity
-execute as @n[tag=reclaimed.voidborne.store_target,distance=..10] at @s run function reclaimed:item/focus/voidborne/store_self with storage aspectlib:dummy
+execute as @n[tag=reclaimed.voidborne.store_target,distance=..10] at @s run function reclaimed:item/focus/voidborne/store_self with storage aspectlib:cache temp
 # Cache Display Name
 function reclaimed:item/focus/voidborne/trigger_cache
 # Update Bossbar

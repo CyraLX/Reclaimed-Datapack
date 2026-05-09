@@ -66,7 +66,7 @@ scoreboard objectives add reclaimed.config.aspect.morphling_morph_cooldown.advan
 #     accepts_with       - SNBT Text Component array formatted into the "Accepts Values" translation key
 #                           Defaults to [""]
 #
-data modify storage aspectlib:dummy config set value {namespace:"reclaimed",type:"aspect",name:"morphling_morph_cooldown",dialog_type:2,dialog_data:{start:0,end:100,step:2,accepts_namespace:"aspects",accepts_name:".above_equal",accepts_with:["0"]}}
+data modify storage aspectlib:cache temp.config set value {namespace:"reclaimed",type:"aspect",name:"morphling_morph_cooldown",dialog_type:2,dialog_data:{start:0,end:100,step:2,accepts_namespace:"aspects",accepts_name:".above_equal",accepts_with:["0"]}}
 # Define Default value
 scoreboard players set #reclaimed aspectlib.dummy 10
 
@@ -76,4 +76,4 @@ execute if score #reclaimed reclaimed.config.morphling.morph_cooldown = #reclaim
 execute if score #reclaimed reclaimed.config.morphling.morph_cooldown = #reclaimed reclaimed.config.morphling.morph_cooldown run scoreboard objectives remove reclaimed.config.morphling.morph_cooldown
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:dummy config
+function aspects:config/_macros/register_config with storage aspectlib:cache temp.config

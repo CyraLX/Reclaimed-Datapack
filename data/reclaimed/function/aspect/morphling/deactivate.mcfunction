@@ -1,7 +1,7 @@
 # Aspect specific PRE-DEACTIVATE logic
 ## Deactivate Morph Aspect Effect
 function aspectlib:expose/player/id
-function reclaimed:aspect/morphling/form/bossbar/destroy with storage aspectlib:dummy
+function reclaimed:aspect/morphling/form/bossbar/destroy with storage aspectlib:cache temp
 function reclaimed:aspect/morphling/form/deactivate_all
 scoreboard players reset @s reclaimed.morphling.form.switch_to
 scoreboard players reset @s reclaimed.morphling.form.switch_time

@@ -1,5 +1,5 @@
 function aspectlib:expose/player/id
-function reclaimed:aspect/morphling/form/bossbar/hide with storage aspectlib:dummy
+function reclaimed:aspect/morphling/form/bossbar/hide with storage aspectlib:cache temp
 
 scoreboard players reset @s reclaimed.morphling.form.switch_to
 scoreboard players reset @s reclaimed.morphling.form.switch_time

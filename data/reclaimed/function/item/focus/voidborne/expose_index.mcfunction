@@ -1,1 +1,1 @@
-execute store result storage aspectlib:dummy index int 1 run scoreboard players get @s reclaimed.voidborne.store_entity.index
+execute store result storage aspectlib:cache temp.index int 1 run scoreboard players get @s reclaimed.voidborne.store_entity.index
