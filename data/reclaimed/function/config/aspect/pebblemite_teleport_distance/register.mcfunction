@@ -68,7 +68,7 @@ scoreboard objectives add reclaimed.config.aspect.pebblemite_teleport_distance.a
 #
 data modify storage aspectlib:cache temp.config set value {namespace:"reclaimed",type:"aspect",name:"pebblemite_teleport_distance",dialog_type:2,dialog_data:{start:0,end:500,step:10,accepts_namespace:"aspects",accepts_name:".above_equal",accepts_with:["0"]}}
 # Define Default value
-scoreboard players set #reclaimed aspectlib.dummy 50
+scoreboard players set #reclaimed aspectlib.temp 50
 
 # Convert legacy scoreboard
 ## From V2 to V3

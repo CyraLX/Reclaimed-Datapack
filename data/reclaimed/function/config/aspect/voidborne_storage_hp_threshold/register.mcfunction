@@ -68,7 +68,7 @@ scoreboard objectives add reclaimed.config.aspect.voidborne_storage_hp_threshold
 #
 data modify storage aspectlib:cache temp.config set value {namespace:"reclaimed",type:"aspect",name:"voidborne_storage_hp_threshold",dialog_type:2,dialog_data:{start:-1,end:100,step:1,accepts_namespace:"aspects",accepts_name:".int"}}
 # Define Default value
-scoreboard players set #reclaimed aspectlib.dummy 40
+scoreboard players set #reclaimed aspectlib.temp 40
 
 # Convert legacy scoreboard
 ## From V2 to V3

@@ -68,7 +68,7 @@ scoreboard objectives add reclaimed.config.aspect.morphling_morph_cooldown.advan
 #
 data modify storage aspectlib:cache temp.config set value {namespace:"reclaimed",type:"aspect",name:"morphling_morph_cooldown",dialog_type:2,dialog_data:{start:0,end:100,step:2,accepts_namespace:"aspects",accepts_name:".above_equal",accepts_with:["0"]}}
 # Define Default value
-scoreboard players set #reclaimed aspectlib.dummy 10
+scoreboard players set #reclaimed aspectlib.temp 10
 
 # Convert legacy scoreboard
 ## From V2 to V3
