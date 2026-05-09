@@ -1,7 +1,7 @@
 # Aspect specific PRE-ACTIVATE logic
 
 # Generic ACTIVATE logic
-function aspects:aspect/generic/activate with storage aspects:registry aspect[{namespace: "reclaimed", name: "frostling"}]
+function aspects:aspect/generic/activate with storage aspectlib:registry aspect[{namespace: "reclaimed", name: "frostling"}]
 
 # Aspect specific POST-ACTIVATE logic
 ## Set Aspect Group

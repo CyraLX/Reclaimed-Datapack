@@ -76,4 +76,4 @@ execute if score #reclaimed reclaimed.config.morphling.morph_duration = #reclaim
 execute if score #reclaimed reclaimed.config.morphling.morph_duration = #reclaimed reclaimed.config.morphling.morph_duration run scoreboard objectives remove reclaimed.config.morphling.morph_duration
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:cache temp.config
+function aspectlib:config/_macros/register_config with storage aspectlib:cache temp.config

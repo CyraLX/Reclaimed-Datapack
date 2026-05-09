@@ -1,1 +1,1 @@
-execute if score #aspects aspects.essence.void matches 120.. run return run function aspects:item/essence_cage/awaken with storage aspects:registry aspect[{namespace: "reclaimed", name: "voidborne"}]
+execute if score #aspects aspects.essence.void matches 120.. run return run function aspects:item/essence_cage/awaken with storage aspectlib:registry aspect[{namespace: "reclaimed", name: "voidborne"}]

@@ -3,7 +3,7 @@
 execute if predicate aspects:equipment/aspect_unique/chest run function aspectlib:equipment/remove/chestplate
 
 # Generic DEACTIVATE logic
-function aspects:aspect/generic/deactivate with storage aspects:registry aspect[{namespace: "reclaimed", name: "dragonkin"}]
+function aspects:aspect/generic/deactivate with storage aspectlib:registry aspect[{namespace: "reclaimed", name: "dragonkin"}]
 
 # Aspect specific POST-DEACTIVATE logic
 ## Remove attributes granted by Aspect

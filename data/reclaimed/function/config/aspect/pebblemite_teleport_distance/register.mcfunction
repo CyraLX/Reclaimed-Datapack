@@ -76,4 +76,4 @@ execute if score #reclaimed reclaimed.config.pebblemite.teleport_distance = #rec
 execute if score #reclaimed reclaimed.config.pebblemite.teleport_distance = #reclaimed reclaimed.config.pebblemite.teleport_distance run scoreboard objectives remove reclaimed.config.pebblemite.teleport_distance
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:cache temp.config
+function aspectlib:config/_macros/register_config with storage aspectlib:cache temp.config

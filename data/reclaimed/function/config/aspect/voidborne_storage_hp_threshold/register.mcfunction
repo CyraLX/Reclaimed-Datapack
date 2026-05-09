@@ -76,4 +76,4 @@ execute if score #reclaimed reclaimed.config.voidborne.storage_hp_threshold = #r
 execute if score #reclaimed reclaimed.config.voidborne.storage_hp_threshold = #reclaimed reclaimed.config.voidborne.storage_hp_threshold run scoreboard objectives remove reclaimed.config.voidborne.storage_hp_threshold
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:cache temp.config
+function aspectlib:config/_macros/register_config with storage aspectlib:cache temp.config

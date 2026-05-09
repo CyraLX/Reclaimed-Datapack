@@ -4,7 +4,7 @@ function reclaimed:item/focus/voidborne/trigger_empty
 function reclaimed:item/focus/voidborne/bossbar/destroy with storage aspectlib:cache temp
 
 # Generic DEACTIVATE logic
-function aspects:aspect/generic/deactivate with storage aspects:registry aspect[{namespace: "reclaimed", name: "voidborne"}]
+function aspects:aspect/generic/deactivate with storage aspectlib:registry aspect[{namespace: "reclaimed", name: "voidborne"}]
 
 # Aspect specific POST-DEACTIVATE logic
 
