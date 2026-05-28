@@ -37,7 +37,7 @@
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "minecraft:entity_type": "#reclaimed:item/focus/voidborne/store_blacklist"
+                                        "type": "#reclaimed:item/focus/voidborne/store_blacklist"
                                     }
                                 }
                             },
@@ -45,7 +45,7 @@
                                 "condition": "minecraft:entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "minecraft:entity_type": "#reclaimed:item/focus/voidborne/store_exclusion"
+                                    "type": "#reclaimed:item/focus/voidborne/store_exclusion"
                                 }
                             }
                         ]
@@ -96,7 +96,7 @@
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "minecraft:entity_type": "#reclaimed:item/focus/voidborne/store_blacklist"
+                                        "type": "#reclaimed:item/focus/voidborne/store_blacklist"
                                     }
                                 }
                             },
@@ -104,7 +104,7 @@
                                 "condition": "minecraft:entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "minecraft:entity_type": "#reclaimed:item/focus/voidborne/store_exclusion"
+                                    "type": "#reclaimed:item/focus/voidborne/store_exclusion"
                                 }
                             }
                         ]

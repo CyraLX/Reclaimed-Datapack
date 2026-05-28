@@ -9,9 +9,10 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "minecraft:type_specific/player": {
+                            "type_specific": {
+                                "type": "minecraft:player",
                                 "advancements": {
-                                    "reclaimed:gameplay/aspect/morphling/form/fire": true
+                                    "reclaimed:gameplay/aspect/morphling/form/void": true
                                 }
                             }
                         }
@@ -22,7 +23,7 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "reclaimed:focus/morphling_fire"
+                "recipe": "reclaimed:focus/morphling_void"
             }
         }
     },
@@ -34,7 +35,7 @@
     ],
     "rewards": {
         "recipes": [
-            "reclaimed:focus/morphling_fire"
+            "reclaimed:focus/morphling_void"
         ]
     }
 }

@@ -81,12 +81,13 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "minecraft:type_specific/player": {
+                            "type_specific": {
+                                "type": "minecraft:player",
                                 "input": {
                                     "sneak": true
                                 }
                             },
-                            "minecraft:flags": {
+                            "flags": {
                                 "is_flying": true
                             }
                         }
@@ -108,12 +109,13 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "minecraft:type_specific/player": {
+                            "type_specific": {
+                                "type": "minecraft:player",
                                 "input": {
                                     "sneak": true
                                 }
                             },
-                            "minecraft:flags": {
+                            "flags": {
                                 "is_flying": true
                             }
                         }
@@ -140,15 +142,16 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "minecraft:type_specific/player": {
+                            "type_specific": {
+                                "type": "minecraft:player",
                                 "input": {
                                     "sneak": true
                                 }
                             },
-                            "minecraft:flags": {
+                            "flags": {
                                 "is_flying": true
                             },
-                            "minecraft:periodic_tick": 20
+                            "periodic_tick": 20
                         }
                     }
                 ],
@@ -165,8 +168,8 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "minecraft:entity_type": "minecraft:player",
-                                "minecraft:periodic_tick": 100
+                                "periodic_tick": 100,
+                                "type": "minecraft:player"
                             }
                         },
                         {

@@ -57,7 +57,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "minecraft:type_specific/player": {
+                            "type_specific": {
+                                "type": "minecraft:player",
                                 "advancements": {
                                     "reclaimed:gameplay/aspect/morphling/form/aquatic": true
                                 }
@@ -70,7 +71,7 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "minecraft:entity_type": "minecraft:blaze"
+                            "type": "minecraft:blaze"
                         }
                     },
                     {
@@ -99,7 +100,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "minecraft:type_specific/player": {
+                            "type_specific": {
+                                "type": "minecraft:player",
                                 "advancements": {
                                     "reclaimed:gameplay/aspect/morphling/form/aquatic": true
                                 }

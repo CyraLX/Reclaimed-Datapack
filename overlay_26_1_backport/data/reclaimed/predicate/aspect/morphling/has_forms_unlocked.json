@@ -2,9 +2,10 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-        "minecraft:type_specific/player": {
+        "type_specific": {
+            "type": "minecraft:player",
             "advancements": {
-                "reclaimed:gameplay/aspect/morphling/form/fire": true
+                "reclaimed:gameplay/aspect/morphling/form/aquatic": true
             }
         }
     }
