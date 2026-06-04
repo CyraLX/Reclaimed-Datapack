@@ -52,6 +52,11 @@
                         "reclaimed:focus/phoenix/use": 1
                     },
                     "minecraft:custom_data": {
+                        "smithed": {
+                            "ignore": {
+                                "everything": true
+                            }
+                        },
                         "aspects": {
                             "focus": {
                                 "aspect": {

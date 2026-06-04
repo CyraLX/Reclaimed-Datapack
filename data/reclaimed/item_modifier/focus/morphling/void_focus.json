@@ -60,6 +60,11 @@
                         "reclaimed:focus/morphling/use_offhand": 1
                     },
                     "minecraft:custom_data": {
+                        "smithed": {
+                            "ignore": {
+                                "everything": true
+                            }
+                        },
                         "aspects": {
                             "focus": {
                                 "aspect": {
