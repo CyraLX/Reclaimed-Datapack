@@ -303,8 +303,19 @@
                                                         "translate": "badge_details.aspects.effect.starting_equipment",
                                                         "with": [
                                                             {
-                                                                "translate": "item.reclaimed.wings.phoenix",
-                                                                "color": "light_purple"
+                                                                "text": "",
+                                                                "color": "white",
+                                                                "extra": [
+                                                                    {
+                                                                        "sprite": "reclaimed:item/wings/phoenix",
+                                                                        "atlas": "minecraft:items"
+                                                                    },
+                                                                    " ",
+                                                                    {
+                                                                        "translate": "item.reclaimed.wings.phoenix",
+                                                                        "color": "light_purple"
+                                                                    }
+                                                                ]
                                                             }
                                                         ]
                                                     },
@@ -344,8 +355,19 @@
                                                         "translate": "equipment.slot.chest"
                                                     },
                                                     {
-                                                        "translate": "item.reclaimed.wings.phoenix",
-                                                        "color": "light_purple"
+                                                        "text": "",
+                                                        "color": "white",
+                                                        "extra": [
+                                                            {
+                                                                "sprite": "reclaimed:item/wings/phoenix",
+                                                                "atlas": "minecraft:items"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "item.reclaimed.wings.phoenix",
+                                                                "color": "light_purple"
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             },
@@ -810,8 +832,19 @@
                                                         "translate": "badge_details.aspects.effect.starting_equipment",
                                                         "with": [
                                                             {
-                                                                "translate": "item.reclaimed.wings.phoenix",
-                                                                "color": "light_purple"
+                                                                "text": "",
+                                                                "color": "white",
+                                                                "extra": [
+                                                                    {
+                                                                        "sprite": "reclaimed:item/wings/phoenix",
+                                                                        "atlas": "minecraft:items"
+                                                                    },
+                                                                    " ",
+                                                                    {
+                                                                        "translate": "item.reclaimed.wings.phoenix",
+                                                                        "color": "light_purple"
+                                                                    }
+                                                                ]
                                                             }
                                                         ]
                                                     },
@@ -851,8 +884,19 @@
                                                         "translate": "equipment.slot.chest"
                                                     },
                                                     {
-                                                        "translate": "item.reclaimed.wings.phoenix",
-                                                        "color": "light_purple"
+                                                        "text": "",
+                                                        "color": "white",
+                                                        "extra": [
+                                                            {
+                                                                "sprite": "reclaimed:item/wings/phoenix",
+                                                                "atlas": "minecraft:items"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "item.reclaimed.wings.phoenix",
+                                                                "color": "light_purple"
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             },

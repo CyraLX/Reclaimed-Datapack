@@ -318,8 +318,19 @@
                                                         "translate": "badge_details.aspects.effect.starting_equipment",
                                                         "with": [
                                                             {
-                                                                "translate": "item.reclaimed.wings.dragonkin",
-                                                                "color": "light_purple"
+                                                                "text": "",
+                                                                "color": "white",
+                                                                "extra": [
+                                                                    {
+                                                                        "sprite": "reclaimed:item/wings/dragonkin",
+                                                                        "atlas": "minecraft:items"
+                                                                    },
+                                                                    " ",
+                                                                    {
+                                                                        "translate": "item.reclaimed.wings.dragonkin",
+                                                                        "color": "light_purple"
+                                                                    }
+                                                                ]
                                                             }
                                                         ]
                                                     },
@@ -359,8 +370,19 @@
                                                         "translate": "equipment.slot.chest"
                                                     },
                                                     {
-                                                        "translate": "item.reclaimed.wings.dragonkin",
-                                                        "color": "light_purple"
+                                                        "text": "",
+                                                        "color": "white",
+                                                        "extra": [
+                                                            {
+                                                                "sprite": "reclaimed:item/wings/dragonkin",
+                                                                "atlas": "minecraft:items"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "item.reclaimed.wings.dragonkin",
+                                                                "color": "light_purple"
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             },
@@ -481,8 +503,19 @@
                                                         "translate": "badge_details.aspects.effect.damage_item",
                                                         "with": [
                                                             {
-                                                                "translate": "item.reclaimed.wings.dragonkin",
-                                                                "color": "light_purple"
+                                                                "text": "",
+                                                                "color": "white",
+                                                                "extra": [
+                                                                    {
+                                                                        "sprite": "reclaimed:item/wings/dragonkin",
+                                                                        "atlas": "minecraft:items"
+                                                                    },
+                                                                    " ",
+                                                                    {
+                                                                        "translate": "item.reclaimed.wings.dragonkin",
+                                                                        "color": "light_purple"
+                                                                    }
+                                                                ]
                                                             },
                                                             "2"
                                                         ]
@@ -647,8 +680,19 @@
                                                         "translate": "badge_details.aspects.effect.starting_equipment",
                                                         "with": [
                                                             {
-                                                                "translate": "item.reclaimed.wings.dragonkin",
-                                                                "color": "light_purple"
+                                                                "text": "",
+                                                                "color": "white",
+                                                                "extra": [
+                                                                    {
+                                                                        "sprite": "reclaimed:item/wings/dragonkin",
+                                                                        "atlas": "minecraft:items"
+                                                                    },
+                                                                    " ",
+                                                                    {
+                                                                        "translate": "item.reclaimed.wings.dragonkin",
+                                                                        "color": "light_purple"
+                                                                    }
+                                                                ]
                                                             }
                                                         ]
                                                     },
@@ -688,8 +732,19 @@
                                                         "translate": "equipment.slot.chest"
                                                     },
                                                     {
-                                                        "translate": "item.reclaimed.wings.dragonkin",
-                                                        "color": "light_purple"
+                                                        "text": "",
+                                                        "color": "white",
+                                                        "extra": [
+                                                            {
+                                                                "sprite": "reclaimed:item/wings/dragonkin",
+                                                                "atlas": "minecraft:items"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "item.reclaimed.wings.dragonkin",
+                                                                "color": "light_purple"
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             },
@@ -963,8 +1018,19 @@
                                                         "translate": "badge_details.aspects.effect.damage_item",
                                                         "with": [
                                                             {
-                                                                "translate": "item.reclaimed.wings.dragonkin",
-                                                                "color": "light_purple"
+                                                                "text": "",
+                                                                "color": "white",
+                                                                "extra": [
+                                                                    {
+                                                                        "sprite": "reclaimed:item/wings/dragonkin",
+                                                                        "atlas": "minecraft:items"
+                                                                    },
+                                                                    " ",
+                                                                    {
+                                                                        "translate": "item.reclaimed.wings.dragonkin",
+                                                                        "color": "light_purple"
+                                                                    }
+                                                                ]
                                                             },
                                                             "1"
                                                         ]
