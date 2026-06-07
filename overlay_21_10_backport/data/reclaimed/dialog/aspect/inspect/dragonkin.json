@@ -1,7 +1,7 @@
 {
-    "type": "minecraft:confirmation",
+    "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.chosen_aspect",
+        "translate": "dialog.aspects.inspect_aspect",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -19,7 +19,7 @@
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "translate": "dialog.aspects.inspect_aspect.external_title",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -50,7 +50,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
+                "translate": "dialog.aspects.aspect_info.hover_tutorial",
                 "italic": true,
                 "color": "gold"
             }
@@ -72,7 +72,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.effects",
+                "translate": "dialog.aspects.aspect_info.effects",
                 "color": "#f6c7ff",
                 "with": [
                     {
@@ -971,7 +971,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.focus",
+                "translate": "dialog.aspects.aspect_info.focus",
                 "color": "#c7fdff",
                 "with": [
                     {
@@ -991,7 +991,7 @@
                         "hover_event": {
                             "action": "show_text",
                             "value": {
-                                "translate": "dialog.aspects.chosen_aspect.focus.hover"
+                                "translate": "dialog.aspects.aspect_info.focus.hover"
                             }
                         }
                     },
@@ -1050,42 +1050,14 @@
                     }
                 ]
             }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.chosen_aspect.confirmation",
-                "bold": false,
-                "with": [
-                    {
-                        "translate": "aspect.reclaimed.dragonkin",
-                        "italic": true,
-                        "color": "#8e00db",
-                        "shadow_color": -14483402
-                    }
-                ]
-            }
         }
     ],
     "can_close_with_escape": true,
     "pause": true,
-    "yes": {
+    "action": {
         "label": {
-            "translate": "gui.yes"
+            "translate": "gui.ok"
         },
-        "action": {
-            "type": "run_command",
-            "command": "trigger aspects.choose_aspect set 1668017"
-        }
-    },
-    "no": {
-        "label": {
-            "translate": "gui.no"
-        },
-        "action": {
-            "type": "show_dialog",
-            "dialog": "aspects:menu/choose_aspect"
-        }
+        "width": 200
     }
 }
