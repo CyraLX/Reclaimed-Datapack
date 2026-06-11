@@ -3,7 +3,11 @@
 # Default: 10
 scoreboard objectives add reclaimed.config.aspect.morphling_morph_duration dummy
 scoreboard objectives add reclaimed.config.aspect.morphling_morph_duration.default dummy
+scoreboard objectives add reclaimed.config.aspect.morphling_morph_duration.min_value dummy
+scoreboard objectives add reclaimed.config.aspect.morphling_morph_duration.max_value dummy
 scoreboard objectives add reclaimed.config.aspect.morphling_morph_duration.advanced_inputs dummy
+scoreboard players reset #reclaimed reclaimed.config.aspect.morphling_morph_duration.min_value
+scoreboard players reset #reclaimed reclaimed.config.aspect.morphling_morph_duration.max_value
 
 # Define Registry Data
 #

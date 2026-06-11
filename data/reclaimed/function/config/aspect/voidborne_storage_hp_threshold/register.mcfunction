@@ -3,7 +3,11 @@
 # Default: 40
 scoreboard objectives add reclaimed.config.aspect.voidborne_storage_hp_threshold dummy
 scoreboard objectives add reclaimed.config.aspect.voidborne_storage_hp_threshold.default dummy
+scoreboard objectives add reclaimed.config.aspect.voidborne_storage_hp_threshold.min_value dummy
+scoreboard objectives add reclaimed.config.aspect.voidborne_storage_hp_threshold.max_value dummy
 scoreboard objectives add reclaimed.config.aspect.voidborne_storage_hp_threshold.advanced_inputs dummy
+scoreboard players reset #reclaimed reclaimed.config.aspect.voidborne_storage_hp_threshold.min_value
+scoreboard players reset #reclaimed reclaimed.config.aspect.voidborne_storage_hp_threshold.max_value
 
 # Define Registry Data
 #

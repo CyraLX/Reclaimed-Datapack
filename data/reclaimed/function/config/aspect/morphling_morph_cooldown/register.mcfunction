@@ -3,7 +3,11 @@
 # Default: 10
 scoreboard objectives add reclaimed.config.aspect.morphling_morph_cooldown dummy
 scoreboard objectives add reclaimed.config.aspect.morphling_morph_cooldown.default dummy
+scoreboard objectives add reclaimed.config.aspect.morphling_morph_cooldown.min_value dummy
+scoreboard objectives add reclaimed.config.aspect.morphling_morph_cooldown.max_value dummy
 scoreboard objectives add reclaimed.config.aspect.morphling_morph_cooldown.advanced_inputs dummy
+scoreboard players reset #reclaimed reclaimed.config.aspect.morphling_morph_cooldown.min_value
+scoreboard players reset #reclaimed reclaimed.config.aspect.morphling_morph_cooldown.max_value
 
 # Define Registry Data
 #

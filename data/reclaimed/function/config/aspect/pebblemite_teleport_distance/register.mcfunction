@@ -3,7 +3,11 @@
 # Default: 50
 scoreboard objectives add reclaimed.config.aspect.pebblemite_teleport_distance dummy
 scoreboard objectives add reclaimed.config.aspect.pebblemite_teleport_distance.default dummy
+scoreboard objectives add reclaimed.config.aspect.pebblemite_teleport_distance.min_value dummy
+scoreboard objectives add reclaimed.config.aspect.pebblemite_teleport_distance.max_value dummy
 scoreboard objectives add reclaimed.config.aspect.pebblemite_teleport_distance.advanced_inputs dummy
+scoreboard players reset #reclaimed reclaimed.config.aspect.pebblemite_teleport_distance.min_value
+scoreboard players reset #reclaimed reclaimed.config.aspect.pebblemite_teleport_distance.max_value
 
 # Define Registry Data
 #

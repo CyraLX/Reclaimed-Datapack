@@ -3,7 +3,11 @@
 # Default: 5
 scoreboard objectives add reclaimed.config.aspect.voidborne_storage_cap dummy
 scoreboard objectives add reclaimed.config.aspect.voidborne_storage_cap.default dummy
+scoreboard objectives add reclaimed.config.aspect.voidborne_storage_cap.min_value dummy
+scoreboard objectives add reclaimed.config.aspect.voidborne_storage_cap.max_value dummy
 scoreboard objectives add reclaimed.config.aspect.voidborne_storage_cap.advanced_inputs dummy
+scoreboard players reset #reclaimed reclaimed.config.aspect.voidborne_storage_cap.min_value
+scoreboard players reset #reclaimed reclaimed.config.aspect.voidborne_storage_cap.max_value
 
 # Define Registry Data
 #
