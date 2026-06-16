@@ -1,13 +1,17 @@
-# Reclaimed 1.2.2
+# Reclaimed 1.3.0
 
-## Overview
-- Updated localization files
-- Added `Addons...` menu on the Data Pack about page
+## Additions
+- Support for Minecraft 26.2.
 
 ## General Changes
-- Updated localization files
+- Most textures and models are remastered.
+
+## Aspect Changes
+### Morphling
+- Aquatic Form no longer has Inifite Water Breathing, instead they get an extended oxygen amount.
+### Voidborne
+- Fixed crafted Focus not working until used for the first time.
 
 ## Technical Changes
-- Increased Pack Format to `7`.
-- Required `aspects` version is now `v1.3.2`
-- Updated localization files
+- Increased Pack Format to `8`.
+- Required `aspects` version is now `v1.4.0`
