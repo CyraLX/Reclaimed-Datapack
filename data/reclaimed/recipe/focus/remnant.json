@@ -158,7 +158,7 @@
                 },
                 "",
                 {
-                    "translate": "item.modifiers.use_condition_2",
+                    "translate": "item.reclaimed.focus.remnant.use_condition_2",
                     "color": "gray",
                     "italic": false
                 },
@@ -172,39 +172,31 @@
                         }
                     ]
                 },
-                "\n",
+                "",
                 {
-                    "translate": "extra.aspects.hover_context",
-                    "color": "#d6d6d6",
-                    "with": [
+                    "translate": "item.reclaimed.focus.remnant.use_condition_3",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
                         {
-                            "translate": "item.reclaimed.focus.remnant.use_name_3"
+                            "translate": "item.reclaimed.focus.remnant.use_result_3_1"
                         }
-                    ],
-                    "hover_event": {
-                        "action": "show_text",
-                        "value": [
-                            {
-                                "translate": "item.reclaimed.focus.remnant.use_condition_3",
-                                "color": "gray",
-                                "italic": false
-                            },
-                            "\n",
-                            {
-                                "text": "",
-                                "color": "blue",
-                                "italic": false,
-                                "extra": [
-                                    {
-                                        "translate": "item.reclaimed.focus.remnant.use_result_3_1"
-                                    },
-                                    {
-                                        "translate": "item.reclaimed.focus.remnant.use_result_3_2"
-                                    }
-                                ]
-                            }
-                        ]
-                    }
+                    ]
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.reclaimed.focus.remnant.use_result_3_2"
+                        }
+                    ]
                 }
             ]
         }
