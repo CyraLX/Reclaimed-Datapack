@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "consume_item": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "reclaimed:aspect/morphling/is_active"
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "reclaimed:aspect/morphling/is_void_form"
+                    }
+                ],
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "aspects": {
+                                "focus": {
+                                    "aspect": {
+                                        "namespace": "reclaimed",
+                                        "name": "morphling"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "reclaimed:item/focus/morphling/reset_momentum"
+    },
+    "parent": "reclaimed:root"
+}
