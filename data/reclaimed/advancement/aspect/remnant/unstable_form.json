@@ -3,16 +3,13 @@
         "got_hit": {
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "aspectlib:random/010"
-                    },
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "reclaimed:aspect/remnant/is_active"
-                    }
-                ]
+                "player": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        "aspectlib:random/010",
+                        "reclaimed:aspect/remnant/is_active"
+                    ]
+                }
             }
         }
     },

@@ -61,11 +61,11 @@
         "minecraft:damage_immunity": [
             {
                 "requirements": {
-                    "condition": "minecraft:damage_source_properties",
+                    "type": "minecraft:damage_source_properties",
                     "predicate": {
                         "tags": [
                             {
-                                "id": "reclaimed:aspect/morphling/fire/damage_immune",
+                                "id": "#reclaimed:aspect/morphling/fire/damage_immune",
                                 "expected": true
                             }
                         ]
@@ -75,21 +75,21 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:all_of",
+                    "type": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:damage_source_properties",
+                            "type": "minecraft:damage_source_properties",
                             "predicate": {
                                 "tags": [
                                     {
-                                        "id": "minecraft:is_fall",
+                                        "id": "#minecraft:is_fall",
                                         "expected": true
                                     }
                                 ]
                             }
                         },
                         {
-                            "condition": "minecraft:location_check",
+                            "type": "minecraft:location_check",
                             "predicate": {
                                 "fluid": {
                                     "fluids": "#minecraft:lava"
@@ -97,10 +97,10 @@
                             }
                         },
                         {
-                            "condition": "minecraft:any_of",
+                            "type": "minecraft:any_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -120,7 +120,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -140,7 +140,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -160,7 +160,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -187,24 +187,24 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:all_of",
+                    "type": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:damage_source_properties",
+                            "type": "minecraft:damage_source_properties",
                             "predicate": {
                                 "tags": [
                                     {
-                                        "id": "reclaimed:aspect/morphling/fire/damage_immune_with_fire_protection",
+                                        "id": "#reclaimed:aspect/morphling/fire/damage_immune_with_fire_protection",
                                         "expected": true
                                     }
                                 ]
                             }
                         },
                         {
-                            "condition": "minecraft:any_of",
+                            "type": "minecraft:any_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -224,7 +224,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -244,7 +244,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -264,7 +264,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -293,15 +293,15 @@
         "minecraft:damage_protection": [
             {
                 "requirements": {
-                    "condition": "minecraft:damage_source_properties",
+                    "type": "minecraft:damage_source_properties",
                     "predicate": {
                         "tags": [
                             {
-                                "id": "reclaimed:aspect/morphling/fire/damage_resistant",
+                                "id": "#reclaimed:aspect/morphling/fire/damage_resistant",
                                 "expected": true
                             },
                             {
-                                "id": "minecraft:bypasses_invulnerability",
+                                "id": "#minecraft:bypasses_invulnerability",
                                 "expected": false
                             }
                         ]
@@ -316,27 +316,27 @@
         "minecraft:tick": [
             {
                 "requirements": {
-                    "condition": "minecraft:all_of",
+                    "type": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:entity_properties",
+                            "type": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "periodic_tick": 19
                             }
                         },
                         {
-                            "condition": "minecraft:entity_scores",
+                            "type": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
                                 "aspectlib.is_submerged_lava": 1
                             }
                         },
                         {
-                            "condition": "minecraft:any_of",
+                            "type": "minecraft:any_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -356,7 +356,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -376,7 +376,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -396,7 +396,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -426,7 +426,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "periodic_tick": 7
@@ -461,7 +461,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "periodic_tick": 8

@@ -56,17 +56,15 @@
         ],
         "minecraft:location_changed": [
             {
-                "requirements": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "flags": {
-                                "is_flying": true
-                            }
+                "requirements": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_flying": true
                         }
                     }
-                ],
+                },
                 "effect": {
                     "type": "minecraft:attribute",
                     "attribute": "minecraft:gravity",
@@ -85,7 +83,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "periodic_tick": 100

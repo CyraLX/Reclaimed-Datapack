@@ -47,35 +47,32 @@
         "consume_fruit_with_head": {
             "trigger": "minecraft:consume_item",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "reclaimed:aspect/morphling/is_active"
-                    },
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "aspectlib:dimension/the_end/is_located"
-                    },
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "minecraft:type_specific/player": {
-                                "advancements": {
-                                    "reclaimed:gameplay/aspect/morphling/form/aquatic": true,
-                                    "reclaimed:gameplay/aspect/morphling/form/fire": true
-                                }
-                            },
-                            "equipment": {
-                                "head": {
-                                    "items": [
-                                        "minecraft:dragon_head"
-                                    ]
+                "player": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        "reclaimed:aspect/morphling/is_active",
+                        "aspectlib:dimension/the_end/is_located",
+                        {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "minecraft:type_specific/player": {
+                                    "advancements": {
+                                        "reclaimed:gameplay/aspect/morphling/form/aquatic": true,
+                                        "reclaimed:gameplay/aspect/morphling/form/fire": true
+                                    }
+                                },
+                                "equipment": {
+                                    "head": {
+                                        "items": [
+                                            "minecraft:dragon_head"
+                                        ]
+                                    }
                                 }
                             }
                         }
-                    }
-                ],
+                    ]
+                },
                 "item": {
                     "items": [
                         "minecraft:chorus_fruit"

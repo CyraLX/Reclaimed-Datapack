@@ -20,15 +20,13 @@
     "effects": {
         "minecraft:tick": [
             {
-                "requirements":[
-                    {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "aspects.aspect_id": 1668057
-                        }
+                "requirements": {
+                    "type": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "aspects.aspect_id": 1668057
                     }
-                ],
+                },
                 "effect": {
                     "type": "minecraft:run_function",
                     "function": "reclaimed:item/focus/voidborne/trigger_change"

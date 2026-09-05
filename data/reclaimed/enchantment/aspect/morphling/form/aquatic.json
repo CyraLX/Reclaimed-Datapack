@@ -49,7 +49,7 @@
         "minecraft:location_changed": [
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "equipment": {
@@ -78,9 +78,9 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:inverted",
+                    "type": "minecraft:inverted",
                     "term": {
-                        "condition": "minecraft:entity_properties",
+                        "type": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
                             "equipment": {
@@ -110,7 +110,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                         "fluid": {
                             "fluids": "#minecraft:water"
@@ -127,12 +127,12 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:inverted",
+                    "type": "minecraft:inverted",
                     "term": {
-                        "condition": "minecraft:any_of",
+                        "type": "minecraft:any_of",
                         "terms": [
                             {
-                                "condition": "minecraft:location_check",
+                                "type": "minecraft:location_check",
                                 "predicate": {
                                     "block": {
                                         "blocks": "minecraft:water_cauldron"
@@ -140,7 +140,7 @@
                                 }
                             },
                             {
-                                "condition": "minecraft:location_check",
+                                "type": "minecraft:location_check",
                                 "predicate": {
                                     "fluid": {
                                         "fluids": "#minecraft:water"
@@ -148,23 +148,23 @@
                                 }
                             },
                             {
-                                "condition": "minecraft:all_of",
+                                "type": "minecraft:all_of",
                                 "terms": [
                                     {
-                                        "condition": "minecraft:weather_check",
+                                        "type": "minecraft:weather_check",
                                         "raining": true
                                     },
                                     {
-                                        "condition": "minecraft:location_check",
+                                        "type": "minecraft:location_check",
                                         "predicate": {
                                             "dimension": "minecraft:overworld",
                                             "can_see_sky": true
                                         }
                                     },
                                     {
-                                        "condition": "minecraft:inverted",
+                                        "type": "minecraft:inverted",
                                         "term": {
-                                            "condition": "minecraft:location_check",
+                                            "type": "minecraft:location_check",
                                             "predicate": {
                                                 "biomes": "#aspectlib:no_rain"
                                             }
@@ -187,7 +187,7 @@
         "minecraft:tick": [
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "periodic_tick": 7,
@@ -227,7 +227,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "periodic_tick": 7
@@ -262,7 +262,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "periodic_tick": 18,
@@ -302,7 +302,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "periodic_tick": 18

@@ -1,13 +1,7 @@
 {
-    "condition": "minecraft:any_of",
+    "type": "minecraft:any_of",
     "terms": [
-        {
-            "condition": "minecraft:reference",
-            "name": "reclaimed:item/focus/morphling/fire/has_mainhand"
-        },
-        {
-            "condition": "minecraft:reference",
-            "name": "reclaimed:item/focus/morphling/fire/has_offhand"
-        }
+        "reclaimed:item/focus/morphling/fire/has_mainhand",
+        "reclaimed:item/focus/morphling/fire/has_offhand"
     ]
 }

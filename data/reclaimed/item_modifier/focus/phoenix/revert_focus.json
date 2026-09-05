@@ -1,13 +1,16 @@
-[
-    {
-        "function": "minecraft:set_components",
-        "components": {
-            "minecraft:max_stack_size": 1,
-            "!minecraft:death_protection": {}
+{
+    "type": "minecraft:sequence",
+    "functions": [
+        {
+            "type": "minecraft:set_components",
+            "components": {
+                "minecraft:max_stack_size": 1,
+                "!minecraft:death_protection": {}
+            }
+        },
+        {
+            "type": "minecraft:set_count",
+            "count": 1
         }
-    },
-    {
-        "function": "minecraft:set_count",
-        "count": 1
-    }
-]
+    ]
+}

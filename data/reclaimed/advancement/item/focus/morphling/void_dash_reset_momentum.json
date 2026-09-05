@@ -3,16 +3,13 @@
         "consume_item": {
             "trigger": "minecraft:consume_item",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "reclaimed:aspect/morphling/is_active"
-                    },
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "reclaimed:aspect/morphling/is_void_form"
-                    }
-                ],
+                "player": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        "reclaimed:aspect/morphling/is_active",
+                        "reclaimed:aspect/morphling/is_void_form"
+                    ]
+                },
                 "item": {
                     "predicates": {
                         "minecraft:custom_data": {

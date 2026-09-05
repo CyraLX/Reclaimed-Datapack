@@ -1,93 +1,93 @@
-[
-    {
-        "function": "minecraft:reference",
-        "name": "aspects:wings_dummy"
-    },
-    {
-        "function": "minecraft:set_components",
-        "components": {
-            "minecraft:item_model": "reclaimed:wings/dragonkin",
-            "minecraft:max_damage": 2400,
-            "minecraft:equippable": {
-                "slot": "chest",
-                "asset_id": "reclaimed:wings/dragonkin",
-                "damage_on_hurt": false,
-                "dispensable": false,
-                "swappable": false,
-                "equip_on_interact": false
-            },
-            "minecraft:enchantments": {
-                "reclaimed:aspect/dragonkin/wings": 1
+{
+    "type": "minecraft:sequence",
+    "functions": [
+        "aspects:wings_dummy",
+        {
+            "type": "minecraft:set_components",
+            "components": {
+                "minecraft:item_model": "reclaimed:wings/dragonkin",
+                "minecraft:max_damage": 2400,
+                "minecraft:equippable": {
+                    "slot": "chest",
+                    "asset_id": "reclaimed:wings/dragonkin",
+                    "damage_on_hurt": false,
+                    "dispensable": false,
+                    "swappable": false,
+                    "equip_on_interact": false
+                },
+                "minecraft:enchantments": {
+                    "reclaimed:aspect/dragonkin/wings": 1
+                }
             }
-        }
-    },
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "target": "item_name",
-        "name": {
-            "translate": "item.reclaimed.wings.dragonkin"
-        }
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_all",
-        "lore": [
-            "",
-            {
-                "translate": "item.modifiers.chest",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "+10 ",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "attribute.name.armor"
-                    }
-                ]
-            },
-            {
-                "text": "+6 ",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "attribute.name.armor_toughness"
-                    }
-                ]
-            },
-            {
-                "text": "+2 ",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "attribute.name.knockback_resistance"
-                    }
-                ]
-            },
-            {
-                "translate": "item.aspects.wings.generic.mending",
-                "color": "blue",
-                "italic": false
-            },
-            {
-                "translate": "item.reclaimed.wings.dragonkin.sneak_gravity",
-                "color": "blue",
-                "italic": false,
-                "with": [
-                    {
-                        "translate": "key.sneak"
-                    },
-                    {
-                        "keybind": "key.sneak"
-                    }
-                ]
+        },
+        {
+            "type": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": {
+                "translate": "item.reclaimed.wings.dragonkin"
             }
-        ]
-    }
-]
+        },
+        {
+            "type": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                "",
+                {
+                    "translate": "item.modifiers.chest",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "+10 ",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "attribute.name.armor"
+                        }
+                    ]
+                },
+                {
+                    "text": "+6 ",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "attribute.name.armor_toughness"
+                        }
+                    ]
+                },
+                {
+                    "text": "+2 ",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "attribute.name.knockback_resistance"
+                        }
+                    ]
+                },
+                {
+                    "translate": "item.aspects.wings.generic.mending",
+                    "color": "blue",
+                    "italic": false
+                },
+                {
+                    "translate": "item.reclaimed.wings.dragonkin.sneak_gravity",
+                    "color": "blue",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "key.sneak"
+                        },
+                        {
+                            "keybind": "key.sneak"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -31,15 +31,15 @@
         "minecraft:damage_protection": [
             {
                 "requirements": {
-                    "condition": "minecraft:damage_source_properties",
+                    "type": "minecraft:damage_source_properties",
                     "predicate": {
                         "tags": [
                             {
-                                "id": "minecraft:is_explosion",
+                                "id": "#minecraft:is_explosion",
                                 "expected": true
                             },
                             {
-                                "id": "minecraft:bypasses_invulnerability",
+                                "id": "#minecraft:bypasses_invulnerability",
                                 "expected": false
                             }
                         ]
@@ -116,7 +116,7 @@
         "minecraft:location_changed": [
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "flags": {
@@ -136,7 +136,7 @@
         "minecraft:tick": [
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "periodic_tick": 20
@@ -149,19 +149,19 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:all_of",
+                    "type": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:entity_properties",
+                            "type": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "periodic_tick": 100
                             }
                         },
                         {
-                            "condition": "minecraft:inverted",
+                            "type": "minecraft:inverted",
                             "term": {
-                                "condition": "minecraft:entity_properties",
+                                "type": "minecraft:entity_properties",
                                 "entity": "this",
                                 "predicate": {
                                     "equipment": {

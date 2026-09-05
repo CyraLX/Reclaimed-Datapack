@@ -20,15 +20,13 @@
     "effects": {
         "minecraft:tick": [
             {
-                "requirements":[
-                    {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "aspects.aspect_id": 1668047
-                        }
+                "requirements": {
+                    "type": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "aspects.aspect_id": 1668047
                     }
-                ],
+                },
                 "effect": {
                     "type": "minecraft:run_function",
                     "function": "reclaimed:item/focus/remnant/trigger_offhand"

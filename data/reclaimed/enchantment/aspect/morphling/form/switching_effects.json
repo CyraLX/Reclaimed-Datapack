@@ -47,17 +47,17 @@
         "minecraft:tick": [
             {
                 "requirements": {
-                    "condition": "minecraft:all_of",
+                    "type": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:entity_properties",
+                            "type": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "periodic_tick": 2
                             }
                         },
                         {
-                            "condition": "minecraft:entity_scores",
+                            "type": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
                                 "reclaimed.morphling.form.switch_time": {
@@ -66,17 +66,17 @@
                             }
                         },
                         {
-                            "condition": "minecraft:any_of",
+                            "type": "minecraft:any_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_scores",
+                                    "type": "minecraft:entity_scores",
                                     "entity": "this",
                                     "scores": {
                                         "reclaimed.morphling.form.switch_to": 1
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_scores",
+                                    "type": "minecraft:entity_scores",
                                     "entity": "this",
                                     "scores": {
                                         "reclaimed.morphling.form.active": 1
@@ -182,17 +182,17 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:all_of",
+                    "type": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:entity_properties",
+                            "type": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "periodic_tick": 2
                             }
                         },
                         {
-                            "condition": "minecraft:entity_scores",
+                            "type": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
                                 "reclaimed.morphling.form.switch_time": {
@@ -201,17 +201,17 @@
                             }
                         },
                         {
-                            "condition": "minecraft:any_of",
+                            "type": "minecraft:any_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_scores",
+                                    "type": "minecraft:entity_scores",
                                     "entity": "this",
                                     "scores": {
                                         "reclaimed.morphling.form.switch_to": 2
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_scores",
+                                    "type": "minecraft:entity_scores",
                                     "entity": "this",
                                     "scores": {
                                         "reclaimed.morphling.form.active": 2
@@ -317,17 +317,17 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:all_of",
+                    "type": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:entity_properties",
+                            "type": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "periodic_tick": 10
                             }
                         },
                         {
-                            "condition": "minecraft:entity_scores",
+                            "type": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
                                 "reclaimed.morphling.form.switch_time": {
@@ -336,17 +336,17 @@
                             }
                         },
                         {
-                            "condition": "minecraft:any_of",
+                            "type": "minecraft:any_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_scores",
+                                    "type": "minecraft:entity_scores",
                                     "entity": "this",
                                     "scores": {
                                         "reclaimed.morphling.form.switch_to": 2
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_scores",
+                                    "type": "minecraft:entity_scores",
                                     "entity": "this",
                                     "scores": {
                                         "reclaimed.morphling.form.active": 2
@@ -383,17 +383,17 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:all_of",
+                    "type": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:entity_properties",
+                            "type": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "periodic_tick": 2
                             }
                         },
                         {
-                            "condition": "minecraft:entity_scores",
+                            "type": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
                                 "reclaimed.morphling.form.switch_time": {
@@ -402,17 +402,17 @@
                             }
                         },
                         {
-                            "condition": "minecraft:any_of",
+                            "type": "minecraft:any_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_scores",
+                                    "type": "minecraft:entity_scores",
                                     "entity": "this",
                                     "scores": {
                                         "reclaimed.morphling.form.switch_to": 3
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:entity_scores",
+                                    "type": "minecraft:entity_scores",
                                     "entity": "this",
                                     "scores": {
                                         "reclaimed.morphling.form.active": 3
@@ -518,17 +518,17 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:all_of",
+                    "type": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:entity_properties",
+                            "type": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "periodic_tick": 10
                             }
                         },
                         {
-                            "condition": "minecraft:entity_scores",
+                            "type": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
                                 "reclaimed.morphling.form.switch_time": {

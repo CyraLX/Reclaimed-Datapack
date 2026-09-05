@@ -51,22 +51,20 @@
         ],
         "minecraft:location_changed": [
             {
-                "requirements": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "flags": {
-                                "is_flying": true
-                            },
-                            "movement": {
-                                "y": {
-                                    "max": 0
-                                }
+                "requirements": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_flying": true
+                        },
+                        "movement": {
+                            "y": {
+                                "max": 0
                             }
                         }
                     }
-                ],
+                },
                 "effect": {
                     "type": "minecraft:attribute",
                     "attribute": "minecraft:gravity",
@@ -76,22 +74,20 @@
                 }
             },
             {
-                "requirements": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "minecraft:type_specific/player": {
-                                "input": {
-                                    "sneak": true
-                                }
-                            },
-                            "minecraft:flags": {
-                                "is_flying": true
+                "requirements": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "minecraft:type_specific/player": {
+                            "input": {
+                                "sneak": true
                             }
+                        },
+                        "minecraft:flags": {
+                            "is_flying": true
                         }
                     }
-                ],
+                },
                 "effect": {
                     "type": "minecraft:attribute",
                     "attribute": "minecraft:gravity",
@@ -103,22 +99,20 @@
         ],
         "minecraft:tick": [
             {
-                "requirements": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "minecraft:type_specific/player": {
-                                "input": {
-                                    "sneak": true
-                                }
-                            },
-                            "minecraft:flags": {
-                                "is_flying": true
+                "requirements": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "minecraft:type_specific/player": {
+                            "input": {
+                                "sneak": true
                             }
+                        },
+                        "minecraft:flags": {
+                            "is_flying": true
                         }
                     }
-                ],
+                },
                 "effect": {
                     "type": "minecraft:apply_impulse",
                     "coordinate_scale": [
@@ -135,23 +129,21 @@
                 }
             },
             {
-                "requirements": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "minecraft:type_specific/player": {
-                                "input": {
-                                    "sneak": true
-                                }
-                            },
-                            "minecraft:flags": {
-                                "is_flying": true
-                            },
-                            "minecraft:periodic_tick": 20
-                        }
+                "requirements": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "minecraft:type_specific/player": {
+                            "input": {
+                                "sneak": true
+                            }
+                        },
+                        "minecraft:flags": {
+                            "is_flying": true
+                        },
+                        "minecraft:periodic_tick": 20
                     }
-                ],
+                },
                 "effect": {
                     "type": "minecraft:change_item_damage",
                     "amount": 2
@@ -159,10 +151,10 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:all_of",
+                    "type": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:entity_properties",
+                            "type": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "minecraft:entity_type": "minecraft:player",
@@ -170,9 +162,9 @@
                             }
                         },
                         {
-                            "condition": "minecraft:inverted",
+                            "type": "minecraft:inverted",
                             "term": {
-                                "condition": "minecraft:entity_scores",
+                                "type": "minecraft:entity_scores",
                                 "entity": "this",
                                 "scores": {
                                     "aspects.aspect_id": 1668017

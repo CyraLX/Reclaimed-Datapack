@@ -31,11 +31,11 @@
         "minecraft:damage_immunity": [
             {
                 "requirements": {
-                    "condition": "minecraft:damage_source_properties",
+                    "type": "minecraft:damage_source_properties",
                     "predicate": {
                         "tags": [
                             {
-                                "id": "minecraft:is_freezing",
+                                "id": "#minecraft:is_freezing",
                                 "expected": true
                             }
                         ]
@@ -47,7 +47,7 @@
         "minecraft:tick": [
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "flags": {
@@ -65,7 +65,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "periodic_tick": 20
@@ -94,7 +94,7 @@
         "minecraft:location_changed": [
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "stepping_on": {
@@ -114,7 +114,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "stepping_on": {
@@ -134,7 +134,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "stepping_on": {
@@ -154,7 +154,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "stepping_on": {
@@ -174,7 +174,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "stepping_on": {
@@ -193,25 +193,23 @@
                 }
             },
             {
-                "requirements": [
-                    {
-                        "condition": "minecraft:any_of",
-                        "terms": [
-                            {
-                                "condition": "minecraft:location_check",
-                                "predicate": {
-                                    "biomes": "#aspectlib:hot"
-                                }
-                            },
-                            {
-                                "condition": "minecraft:location_check",
-                                "predicate": {
-                                    "dimension": "minecraft:the_nether"
-                                }
+                "requirements": {
+                    "type": "minecraft:any_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:location_check",
+                            "predicate": {
+                                "biomes": "#aspectlib:hot"
                             }
-                        ]
-                    }
-                ],
+                        },
+                        {
+                            "type": "minecraft:location_check",
+                            "predicate": {
+                                "dimension": "minecraft:the_nether"
+                            }
+                        }
+                    ]
+                },
                 "effect": {
                     "type": "minecraft:all_of",
                     "effects": [
@@ -254,28 +252,26 @@
                 }
             },
             {
-                "requirements": [
-                    {
-                        "condition": "minecraft:all_of",
-                        "terms": [
-                            {
-                                "condition": "minecraft:location_check",
+                "requirements": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:location_check",
+                            "predicate": {
+                                "biomes": "#aspectlib:cold"
+                            }
+                        },
+                        {
+                            "type": "minecraft:inverted",
+                            "term": {
+                                "type": "minecraft:location_check",
                                 "predicate": {
-                                    "biomes": "#aspectlib:cold"
-                                }
-                            },
-                            {
-                                "condition": "minecraft:inverted",
-                                "term": {
-                                    "condition": "minecraft:location_check",
-                                    "predicate": {
-                                        "dimension": "minecraft:the_nether"
-                                    }
+                                    "dimension": "minecraft:the_nether"
                                 }
                             }
-                        ]
-                    }
-                ],
+                        }
+                    ]
+                },
                 "effect": {
                     "type": "minecraft:all_of",
                     "effects": [
@@ -318,58 +314,58 @@
                 }
             },
             {
-                "requirements": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "flags": {
-                                "is_sneaking": true,
-                                "is_on_ground": true
+                "requirements": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "flags": {
+                                    "is_sneaking": true,
+                                    "is_on_ground": true
+                                }
                             }
-                        }
-                    },
-                    {
-                        "condition": "minecraft:any_of",
-                        "terms": [
-                            {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "equipment": {
-                                        "feet": {
-                                            "items": "minecraft:air"
+                        },
+                        {
+                            "type": "minecraft:any_of",
+                            "terms": [
+                                {
+                                    "type": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "feet": {
+                                                "items": "minecraft:air"
+                                            }
                                         }
                                     }
-                                }
-                            },
-                            {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "equipment": {
-                                        "feet": {
-                                            "predicates": {
-                                                "minecraft:enchantments": [
-                                                    {
-                                                        "enchantments": "minecraft:frost_walker"
-                                                    }
-                                                ]
+                                },
+                                {
+                                    "type": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "feet": {
+                                                "predicates": {
+                                                    "minecraft:enchantments": [
+                                                        {
+                                                            "enchantments": "minecraft:frost_walker"
+                                                        }
+                                                    ]
+                                                }
                                             }
                                         }
                                     }
                                 }
-                            }
-                        ]
-                    }
-                ],
+                            ]
+                        }
+                    ]
+                },
                 "effect": {
                     "type": "minecraft:replace_disk",
                     "block_state": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                            "Name": "minecraft:ice"
-                        }
+                        "id": "minecraft:ice"
                     },
                     "predicate": {
                         "type": "minecraft:any_of",
@@ -434,7 +430,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "flags": {
@@ -446,12 +442,9 @@
                 "effect": {
                     "type": "minecraft:replace_disk",
                     "block_state": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                            "Name": "minecraft:frosted_ice",
-                            "Properties": {
-                                "age": "0"
-                            }
+                        "id": "minecraft:frosted_ice",
+                        "properties": {
+                            "age": "0"
                         }
                     },
                     "predicate": {
@@ -491,7 +484,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "flags": {
@@ -503,10 +496,7 @@
                 "effect": {
                     "type": "minecraft:replace_disk",
                     "block_state": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                            "Name": "minecraft:basalt"
-                        }
+                        "id": "minecraft:basalt"
                     },
                     "predicate": {
                         "type": "minecraft:all_of",

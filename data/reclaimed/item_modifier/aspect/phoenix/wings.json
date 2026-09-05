@@ -1,50 +1,50 @@
-[
-    {
-        "function": "minecraft:reference",
-        "name": "aspects:wings_dummy"
-    },
-    {
-        "function": "minecraft:set_components",
-        "components": {
-            "minecraft:item_model": "reclaimed:wings/phoenix",
-            "minecraft:max_damage": 600,
-            "minecraft:equippable": {
-                "slot": "chest",
-                "asset_id": "reclaimed:wings/phoenix",
-                "damage_on_hurt": false,
-                "dispensable": false,
-                "swappable": false,
-                "equip_on_interact": false
-            },
-            "minecraft:enchantments": {
-                "reclaimed:aspect/phoenix/wings": 1
+{
+    "type": "minecraft:sequence",
+    "functions": [
+        "aspects:wings_dummy",
+        {
+            "type": "minecraft:set_components",
+            "components": {
+                "minecraft:item_model": "reclaimed:wings/phoenix",
+                "minecraft:max_damage": 600,
+                "minecraft:equippable": {
+                    "slot": "chest",
+                    "asset_id": "reclaimed:wings/phoenix",
+                    "damage_on_hurt": false,
+                    "dispensable": false,
+                    "swappable": false,
+                    "equip_on_interact": false
+                },
+                "minecraft:enchantments": {
+                    "reclaimed:aspect/phoenix/wings": 1
+                }
             }
-        }
-    },
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "target": "item_name",
-        "name": {
-            "translate": "item.reclaimed.wings.phoenix"
-        }
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_all",
-        "lore": [
-            "",
-            {
-                "translate": "item.modifiers.chest",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "translate": "item.aspects.wings.generic.mending",
-                "color": "blue",
-                "italic": false
+        },
+        {
+            "type": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": {
+                "translate": "item.reclaimed.wings.phoenix"
             }
-        ]
-    }
-]
+        },
+        {
+            "type": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                "",
+                {
+                    "translate": "item.modifiers.chest",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "translate": "item.aspects.wings.generic.mending",
+                    "color": "blue",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

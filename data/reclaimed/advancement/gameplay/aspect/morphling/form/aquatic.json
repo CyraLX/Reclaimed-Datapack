@@ -34,27 +34,27 @@
         "enchant_item": {
             "trigger": "minecraft:enchanted_item",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "reclaimed:aspect/morphling/is_active"
-                    },
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "minecraft:type_specific/player": {
-                                "gamemode": [
-                                    "survival",
-                                    "adventure"
-                                ],
-                                "level": {
-                                    "min": 15
+                "player": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        "reclaimed:aspect/morphling/is_active",
+                        {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "minecraft:type_specific/player": {
+                                    "gamemode": [
+                                        "survival",
+                                        "adventure"
+                                    ],
+                                    "level": {
+                                        "min": 15
+                                    }
                                 }
                             }
                         }
-                    }
-                ],
+                    ]
+                },
                 "levels": {
                     "min": 3
                 }

@@ -195,6 +195,17 @@
                                                 "translate": "badge_details.aspects.effect.attribute",
                                                 "color": "red",
                                                 "with": [
+                                                    "-20%",
+                                                    {
+                                                        "translate": "attribute.name.max_health"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
                                                     "+50%",
                                                     {
                                                         "translate": "attribute.name.fall_damage_multiplier"
@@ -425,6 +436,17 @@
                                                     "+20%",
                                                     {
                                                         "translate": "attribute.name.gravity"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-20%",
+                                                    {
+                                                        "translate": "attribute.name.max_health"
                                                     }
                                                 ]
                                             },

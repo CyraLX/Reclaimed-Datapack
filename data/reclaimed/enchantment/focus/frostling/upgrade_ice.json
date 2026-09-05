@@ -21,25 +21,20 @@
     "effects": {
         "minecraft:tick": [
             {
-                "requirements": [
-                    {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "aspects.aspect_id": 1668027
-                        }
+                "requirements": {
+                    "type": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "aspects.aspect_id": 1668027
                     }
-                ],
+                },
                 "effect": {
                     "type": "minecraft:all_of",
                     "effects": [
                         {
                             "type": "minecraft:replace_disk",
                             "block_state": {
-                                "type": "minecraft:simple_state_provider",
-                                "state": {
-                                    "Name": "minecraft:blue_ice"
-                                }
+                                "id": "minecraft:blue_ice"
                             },
                             "predicate": {
                                 "type": "minecraft:all_of",
@@ -74,10 +69,7 @@
                         {
                             "type": "minecraft:replace_disk",
                             "block_state": {
-                                "type": "minecraft:simple_state_provider",
-                                "state": {
-                                    "Name": "minecraft:packed_ice"
-                                }
+                                "id": "minecraft:packed_ice"
                             },
                             "predicate": {
                                 "type": "minecraft:all_of",
@@ -112,10 +104,7 @@
                         {
                             "type": "minecraft:replace_disk",
                             "block_state": {
-                                "type": "minecraft:simple_state_provider",
-                                "state": {
-                                    "Name": "minecraft:ice"
-                                }
+                                "id": "minecraft:ice"
                             },
                             "predicate": {
                                 "type": "minecraft:all_of",
@@ -150,12 +139,9 @@
                         {
                             "type": "minecraft:replace_disk",
                             "block_state": {
-                                "type": "minecraft:simple_state_provider",
-                                "state": {
-                                    "Name": "minecraft:frosted_ice",
-                                    "Properties": {
-                                        "age": "0"
-                                    }
+                                "id": "minecraft:frosted_ice",
+                                "properties": {
+                                    "age": "0"
                                 }
                             },
                             "predicate": {
@@ -195,10 +181,7 @@
                         {
                             "type": "minecraft:replace_disk",
                             "block_state": {
-                                "type": "minecraft:simple_state_provider",
-                                "state": {
-                                    "Name": "minecraft:basalt"
-                                }
+                                "id": "minecraft:basalt"
                             },
                             "predicate": {
                                 "type": "minecraft:all_of",

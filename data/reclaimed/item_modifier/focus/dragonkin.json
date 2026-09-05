@@ -1,151 +1,151 @@
-[
-    {
-        "function": "minecraft:reference",
-        "name": "aspects:focus_dummy"
-    },
-    {
-        "function": "minecraft:set_custom_data",
-        "tag": {
-            "aspects": {
-                "focus": {
-                    "aspect": {
-                        "namespace": "reclaimed",
-                        "name": "dragonkin"
+{
+    "type": "minecraft:sequence",
+    "functions": [
+        "aspects:focus_dummy",
+        {
+            "type": "minecraft:set_custom_data",
+            "tag": {
+                "aspects": {
+                    "focus": {
+                        "aspect": {
+                            "namespace": "reclaimed",
+                            "name": "dragonkin"
+                        }
                     }
                 }
             }
-        }
-    },
-    {
-        "function": "minecraft:set_components",
-        "components": {
-            "minecraft:item_model": "reclaimed:focus/dragonkin",
-            "minecraft:consumable": {
-                "consume_seconds": 2.0,
-                "animation": "bow",
-                "sound": "minecraft:entity.shulker.hurt_closed",
-                "has_consume_particles": false
-            },
-            "minecraft:use_cooldown": {
-                "seconds": 60,
-                "cooldown_group": "aspects:focus"
-            },
-            "minecraft:use_remainder": {
-                "id": "minecraft:jigsaw",
-                "components": {
-                    "minecraft:item_name": {
-                        "translate": "item.reclaimed.focus.dragonkin",
-                        "color": "#ffff55"
+        },
+        {
+            "type": "minecraft:set_components",
+            "components": {
+                "minecraft:item_model": "reclaimed:focus/dragonkin",
+                "minecraft:consumable": {
+                    "consume_seconds": 2.0,
+                    "animation": "bow",
+                    "sound": "minecraft:entity.shulker.hurt_closed",
+                    "has_consume_particles": false
+                },
+                "minecraft:use_cooldown": {
+                    "seconds": 60,
+                    "cooldown_group": "aspects:focus"
+                },
+                "minecraft:use_remainder": {
+                    "id": "minecraft:jigsaw",
+                    "components": {
+                        "minecraft:item_name": {
+                            "translate": "item.reclaimed.focus.dragonkin",
+                            "color": "#ffff55"
+                        },
+                        "minecraft:rarity": "uncommon",
+                        "minecraft:enchantment_glint_override": false,
+                        "minecraft:tooltip_display": {
+                            "hidden_components": [
+                                "minecraft:attribute_modifiers",
+                                "minecraft:enchantments"
+                            ]
+                        },
+                        "minecraft:item_model": "reclaimed:focus/dragonkin",
+                        "minecraft:enchantments": {
+                            "aspects:focus/generic/modify_mainhand": 1,
+                            "aspects:focus/generic/modify_offhand": 1
+                        },
+                        "minecraft:custom_data": {
+                            "smithed": {
+                                "ignore": {
+                                    "everything": true
+                                }
+                            },
+                            "aspects": {
+                                "focus": {
+                                    "aspect": {
+                                        "namespace": "reclaimed",
+                                        "name": "dragonkin"
+                                    }
+                                }
+                            }
+                        }
                     },
-                    "minecraft:rarity": "uncommon",
-                    "minecraft:enchantment_glint_override": false,
-                    "minecraft:tooltip_display": {
-                        "hidden_components": [
-                            "minecraft:attribute_modifiers",
-                            "minecraft:enchantments"
+                    "count": 1
+                },
+                "minecraft:item_name": {
+                    "translate": "item.reclaimed.focus.dragonkin",
+                    "color": "#ffff55"
+                },
+                "minecraft:lore": [
+                    {
+                        "translate": "lore.equipment.use_time_format",
+                        "color": "gray",
+                        "italic": false,
+                        "with": [
+                            {
+                                "translate": "lore.equipment.use_time"
+                            },
+                            {
+                                "translate": "lore.equipment.use_time.seconds",
+                                "color": "#757575",
+                                "with": [
+                                    "2"
+                                ]
+                            }
                         ]
                     },
-                    "minecraft:item_model": "reclaimed:focus/dragonkin",
-                    "minecraft:enchantments": {
-                        "aspects:focus/generic/modify_mainhand": 1,
-                        "aspects:focus/generic/modify_offhand": 1
+                    {
+                        "translate": "lore.equipment.use_cooldown_format",
+                        "color": "gray",
+                        "italic": false,
+                        "with": [
+                            {
+                                "translate": "lore.equipment.use_cooldown"
+                            },
+                            {
+                                "translate": "lore.equipment.use_cooldown.seconds",
+                                "color": "#757575",
+                                "with": [
+                                    "60"
+                                ]
+                            }
+                        ]
                     },
-                    "minecraft:custom_data": {
-                        "smithed": {
-                            "ignore": {
-                                "everything": true
+                    "",
+                    {
+                        "translate": "item.modifiers.use",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "",
+                        "color": "blue",
+                        "italic": false,
+                        "extra": [
+                            {
+                                "translate": "item.reclaimed.focus.dragonkin.use_result_1",
+                                "with": [
+                                    {
+                                        "translate": "potion.withAmplifier",
+                                        "with": [
+                                            {
+                                                "translate": "effect.minecraft.regeneration"
+                                            },
+                                            {
+                                                "translate": "potion.potency.1"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "translate": "effect.minecraft.resistance"
+                                    },
+                                    {
+                                        "text": "30"
+                                    },
+                                    {
+                                        "text": "30"
+                                    }
+                                ]
                             }
-                        },
-                        "aspects": {
-                            "focus": {
-                                "aspect": {
-                                    "namespace": "reclaimed",
-                                    "name": "dragonkin"
-                                }
-                            }
-                        }
+                        ]
                     }
-                },
-                "count": 1
-            },
-            "minecraft:item_name": {
-                "translate": "item.reclaimed.focus.dragonkin",
-                "color": "#ffff55"
-            },
-            "minecraft:lore": [
-                {
-                    "translate": "lore.equipment.use_time_format",
-                    "color": "gray",
-                    "italic": false,
-                    "with": [
-                        {
-                            "translate": "lore.equipment.use_time"
-                        },
-                        {
-                            "translate": "lore.equipment.use_time.seconds",
-                            "color": "#757575",
-                            "with": [
-                                "2"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "translate": "lore.equipment.use_cooldown_format",
-                    "color": "gray",
-                    "italic": false,
-                    "with": [
-                        {
-                            "translate": "lore.equipment.use_cooldown"
-                        },
-                        {
-                            "translate": "lore.equipment.use_cooldown.seconds",
-                            "color": "#757575",
-                            "with": [
-                                "60"
-                            ]
-                        }
-                    ]
-                },
-                "",
-                {
-                    "translate": "item.modifiers.use",
-                    "color": "gray",
-                    "italic": false
-                },
-                {
-                    "text": "",
-                    "color": "blue",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "translate": "item.reclaimed.focus.dragonkin.use_result_1",
-                            "with": [
-                                {
-                                    "translate": "potion.withAmplifier",
-                                    "with": [
-                                        {
-                                            "translate": "effect.minecraft.regeneration"
-                                        },
-                                        {
-                                            "translate": "potion.potency.1"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "translate": "effect.minecraft.resistance"
-                                },
-                                {
-                                    "text": "30"
-                                },
-                                {
-                                    "text": "30"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+                ]
+            }
         }
-    }
-]
+    ]
+}

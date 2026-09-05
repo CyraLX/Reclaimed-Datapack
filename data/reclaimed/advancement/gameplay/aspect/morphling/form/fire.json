@@ -44,40 +44,37 @@
         "kill_on_fire_blaze": {
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "reclaimed:aspect/morphling/is_active"
-                    },
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "aspectlib:dimension/the_nether/is_located"
-                    },
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "minecraft:type_specific/player": {
-                                "advancements": {
-                                    "reclaimed:gameplay/aspect/morphling/form/aquatic": true
+                "player": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        "reclaimed:aspect/morphling/is_active",
+                        "aspectlib:dimension/the_nether/is_located",
+                        {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "minecraft:type_specific/player": {
+                                    "advancements": {
+                                        "reclaimed:gameplay/aspect/morphling/form/aquatic": true
+                                    }
                                 }
                             }
                         }
-                    }
-                ],
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "minecraft:entity_type": "minecraft:blaze"
-                        }
-                    },
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "aspectlib:flags/is_on_fire"
-                    }
-                ],
+                    ]
+                },
+                "entity": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "minecraft:entity_type": "minecraft:blaze"
+                            }
+                        },
+                        "aspectlib:flags/is_on_fire"
+                    ]
+                },
                 "killing_blow": {
                     "is_direct": true
                 }
@@ -86,37 +83,31 @@
         "kill_on_fire_infernal": {
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "reclaimed:aspect/morphling/is_active"
-                    },
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "aspectlib:dimension/the_nether/is_located"
-                    },
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "minecraft:type_specific/player": {
-                                "advancements": {
-                                    "reclaimed:gameplay/aspect/morphling/form/aquatic": true
+                "player": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        "reclaimed:aspect/morphling/is_active",
+                        "aspectlib:dimension/the_nether/is_located",
+                        {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "minecraft:type_specific/player": {
+                                    "advancements": {
+                                        "reclaimed:gameplay/aspect/morphling/form/aquatic": true
+                                    }
                                 }
                             }
                         }
-                    }
-                ],
-                "entity": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "aspects:aspect/infernal/is_active"
-                    },
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "aspectlib:flags/is_on_fire"
-                    }
-                ],
+                    ]
+                },
+                "entity": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        "aspects:aspect/infernal/is_active",
+                        "aspectlib:flags/is_on_fire"
+                    ]
+                },
                 "killing_blow": {
                     "is_direct": true
                 }

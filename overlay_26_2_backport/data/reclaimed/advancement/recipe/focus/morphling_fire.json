@@ -1,0 +1,40 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "autogrant": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "minecraft:type_specific/player": {
+                                "advancements": {
+                                    "reclaimed:gameplay/aspect/morphling/form/fire": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "reclaimed:focus/morphling_fire"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "autogrant"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "reclaimed:focus/morphling_fire"
+        ]
+    }
+}

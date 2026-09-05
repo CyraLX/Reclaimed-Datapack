@@ -36,6 +36,12 @@
                 "operation": "add_multiplied_base"
             },
             {
+                "attribute": "minecraft:max_health",
+                "id": "reclaimed:voidborne/max_health",
+                "amount": -0.2,
+                "operation": "add_multiplied_base"
+            },
+            {
                 "attribute": "minecraft:gravity",
                 "id": "reclaimed:voidborne/gravity",
                 "amount": 0.2,
@@ -86,24 +92,27 @@
                 },
                 "enchanted": "victim",
                 "affected": "attacker",
-                "requirements": [
-                    {
-                        "condition": "minecraft:random_chance",
-                        "chance": 0.025
-                    },
-                    {
-                        "condition": "minecraft:damage_source_properties",
-                        "predicate": {
-                            "is_direct": true
+                "requirements": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:random_chance",
+                            "chance": 0.025
+                        },
+                        {
+                            "type": "minecraft:damage_source_properties",
+                            "predicate": {
+                                "is_direct": true
+                            }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         ],
         "minecraft:tick": [
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "periodic_tick": 20
@@ -121,7 +130,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "flags": {

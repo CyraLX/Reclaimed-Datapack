@@ -69,11 +69,11 @@
         "minecraft:damage_immunity": [
             {
                 "requirements": {
-                    "condition": "damage_source_properties",
+                    "type": "damage_source_properties",
                     "predicate": {
                         "tags": [
                             {
-                                "id": "reclaimed:aspect/pebblemite/is_suffocation",
+                                "id": "#reclaimed:aspect/pebblemite/is_suffocation",
                                 "expected": true
                             }
                         ]
@@ -84,22 +84,20 @@
         ],
         "minecraft:location_changed": [
             {
-                "requirements": [
-                    {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "stepping_on": {
-                                    "block": {
-                                        "blocks": "#reclaimed:aspect/pebblemite/is_stone_like"
-                                    }
+                "requirements": {
+                    "type": "minecraft:inverted",
+                    "term": {
+                        "type": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "stepping_on": {
+                                "block": {
+                                    "blocks": "#reclaimed:aspect/pebblemite/is_stone_like"
                                 }
                             }
                         }
                     }
-                ],
+                },
                 "effect": {
                     "type": "minecraft:all_of",
                     "effects": [
@@ -128,19 +126,17 @@
                 }
             },
             {
-                "requirements": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "stepping_on": {
-                                "block": {
-                                    "blocks": "#reclaimed:aspect/pebblemite/is_stone_like"
-                                }
+                "requirements": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "stepping_on": {
+                            "block": {
+                                "blocks": "#reclaimed:aspect/pebblemite/is_stone_like"
                             }
                         }
                     }
-                ],
+                },
                 "effect": {
                     "type": "minecraft:all_of",
                     "effects": [
@@ -179,7 +175,7 @@
         "minecraft:tick": [
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "periodic_tick": 100

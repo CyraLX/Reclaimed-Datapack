@@ -7,7 +7,7 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "reclaimed:focus/dragonkin"
+                "recipes": "reclaimed:focus/dragonkin"
             }
         }
     },
