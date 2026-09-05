@@ -1,7 +1,9 @@
 # Reclaimed 1.3.2
 
+## Additions
+- Support for Minecraft 26.3.
+
 ## General Changes
-- Added Minecraft 26.3 support.
 - Fixed Morphling being unobtainable using the Essence Cage.
 
 ## Aspect Changes
