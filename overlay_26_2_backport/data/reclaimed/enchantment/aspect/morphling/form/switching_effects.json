@@ -2,7 +2,7 @@
     "description": {
         "translate": "enchantment.reclaimed.power.morphling.switching_effects"
     },
-    "supported_items": "minecraft:jigsaw",
+    "supported_items": "minecraft:poisonous_potato",
     "weight": 1,
     "max_level": 1,
     "min_cost": {

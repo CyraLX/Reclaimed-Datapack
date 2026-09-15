@@ -22,7 +22,7 @@
         ]
     },
     "result": {
-        "id": "minecraft:jigsaw",
+        "id": "minecraft:poisonous_potato",
         "count": 1,
         "components": {
             "minecraft:max_stack_size": 1,
@@ -46,7 +46,7 @@
                 "cooldown_group": "aspects:focus"
             },
             "minecraft:use_remainder": {
-                "id": "minecraft:jigsaw",
+                "id": "minecraft:poisonous_potato",
                 "components": {
                     "minecraft:item_name": {
                         "translate": "item.reclaimed.focus.morphling",

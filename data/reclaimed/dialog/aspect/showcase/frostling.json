@@ -54,7 +54,7 @@
         {
             "type": "minecraft:item",
             "item": {
-                "id": "minecraft:jigsaw",
+                "id": "minecraft:poisonous_potato",
                 "count": 1,
                 "components": {
                     "minecraft:item_model": "reclaimed:awakened_essence_cage",
@@ -102,7 +102,7 @@
         {
             "type": "minecraft:item",
             "item": {
-                "id": "minecraft:jigsaw",
+                "id": "minecraft:poisonous_potato",
                 "count": 1,
                 "components": {
                     "minecraft:item_model": "reclaimed:aspect/frostling",
@@ -196,7 +196,7 @@
         {
             "type": "minecraft:item",
             "item": {
-                "id": "minecraft:jigsaw",
+                "id": "minecraft:poisonous_potato",
                 "count": 1,
                 "components": {
                     "minecraft:item_model": "reclaimed:focus/frostling",
