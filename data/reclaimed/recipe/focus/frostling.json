@@ -60,6 +60,8 @@
                             "minecraft:enchantments"
                         ]
                     },
+                        "!minecraft:food":{},
+                        "!minecraft:consumable":{},
                     "minecraft:item_model": "reclaimed:focus/frostling",
                     "minecraft:enchantments": {
                         "reclaimed:focus/frostling/upgrade_ice": 1,

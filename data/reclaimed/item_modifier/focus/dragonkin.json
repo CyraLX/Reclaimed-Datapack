@@ -45,6 +45,8 @@
                             ]
                         },
                         "minecraft:item_model": "reclaimed:focus/dragonkin",
+                        "!minecraft:food":{},
+                        "!minecraft:consumable":{},
                         "minecraft:enchantments": {
                             "aspects:focus/generic/modify_mainhand": 1,
                             "aspects:focus/generic/modify_offhand": 1

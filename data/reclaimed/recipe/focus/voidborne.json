@@ -59,6 +59,8 @@
                             "minecraft:enchantments"
                         ]
                     },
+                        "!minecraft:food":{},
+                        "!minecraft:consumable":{},
                     "minecraft:enchantments": {
                         "reclaimed:focus/voidborne/summon_index": 1,
                         "reclaimed:focus/voidborne/summon_all": 1,
