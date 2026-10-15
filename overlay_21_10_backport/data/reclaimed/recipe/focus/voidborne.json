@@ -37,6 +37,7 @@
                 "reclaimed:focus/voidborne/store_entity": 1
             },
             "minecraft:item_model": "reclaimed:focus/voidborne",
+            "!minecraft:food": {},
             "minecraft:consumable": {
                 "consume_seconds": 1,
                 "animation": "bow",

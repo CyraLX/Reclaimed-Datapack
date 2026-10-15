@@ -35,6 +35,7 @@
                 ]
             },
             "minecraft:item_model": "reclaimed:focus/morphling_aquatic",
+            "!minecraft:food": {},
             "minecraft:consumable": {
                 "consume_seconds": 1.0,
                 "animation": "bow",

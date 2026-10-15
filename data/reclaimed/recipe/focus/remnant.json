@@ -35,6 +35,7 @@
                 ]
             },
             "minecraft:item_model": "reclaimed:focus/remnant",
+            "!minecraft:food": {},
             "minecraft:consumable": {
                 "consume_seconds": 8,
                 "animation": "bow",

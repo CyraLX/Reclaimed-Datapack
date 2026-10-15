@@ -35,6 +35,7 @@
                 ]
             },
             "minecraft:item_model": "reclaimed:focus/pebblemite",
+            "!minecraft:food": {},
             "minecraft:consumable": {
                 "consume_seconds": 2,
                 "animation": "bow",

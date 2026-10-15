@@ -35,6 +35,7 @@
                 ]
             },
             "minecraft:item_model": "reclaimed:focus/phoenix",
+            "!minecraft:food": {},
             "minecraft:consumable": {
                 "consume_seconds": 2.0,
                 "animation": "bow",
